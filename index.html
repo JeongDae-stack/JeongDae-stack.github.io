@@ -3,79 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스톤에이지 펫 도감 검색</title>
+    <title>스톤에이지 펫 도감</title>
     <style>
-        body { font-family: 'Malgun Gothic', sans-serif; background-color: #1a1a2e; color: #eaeaea; text-align: center; padding: 20px; }
-        .search-container { background: #16213e; padding: 20px; border-radius: 10px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        input#searchInput { width: 70%; padding: 12px; border-radius: 5px; border: none; font-size: 16px; }
-        button { padding: 12px 20px; background: #0f3460; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px; font-weight: bold; }
-        button:hover { background: #e94560; }
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --accent: #f43f5e;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+        }
+
+        body { 
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-main); 
+            margin: 0; padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--primary); }
+        p.desc { color: var(--text-sub); margin-bottom: 30px; }
+
+        /* 검색창 디자인 */
+        .search-box {
+            position: sticky; top: 20px; z-index: 100;
+            display: flex; gap: 10px;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px; border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+        }
+
+        input#searchInput {
+            flex: 1; padding: 12px 20px; border-radius: 10px;
+            border: 2px solid #334155; background: #0f172a;
+            color: white; font-size: 16px; outline: none; transition: 0.3s;
+        }
+
+        input#searchInput:focus { border-color: var(--primary); }
+
+        button {
+            padding: 12px 25px; background: var(--primary); color: #0f172a;
+            border: none; border-radius: 10px; cursor: pointer;
+            font-weight: bold; transition: 0.3s;
+        }
+
+        button:hover { background: #7dd3fc; transform: translateY(-2px); }
+
+        /* 결과 카드 디자인 */
+        #resultArea {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .pet-card {
+            background: var(--card-bg); border-radius: 16px; padding: 24px;
+            transition: 0.3s; border: 1px solid #334155; position: relative;
+            overflow: hidden;
+        }
+
+        .pet-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+
+        .pet-name { font-size: 1.4rem; font-weight: 800; margin-bottom: 5px; display: flex; align-items: center; gap: 8px; }
+        .pet-sub { font-size: 0.85rem; color: var(--text-sub); margin-bottom: 15px; }
+
+        .stat-group { margin-bottom: 15px; padding-top: 15px; border-top: 1px solid #334155; }
+        .stat-title { font-size: 0.75rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: bold; }
         
-        #resultArea { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .pet-card { background: #0f3460; border-radius: 10px; padding: 20px; width: 250px; text-align: left; border-left: 5px solid #e94560; }
-        .pet-card h3 { margin-top: 0; color: #f1c40f; }
-        .stat-item { font-size: 14px; margin: 5px 0; }
-        .highlight { color: #e94560; font-weight: bold; }
+        .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .stat-val { font-size: 0.9rem; display: flex; justify-content: space-between; }
+        .stat-label { color: var(--text-sub); }
+        .stat-num { font-weight: 600; color: #fff; }
+
+        .total-badge {
+            position: absolute; top: 20px; right: 20px;
+            background: var(--accent); color: white;
+            padding: 4px 10px; border-radius: 8px; font-weight: bold; font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 
-    <h1>🦖 스톤에이지 펫 정보 검색</h1>
+<div class="container">
+    <h1>Pet Encyclopedia</h1>
+    <p class="desc">스톤에이지 페트 성장률 및 초기치 데이터베이스</p>
     
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="펫 이름을 입력하세요 (예: 백호, 언딘)" onkeypress="if(event.keyCode==13) searchPet()">
-        <button onclick="searchPet()">검색</button>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="페트 이름을 입력하세요..." onkeypress="if(event.keyCode==13) searchPet()">
+        <button onclick="searchPet()">검색하기</button>
     </div>
 
-    <div id="resultArea">
-        </div>
+    <div id="resultArea"></div>
+</div>
 
-    <script>
-        // 1. 보내주신 파일의 데이터를 자바스크립트 배열(C의 구조체 배열)로 정의합니다.
-        // 데이터가 많으므로 주요 데이터 일부를 먼저 넣었습니다. (나머지도 같은 형식으로 추가 가능합니다)
-        const petData = [
-            { "name": "(신)백호", "sub": "신전에서 영웅의 길로", "elem": {"지":7, "수":3}, "total": 5.008, "stats": {"atk":2.229, "def":1.335, "agi":1.443, "hp":10.243}, "init": {"atk":12, "def":7, "agi":7, "hp":56}, "emoji": "🐅" },
-            { "name": "SD언딘", "sub": "충전보상", "elem": {"수":1, "화":9}, "total": 5.160, "stats": {"atk":2.34, "def":1.27, "agi":1.55, "hp":10.55}, "init": {"atk":14, "def":6, "agi":9, "hp":56}, "emoji": "🧚‍♀️" },
-            { "name": "SD언딘(진)", "sub": "페트진화", "elem": {"화":9, "풍":1}, "total": 5.288, "stats": {"atk":2.429, "def":1.079, "agi":1.77, "hp":10.144}, "init": {"atk":14, "def":6, "agi":10, "hp":60}, "emoji": "🧚‍♀️" },
-            { "name": "골드테이노스(환)", "sub": "페트 환생", "total": 5.429, "stats": {"atk":2.362, "def":1.34, "agi":1.727, "hp":11.709}, "emoji": "🦖" }
-            // 여기에 보내주신 파일의 나머지 데이터를 복사해서 붙여넣으시면 됩니다.
-        ];
+<script>
+    // 제공된 데이터 구조
+    const petData = [
+        { "name": "(신)백호", "sub": "신전에서 영웅의 길로", "elem": {"지":7, "수":3}, "total": 5.008, "stats": {"atk":2.229, "def":1.335, "agi":1.443, "hp":10.243}, "init": {"atk":12, "def":7, "agi":7, "hp":56}, "emoji": "🐅" },
+        { "name": "SD언딘", "sub": "충전보상", "elem": {"수":1, "화":9}, "total": 5.160, "stats": {"atk":2.34, "def":1.27, "agi":1.55, "hp":10.55}, "init": {"atk":14, "def":6, "agi":9, "hp":56}, "emoji": "🧚‍♀️" },
+        { "name": "SD언딘(진)", "sub": "페트진화", "elem": {"화":9, "풍":1}, "total": 5.288, "stats": {"atk":2.429, "def":1.079, "agi":1.77, "hp":10.144}, "init": {"atk":14, "def":6, "agi":10, "hp":60}, "emoji": "🧚‍♀️" },
+        { "name": "골드테이노스(환)", "sub": "페트 환생", "total": 5.429, "stats": {"atk":2.362, "def":1.34, "agi":1.727, "hp":11.709}, "init": {"atk":15, "def":8, "agi":10, "hp":65}, "emoji": "🦖" }
+        // ... 나머지 데이터는 여기에 붙여넣으세요
+    ];
 
-        function searchPet() {
-            const query = document.getElementById('searchInput').value.trim();
-            const resultArea = document.getElementById('resultArea');
-            
-            // 검색어 초기화 시 결과 비우기
-            resultArea.innerHTML = "";
+    function searchPet() {
+        const query = document.getElementById('searchInput').value.trim();
+        const resultArea = document.getElementById('resultArea');
+        resultArea.innerHTML = "";
 
-            if (query === "") {
-                alert("이름을 입력해주세요!");
-                return;
-            }
+        if (!query) return;
 
-            // 2. 검색 로직 (C의 문자열 비교 strstr 같은 역할)
-            // 이름에 검색어가 포함된 모든 펫을 찾습니다.
-            const filteredPets = petData.filter(pet => pet.name.includes(query));
+        const results = petData.filter(p => p.name.includes(query));
 
-            if (filteredPets.length === 0) {
-                resultArea.innerHTML = "<p>검색 결과가 없습니다.</p>";
-                return;
-            }
-
-            // 3. 화면에 결과 뿌리기 (DOM 조작)
-            filteredPets.forEach(pet => {
-                const card = document.createElement('div');
-                card.className = 'pet-card';
-                card.innerHTML = `
-                    <h3>${pet.emoji || '🐾'} ${pet.name}</h3>
-                    <div class="stat-item">출처: ${pet.sub}</div>
-                    <div class="stat-item">성장률: <span class="highlight">${pet.total}</span></div>
-                    <div class="stat-item">공: ${pet.stats.atk} / 방: ${pet.stats.def} / 순: ${pet.stats.agi}</div>
-                    <div class="stat-item">체: ${pet.stats.hp}</div>
-                `;
-                resultArea.appendChild(card);
-            });
+        if (results.length === 0) {
+            resultArea.innerHTML = "<p style='grid-column: 1/-1'>결과를 찾을 수 없습니다.</p>";
+            return;
         }
-    </script>
+
+        results.forEach(pet => {
+            const card = document.createElement('div');
+            card.className = 'pet-card';
+            card.innerHTML = `
+                <div class="total-badge">${pet.total}</div>
+                <div class="pet-name">${pet.emoji || '🐾'} ${pet.name}</div>
+                <div class="pet-sub">${pet.sub}</div>
+                
+                <div class="stat-group">
+                    <div class="stat-title">Growth Stats (성장률)</div>
+                    <div class="stat-grid">
+                        <div class="stat-val"><span class="stat-label">공격</span><span class="stat-num">${pet.stats.atk}</span></div>
+                        <div class="stat-val"><span class="stat-label">방어</span><span class="stat-num">${pet.stats.def}</span></div>
+                        <div class="stat-val"><span class="stat-label">순발</span><span class="stat-num">${pet.stats.agi}</span></div>
+                        <div class="stat-val"><span class="stat-label">체력</span><span class="stat-num">${pet.stats.hp}</span></div>
+                    </div>
+                </div>
+
+                <div class="stat-group">
+                    <div class="stat-title">Initial Stats (초기치)</div>
+                    <div class="stat-grid">
+                        <div class="stat-val"><span class="stat-label">공격</span><span class="stat-num">${pet.init?.atk || '-'}</span></div>
+                        <div class="stat-val"><span class="stat-label">방어</span><span class="stat-num">${pet.init?.def || '-'}</span></div>
+                        <div class="stat-val"><span class="stat-label">순발</span><span class="stat-num">${pet.init?.agi || '-'}</span></div>
+                        <div class="stat-val"><span class="stat-label">체력</span><span class="stat-num">${pet.init?.hp || '-'}</span></div>
+                    </div>
+                </div>
+            `;
+            resultArea.appendChild(card);
+        });
+    }
+</script>
+
 </body>
 </html>
