@@ -829,7 +829,11 @@
         document.getElementById('resultArea').innerHTML = "";
     }
 
-    function resetSearch() { document.querySelectorAll('input').forEach(i => i.value = ""); document.querySelector('select').value = ""; }
+    function resetSearch() {
+        document.querySelectorAll('input').forEach(i => i.value = "");
+        document.querySelectorAll('select').forEach(s => s.value = "");
+        document.getElementById('resultArea').innerHTML = "";
+    }
 
     function doSearch() {
         const area = document.getElementById('resultArea');
@@ -888,31 +892,150 @@
                     </div>`;
             });
         } else {
-            // 아이템 검색 로직
-            const iName = document.getElementById('iName').value.toLowerCase();
+            // 아이템 검색 로직 - 수정 버전
+            const iName = document.getElementById('iName').value.trim().toLowerCase();
             const iType = document.getElementById('iType').value;
-            const iEffect = document.getElementById('iEffect').value.toLowerCase();
+            const iEffect = document.getElementById('iEffect').value.trim().toLowerCase();
 
-            const filteredItems = itemData.filter(i => {
-                const matchName = i.name.toLowerCase().includes(iName);
-                const matchType = iType === "" || i.type === iType;
-                const matchEffect = i.effect.toLowerCase().includes(iEffect) || i.desc.toLowerCase().includes(iEffect);
+            function safeText(value) {
+                return String(value ?? '').toLowerCase();
+            }
+
+            function objectToSearchText(obj = {}) {
+                const labelMap = {
+                    atk: '공 공격 공격력',
+                    def: '방 방어 방어력',
+                    agi: '순 순발 순발력 민첩',
+                    hp: '체 체력 hp'
+                };
+
+                return Object.entries(obj || {})
+                    .map(([key, value]) => `${key} ${labelMap[key] || ''} ${value}`)
+                    .join(' ');
+            }
+
+            function getItemType(item) {
+                const name = item.name || '';
+                const emoji = item.emoji || '';
+
+                if (
+                    /(창|도끼|활|장궁|부메랑|손톱|발톱|참다랑어)/.test(name) ||
+                    ['🔱', '🪓', '🏹', '🪃', '🐾', '🐟'].includes(emoji)
+                ) {
+                    return '무기';
+                }
+
+                if (
+                    /(갑옷|옷|투구|머리장식|장갑)/.test(name) ||
+                    ['👕', '🪖', '👑', '🧤'].includes(emoji)
+                ) {
+                    return '방어구';
+                }
+
+                if (
+                    /(반지|귀걸이|목걸이|펜던트|벨트)/.test(name) ||
+                    ['💍', '👂', '📿', '🎗️'].includes(emoji)
+                ) {
+                    return '장신구';
+                }
+
+                return '소모품';
+            }
+
+            function getItemSearchText(item) {
+                return [
+                    item.name,
+                    item.sub,
+                    item.desc,
+                    objectToSearchText(item.elem),
+                    objectToSearchText(item.init),
+                    objectToSearchText(item.stats)
+                ].join(' ').toLowerCase();
+            }
+
+            function makeStatHtml(title, obj = {}) {
+                const entries = Object.entries(obj || {})
+                    .filter(([_, value]) => String(value) !== '0' && String(value).trim() !== '');
+
+                if (entries.length === 0) return '';
+
+                return `
+                    <div style="margin-top:8px;">
+                        <div style="font-size:0.75rem; color:var(--item-color); font-weight:bold; margin-bottom:4px;">${title}</div>
+                        <div class="stat-grid">
+                            ${entries.map(([key, value]) => `
+                                <div class="stat-val">
+                                    <span class="stat-label">${key}</span>
+                                    <span class="stat-num">${value}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            const filteredItems = itemData.filter(item => {
+                const type = getItemType(item);
+                const searchText = getItemSearchText(item);
+
+                const matchName = safeText(item.name).includes(iName);
+                const matchType = iType === '' || type === iType;
+                const matchEffect = iEffect === '' || searchText.includes(iEffect);
+
                 return matchName && matchType && matchEffect;
             });
 
-            filteredItems.forEach(i => {
+            if (filteredItems.length === 0) {
+                area.innerHTML = `
+                    <div style="grid-column:1/-1; text-align:center; color:var(--text-sub); padding:40px;">
+                        검색 결과가 없습니다.
+                    </div>
+                `;
+                return;
+            }
+
+            filteredItems.forEach(item => {
+                const type = getItemType(item);
+
+                let elemHtml = '';
+                for (const [key, value] of Object.entries(item.elem || {})) {
+                    if (value > 0) {
+                        elemHtml += `<span class="elem-badge bg-${key}">${key} ${value}</span>`;
+                    }
+                }
+
                 area.innerHTML += `
                     <div class="card" style="border-left: 5px solid var(--item-color)">
-                        <div style="font-size:0.7rem; color:var(--item-color); font-weight:bold; margin-bottom:5px;">${i.type}</div>
-                        <div style="font-size:1.3rem; font-weight:bold; color:var(--item-color);">${i.name}</div>
-                        <div style="margin-top:10px; background:#0f172a; padding:10px; border-radius:8px;">
-                            <div style="color:white; font-size:0.9rem; margin-bottom:5px;">✨ ${i.effect}</div>
-                            <div style="color:var(--text-sub); font-size:0.8rem;">${i.desc}</div>
+                        <div style="font-size:0.7rem; color:var(--item-color); font-weight:bold; margin-bottom:5px;">
+                            ${type}
                         </div>
-                    </div>`;
+
+                        <div style="font-size:1.3rem; font-weight:bold; color:var(--item-color);">
+                            ${item.emoji || '🎒'} ${item.name}
+                        </div>
+
+                        <div style="font-size:0.75rem; color:var(--text-sub); margin-top:4px;">
+                            ${item.sub || ''}
+                        </div>
+
+                        <div style="margin-top:8px;">
+                            ${elemHtml}
+                        </div>
+
+                        <div class="stat-section">
+                            ${makeStatHtml('기본 능력치', item.init)}
+                            ${makeStatHtml('추가 효과', item.stats)}
+
+                            ${item.desc ? `
+                                <div style="margin-top:10px; color:var(--text-sub); font-size:0.85rem;">
+                                    ${item.desc}
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
             });
         }
-    }
 </script>
 </body>
 </html>
