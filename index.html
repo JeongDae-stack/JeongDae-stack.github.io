@@ -6,87 +6,48 @@
     <title>스톤에이지 통합 도감</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --primary: #38bdf8;
-            --item-color: #10b981;
-            --accent: #f43f5e;
-            --text-main: #f1f5f9;
-            --text-sub: #94a3b8;
-            --elem-지: #22c55e; /* 초록색 */
-            --elem-수: #2196f3; /* 파란색 */
-            --elem-화: #f44336; /* 빨간색 */
-            --elem-풍: #facc15; /* 노란색 */
+            --bg-color: #0f172a; --card-bg: #1e293b; --primary: #38bdf8;
+            --item-color: #10b981; --accent: #f43f5e; --text-main: #f1f5f9; --text-sub: #94a3b8;
+            --elem-지: #22c55e; --elem-수: #2196f3; --elem-화: #f44336; --elem-풍: #facc15;
         }
 
-        body { 
-            font-family: 'Pretendard', -apple-system, sans-serif; 
-            background-color: var(--bg-color); color: var(--text-main); 
-            margin: 0; padding: 20px; line-height: 1.6;
-        }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); color: var(--text-main); margin: 0; padding: 20px; }
+        .container { max-width: 1100px; margin: 0 auto; }
 
-        .container { max-width: 1000px; margin: 0 auto; }
-
+        /* 탭 메뉴 */
         .nav-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }
-        .nav-btn { 
-            padding: 12px 25px; border-radius: 30px; border: 2px solid #334155; 
-            background: transparent; color: var(--text-sub); cursor: pointer; 
-            font-weight: bold; transition: 0.3s;
-        }
+        .nav-btn { padding: 12px 25px; border-radius: 30px; border: 2px solid #334155; background: transparent; color: var(--text-sub); cursor: pointer; font-weight: bold; transition: 0.3s; }
         .nav-btn.active-pet { background: var(--primary); color: #0f172a; border-color: var(--primary); }
         .nav-btn.active-item { background: var(--item-color); color: #0f172a; border-color: var(--item-color); }
 
-        .search-box {
-            display: flex; gap: 10px; background: var(--card-bg); padding: 15px; 
-            border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); margin-bottom: 30px;
-        }
-        input#searchInput {
-            flex: 1; padding: 12px; border-radius: 10px; border: 2px solid #334155; 
-            background: #0f172a; color: white; font-size: 16px; outline: none;
-        }
+        /* 상세 검색 패널 */
+        .search-panel { background: var(--card-bg); padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); margin-bottom: 30px; border: 1px solid #334155; }
+        .search-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 15px; }
+        .search-group { display: flex; flex-direction: column; gap: 5px; }
+        .search-group label { font-size: 0.75rem; color: var(--primary); font-weight: bold; }
+        
+        input, select { padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; outline: none; transition: 0.3s; }
+        input:focus { border-color: var(--primary); }
 
-        #resultArea { 
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-            gap: 20px; 
-        }
+        .search-actions { display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid #334155; padding-top: 15px; }
+        .btn-search { padding: 10px 30px; border-radius: 8px; border: none; font-weight: bold; cursor: pointer; background: var(--primary); color: #0f172a; }
+        .btn-reset { padding: 10px 20px; border-radius: 8px; border: 1px solid #334155; background: transparent; color: var(--text-sub); cursor: pointer; }
 
-        .card { 
-            background: var(--card-bg); border-radius: 16px; padding: 20px; 
-            border: 1px solid #334155; position: relative; transition: 0.3s;
-        }
-        .card:hover { transform: translateY(-5px); border-color: #475569; }
-
-        .elem-badge {
-            display: inline-block; padding: 2px 8px; border-radius: 5px;
-            font-size: 0.75rem; font-weight: bold; margin-right: 5px; margin-top: 8px;
-        }
+        /* 결과 영역 */
+        #resultArea { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid #334155; position: relative; transition: 0.3s; }
+        .elem-badge { display: inline-block; padding: 2px 8px; border-radius: 5px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; margin-top: 8px; }
         .bg-지 { background-color: var(--elem-지); color: white; }
         .bg-수 { background-color: var(--elem-수); color: white; }
         .bg-화 { background-color: var(--elem-화); color: white; }
         .bg-풍 { background-color: var(--elem-풍); color: #0f172a; }
 
-        /* 스탯 스타일 수정: 4열(한 줄) 배치 */
         .stat-group { margin-top: 15px; padding-top: 10px; border-top: 1px solid #334155; }
-        .stat-grid { 
-            display: grid; 
-            grid-template-columns: repeat(4, 1fr); /* 4개 요소를 한 줄에 배치 */
-            gap: 5px; 
-            text-align: center;
-        }
-        .stat-val { 
-            font-size: 0.8rem; 
-            display: flex; 
-            flex-direction: column; /* 라벨과 수치를 위아래로 배치 */
-            align-items: center;
-        }
+        .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; text-align: center; }
+        .stat-val { font-size: 0.8rem; display: flex; flex-direction: column; align-items: center; }
         .stat-label { color: var(--text-sub); font-size: 0.7rem; margin-bottom: 2px; }
         .stat-num { font-weight: bold; color: #fff; }
-
-        .total-badge {
-            position: absolute; top: 20px; right: 20px;
-            background: var(--accent); color: white; padding: 3px 8px;
-            border-radius: 6px; font-weight: bold; font-size: 0.85rem;
-        }
+        .total-badge { position: absolute; top: 20px; right: 20px; background: var(--accent); color: white; padding: 3px 8px; border-radius: 6px; font-weight: bold; font-size: 0.85rem; }
     </style>
 </head>
 <body>
@@ -99,9 +60,51 @@
         <button id="itemBtn" class="nav-btn" onclick="switchTab('item')">⚔️ 아이템 검색</button>
     </div>
 
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="페트 이름을 입력하세요..." onkeypress="if(event.keyCode==13) doSearch()">
-        <button id="mainBtn" onclick="doSearch()" style="padding:12px 20px; border-radius:10px; border:none; cursor:pointer; font-weight:bold; background:var(--primary);">검색</button>
+    <!-- 페트 상세 검색 패널 -->
+    <div id="petSearchPanel" class="search-panel">
+        <div class="search-row">
+            <div class="search-group">
+                <label>페트 이름</label>
+                <input type="text" id="pName" placeholder="예: 백호">
+            </div>
+            <div class="search-group">
+                <label>주속성</label>
+                <select id="pElem">
+                    <option value="">전체</option>
+                    <option value="지">지속성</option>
+                    <option value="수">수속성</option>
+                    <option value="화">화속성</option>
+                    <option value="풍">풍속성</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <label>속성 수치(이상)</label>
+                <input type="number" id="pElemVal" placeholder="0~10" min="0" max="10">
+            </div>
+        </div>
+        <div class="search-row">
+            <div class="search-group"><label>공격 성장률(↑)</label><input type="number" id="minAtk" step="0.1" placeholder="0.0"></div>
+            <div class="search-group"><label>방어 성장률(↑)</label><input type="number" id="minDef" step="0.1" placeholder="0.0"></div>
+            <div class="search-group"><label>순발 성장률(↑)</label><input type="number" id="minAgi" step="0.1" placeholder="0.0"></div>
+            <div class="search-group"><label>체력 성장률(↑)</label><input type="number" id="minHp" step="0.1" placeholder="0.0"></div>
+        </div>
+        <div class="search-actions">
+            <button class="btn-reset" onclick="resetSearch()">초기화</button>
+            <button class="btn-search" onclick="doSearch()">조건 검색</button>
+        </div>
+    </div>
+
+    <!-- 아이템 검색창 (간소화) -->
+    <div id="itemSearchPanel" class="search-panel" style="display:none;">
+        <div class="search-row">
+            <div class="search-group" style="grid-column: span 2;">
+                <label>아이템 이름</label>
+                <input type="text" id="iName" placeholder="아이템명을 입력하세요...">
+            </div>
+        </div>
+        <div class="search-actions">
+            <button class="btn-search" onclick="doSearch()" style="background:var(--item-color)">아이템 검색</button>
+        </div>
     </div>
 
     <div id="resultArea"></div>
@@ -110,7 +113,7 @@
 <script>
     let currentTab = 'pet';
 
-    // 데이터 소스
+    // 데이터
     const petData = [
         { "name": "(신)백호", "sub": "영웅의 길", "elem": {"지":7, "수":3}, "total": 5.008, "stats": {"atk":2.229, "def":1.335, "agi":1.443, "hp":10.243}, "init": {"atk":12, "def":7, "agi":7, "hp":56}, "emoji": "🐅" },
         { "name": "SD언딘", "sub": "충전보상", "elem": {"수":1, "화":9}, "total": 5.160, "stats": {"atk":2.34, "def":1.27, "agi":1.55, "hp":10.55}, "init": {"atk":14, "def":6, "agi":9, "hp":56}, "emoji": "🧚‍♀️" },
@@ -119,57 +122,54 @@
     ];
 
     const itemData = [
-        { "name": "태양의 목걸이", "type": "장신구", "effect": "공격력 +20, 순발력 +10", "desc": "빛나는 태양의 기운이 담긴 목걸이" },
-        { "name": "대지의 도끼", "type": "무기", "effect": "공격력 +50, 방어력 -10", "desc": "땅의 무게를 담아 파괴력이 강한 도끼" }
+        { "name": "태양의 목걸이", "type": "장신구", "effect": "공격력 +20, 순발력 +10", "desc": "빛나는 태양의 기운이 담긴 목걸이" }
     ];
 
     function switchTab(tab) {
         currentTab = tab;
-        const pBtn = document.getElementById('petBtn');
-        const iBtn = document.getElementById('itemBtn');
-        const mBtn = document.getElementById('mainBtn');
-        const input = document.getElementById('searchInput');
-
-        if(tab === 'pet') {
-            pBtn.className = 'nav-btn active-pet';
-            iBtn.className = 'nav-btn';
-            mBtn.style.background = 'var(--primary)';
-            input.placeholder = "페트 이름을 입력하세요...";
-        } else {
-            pBtn.className = 'nav-btn';
-            iBtn.className = 'nav-btn active-item';
-            mBtn.style.background = 'var(--item-color)';
-            input.placeholder = "아이템 이름을 입력하세요...";
-        }
+        document.getElementById('petSearchPanel').style.display = tab === 'pet' ? 'block' : 'none';
+        document.getElementById('itemSearchPanel').style.display = tab === 'item' ? 'block' : 'none';
+        document.getElementById('petBtn').className = tab === 'pet' ? 'nav-btn active-pet' : 'nav-btn';
+        document.getElementById('itemBtn').className = tab === 'item' ? 'nav-btn active-item' : 'nav-btn';
         document.getElementById('resultArea').innerHTML = "";
     }
 
+    function resetSearch() {
+        document.querySelectorAll('input').forEach(i => i.value = "");
+        document.querySelector('select').value = "";
+    }
+
     function doSearch() {
-        const query = document.getElementById('searchInput').value.trim();
         const area = document.getElementById('resultArea');
         area.innerHTML = "";
-        if(!query) return;
 
-        if(currentTab === 'pet') {
-            const results = petData.filter(p => p.name.includes(query));
-            results.forEach(p => {
+        if (currentTab === 'pet') {
+            const name = document.getElementById('pName').value.toLowerCase();
+            const elem = document.getElementById('pElem').value;
+            const elemVal = parseFloat(document.getElementById('pElemVal').value) || 0;
+            const mAtk = parseFloat(document.getElementById('minAtk').value) || 0;
+            const mDef = parseFloat(document.getElementById('minDef').value) || 0;
+            const mAgi = parseFloat(document.getElementById('minAgi').value) || 0;
+            const mHp = parseFloat(document.getElementById('minHp').value) || 0;
+
+            const filtered = petData.filter(p => {
+                const matchName = p.name.toLowerCase().includes(name);
+                const matchElem = elem ? (p.elem && p.elem[elem] >= elemVal) : true;
+                const matchStats = p.stats.atk >= mAtk && p.stats.def >= mDef && p.stats.agi >= mAgi && p.stats.hp >= mHp;
+                return matchName && matchElem && matchStats;
+            });
+
+            filtered.forEach(p => {
                 let elemHtml = '';
-                if(p.elem) {
-                    for(const [key, val] of Object.entries(p.elem)) {
-                        if(val > 0) elemHtml += `<span class="elem-badge bg-${key}">${key} ${val}</span>`;
-                    }
-                }
-
+                for(const [k, v] of Object.entries(p.elem || {})) if(v > 0) elemHtml += `<span class="elem-badge bg-${k}">${k} ${v}</span>`;
+                
                 area.innerHTML += `
                     <div class="card" style="border-left: 5px solid var(--primary)">
                         <div class="total-badge">${p.total}</div>
                         <div style="font-size:1.3rem; font-weight:bold; color:var(--primary);">${p.emoji || '🐾'} ${p.name}</div>
                         <div style="font-size:0.8rem; color:var(--text-sub);">${p.sub}</div>
                         <div>${elemHtml}</div>
-                        
-                        <!-- 성장률 한 줄 표시 -->
                         <div class="stat-group">
-                            <div style="font-size:0.65rem; color:var(--primary); margin-bottom:8px; font-weight:bold;">GROWTH STATS</div>
                             <div class="stat-grid">
                                 <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.stats.atk}</span></div>
                                 <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.stats.def}</span></div>
@@ -177,31 +177,12 @@
                                 <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${p.stats.hp}</span></div>
                             </div>
                         </div>
-
-                        <!-- 초기치 한 줄 표시[cite: 1] -->
-                        <div class="stat-group">
-                            <div style="font-size:0.65rem; color:var(--text-sub); margin-bottom:8px; font-weight:bold;">INITIAL STATS</div>
-                            <div class="stat-grid">
-                                <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.init?.atk || '-'}</span></div>
-                                <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.init?.def || '-'}</span></div>
-                                <div class="stat-val"><span class="stat-label">순</span><span class="stat-num">${p.init?.agi || '-'}</span></div>
-                                <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${p.init?.hp || '-'}</span></div>
-                            </div>
-                        </div>
                     </div>`;
             });
         } else {
-            const results = itemData.filter(i => i.name.includes(query));
-            results.forEach(i => {
-                area.innerHTML += `
-                    <div class="card" style="border-left: 5px solid var(--item-color)">
-                        <div style="font-size:0.7rem; color:var(--item-color); font-weight:bold;">${i.type}</div>
-                        <div style="font-size:1.3rem; font-weight:bold; color:var(--item-color); margin-bottom:10px;">${i.name}</div>
-                        <div style="background:#0f172a; padding:10px; border-radius:8px; font-size:0.9rem;">
-                            <div style="color:white; margin-bottom:5px;">✨ ${i.effect}</div>
-                            <div style="color:var(--text-sub); font-size:0.8rem;">${i.desc}</div>
-                        </div>
-                    </div>`;
+            const name = document.getElementById('iName').value.toLowerCase();
+            itemData.filter(i => i.name.toLowerCase().includes(name)).forEach(i => {
+                area.innerHTML += `<div class="card" style="border-left:5px solid var(--item-color)"><div style="font-size:1.3rem; font-weight:bold; color:var(--item-color);">${i.name}</div><div style="font-size:0.9rem; margin-top:10px;">✨ ${i.effect}</div></div>`;
             });
         }
     }
