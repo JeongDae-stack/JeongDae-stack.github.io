@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>JeongDae-stack Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스톤에이지 성장률 계산기</title>
     <style>
-        body { background: #222; color: #0f0; font-family: monospace; text-align: center; padding-top: 100px; }
-        .console { border: 1px solid #0f0; display: inline-block; padding: 20px; }
+        body { font-family: 'Malgun Gothic', sans-serif; background-color: #2c3e50; color: white; text-align: center; padding: 50px; }
+        .calc-card { background: #34495e; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        input { padding: 10px; margin: 5px; border-radius: 5px; border: none; width: 80px; text-align: center; }
+        button { padding: 10px 20px; background-color: #e67e22; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #d35400; }
+        #result { margin-top: 20px; font-size: 1.5em; color: #f1c40f; }
     </style>
 </head>
 <body>
-    <div class="console">
-        <h1>[ SYSTEM READY ]</h1>
-        <p>JeongDae-stack의 리눅스 감성 첫 웹사이트입니다.</p>
-        <p id="status">상태: 연결됨</p>
+
+    <div class="calc-card">
+        <h2>펫 성장률 계산기</h2>
+        <p>능력치를 입력하세요</p>
+        <input type="number" id="hp" placeholder="피">
+        <input type="number" id="atk" placeholder="공">
+        <input type="number" id="def" placeholder="방">
+        <input type="number" id="spd" placeholder="순">
+        <br><br>
+        <button onclick="calculate()">계산하기</button>
+        <div id="result">성장률: 0.00</div>
     </div>
+
+    <script>
+        function calculate() {
+            // 1. 입력값 가져오기 (C의 scanf 역할)
+            const hp = parseFloat(document.getElementById('hp').value) || 0;
+            const atk = parseFloat(document.getElementById('atk').value) || 0;
+            const def = parseFloat(document.getElementById('def').value) || 0;
+            const spd = parseFloat(document.getElementById('spd').value) || 0;
+
+            // 2. 스톤에이지 성장률 공식 (공+방+순 + (피/4))
+            // 주의: 실제 게임 공식은 레벨 1과 현재 레벨을 비교해야 하지만, 우선 기본 합산으로 시작합니다.
+            const growth = atk + def + spd + (hp / 4);
+
+            // 3. 결과 화면에 출력 (C의 printf 역할)
+            document.getElementById('result').innerText = "예상 성장률: " + growth.toFixed(2);
+        }
+    </script>
+
 </body>
 </html>
