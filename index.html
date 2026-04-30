@@ -13,7 +13,6 @@
             --accent: #f43f5e;
             --text-main: #f1f5f9;
             --text-sub: #94a3b8;
-            /* 요청하신 속성 색상 변경 */
             --elem-지: #22c55e; /* 초록색 */
             --elem-수: #2196f3; /* 파란색 */
             --elem-화: #f44336; /* 빨간색 */
@@ -47,7 +46,7 @@
         }
 
         #resultArea { 
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
             gap: 20px; 
         }
 
@@ -61,17 +60,27 @@
             display: inline-block; padding: 2px 8px; border-radius: 5px;
             font-size: 0.75rem; font-weight: bold; margin-right: 5px; margin-top: 8px;
         }
-        /* 속성 클래스 연결 */
         .bg-지 { background-color: var(--elem-지); color: white; }
         .bg-수 { background-color: var(--elem-수); color: white; }
         .bg-화 { background-color: var(--elem-화); color: white; }
-        .bg-풍 { background-color: var(--elem-풍); color: #0f172a; } /* 노란색 배경에 검은 글씨가 더 잘 보임 */
+        .bg-풍 { background-color: var(--elem-풍); color: #0f172a; }
 
+        /* 스탯 스타일 수정: 4열(한 줄) 배치 */
         .stat-group { margin-top: 15px; padding-top: 10px; border-top: 1px solid #334155; }
-        .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
-        .stat-val { font-size: 0.85rem; display: flex; justify-content: space-between; }
-        .stat-label { color: var(--text-sub); }
-        .stat-num { font-weight: bold; }
+        .stat-grid { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); /* 4개 요소를 한 줄에 배치 */
+            gap: 5px; 
+            text-align: center;
+        }
+        .stat-val { 
+            font-size: 0.8rem; 
+            display: flex; 
+            flex-direction: column; /* 라벨과 수치를 위아래로 배치 */
+            align-items: center;
+        }
+        .stat-label { color: var(--text-sub); font-size: 0.7rem; margin-bottom: 2px; }
+        .stat-num { font-weight: bold; color: #fff; }
 
         .total-badge {
             position: absolute; top: 20px; right: 20px;
@@ -157,8 +166,10 @@
                         <div style="font-size:1.3rem; font-weight:bold; color:var(--primary);">${p.emoji || '🐾'} ${p.name}</div>
                         <div style="font-size:0.8rem; color:var(--text-sub);">${p.sub}</div>
                         <div>${elemHtml}</div>
+                        
+                        <!-- 성장률 한 줄 표시 -->
                         <div class="stat-group">
-                            <div style="font-size:0.7rem; color:var(--primary); margin-bottom:5px;">GROWTH STATS</div>
+                            <div style="font-size:0.65rem; color:var(--primary); margin-bottom:8px; font-weight:bold;">GROWTH STATS</div>
                             <div class="stat-grid">
                                 <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.stats.atk}</span></div>
                                 <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.stats.def}</span></div>
@@ -166,8 +177,10 @@
                                 <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${p.stats.hp}</span></div>
                             </div>
                         </div>
+
+                        <!-- 초기치 한 줄 표시[cite: 1] -->
                         <div class="stat-group">
-                            <div style="font-size:0.7rem; color:var(--text-sub); margin-bottom:5px;">INITIAL STATS</div>
+                            <div style="font-size:0.65rem; color:var(--text-sub); margin-bottom:8px; font-weight:bold;">INITIAL STATS</div>
                             <div class="stat-grid">
                                 <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.init?.atk || '-'}</span></div>
                                 <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.init?.def || '-'}</span></div>
