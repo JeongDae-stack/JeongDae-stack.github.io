@@ -3,46 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스톤에이지 성장률 계산기</title>
+    <title>스톤에이지 펫 도감 검색</title>
     <style>
-        body { font-family: 'Malgun Gothic', sans-serif; background-color: #2c3e50; color: white; text-align: center; padding: 50px; }
-        .calc-card { background: #34495e; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-        input { padding: 10px; margin: 5px; border-radius: 5px; border: none; width: 80px; text-align: center; }
-        button { padding: 10px 20px; background-color: #e67e22; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        button:hover { background-color: #d35400; }
-        #result { margin-top: 20px; font-size: 1.5em; color: #f1c40f; }
+        body { font-family: 'Malgun Gothic', sans-serif; background-color: #1a1a2e; color: #eaeaea; text-align: center; padding: 20px; }
+        .search-container { background: #16213e; padding: 20px; border-radius: 10px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        input#searchInput { width: 70%; padding: 12px; border-radius: 5px; border: none; font-size: 16px; }
+        button { padding: 12px 20px; background: #0f3460; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px; font-weight: bold; }
+        button:hover { background: #e94560; }
+        
+        #resultArea { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .pet-card { background: #0f3460; border-radius: 10px; padding: 20px; width: 250px; text-align: left; border-left: 5px solid #e94560; }
+        .pet-card h3 { margin-top: 0; color: #f1c40f; }
+        .stat-item { font-size: 14px; margin: 5px 0; }
+        .highlight { color: #e94560; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="calc-card">
-        <h2>펫 성장률 계산기</h2>
-        <p>능력치를 입력하세요</p>
-        <input type="number" id="hp" placeholder="피">
-        <input type="number" id="atk" placeholder="공">
-        <input type="number" id="def" placeholder="방">
-        <input type="number" id="spd" placeholder="순">
-        <br><br>
-        <button onclick="calculate()">계산하기</button>
-        <div id="result">성장률: 0.00</div>
+    <h1>🦖 스톤에이지 펫 정보 검색</h1>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="펫 이름을 입력하세요 (예: 백호, 언딘)" onkeypress="if(event.keyCode==13) searchPet()">
+        <button onclick="searchPet()">검색</button>
     </div>
 
+    <div id="resultArea">
+        </div>
+
     <script>
-        function calculate() {
-            // 1. 입력값 가져오기 (C의 scanf 역할)
-            const hp = parseFloat(document.getElementById('hp').value) || 0;
-            const atk = parseFloat(document.getElementById('atk').value) || 0;
-            const def = parseFloat(document.getElementById('def').value) || 0;
-            const spd = parseFloat(document.getElementById('spd').value) || 0;
+        // 1. 보내주신 파일의 데이터를 자바스크립트 배열(C의 구조체 배열)로 정의합니다.
+        // 데이터가 많으므로 주요 데이터 일부를 먼저 넣었습니다. (나머지도 같은 형식으로 추가 가능합니다)
+        const petData = [
+            { "name": "(신)백호", "sub": "신전에서 영웅의 길로", "elem": {"지":7, "수":3}, "total": 5.008, "stats": {"atk":2.229, "def":1.335, "agi":1.443, "hp":10.243}, "init": {"atk":12, "def":7, "agi":7, "hp":56}, "emoji": "🐅" },
+            { "name": "SD언딘", "sub": "충전보상", "elem": {"수":1, "화":9}, "total": 5.160, "stats": {"atk":2.34, "def":1.27, "agi":1.55, "hp":10.55}, "init": {"atk":14, "def":6, "agi":9, "hp":56}, "emoji": "🧚‍♀️" },
+            { "name": "SD언딘(진)", "sub": "페트진화", "elem": {"화":9, "풍":1}, "total": 5.288, "stats": {"atk":2.429, "def":1.079, "agi":1.77, "hp":10.144}, "init": {"atk":14, "def":6, "agi":10, "hp":60}, "emoji": "🧚‍♀️" },
+            { "name": "골드테이노스(환)", "sub": "페트 환생", "total": 5.429, "stats": {"atk":2.362, "def":1.34, "agi":1.727, "hp":11.709}, "emoji": "🦖" }
+            // 여기에 보내주신 파일의 나머지 데이터를 복사해서 붙여넣으시면 됩니다.
+        ];
 
-            // 2. 스톤에이지 성장률 공식 (공+방+순 + (피/4))
-            // 주의: 실제 게임 공식은 레벨 1과 현재 레벨을 비교해야 하지만, 우선 기본 합산으로 시작합니다.
-            const growth = atk + def + spd + (hp / 4);
+        function searchPet() {
+            const query = document.getElementById('searchInput').value.trim();
+            const resultArea = document.getElementById('resultArea');
+            
+            // 검색어 초기화 시 결과 비우기
+            resultArea.innerHTML = "";
 
-            // 3. 결과 화면에 출력 (C의 printf 역할)
-            document.getElementById('result').innerText = "예상 성장률: " + growth.toFixed(2);
+            if (query === "") {
+                alert("이름을 입력해주세요!");
+                return;
+            }
+
+            // 2. 검색 로직 (C의 문자열 비교 strstr 같은 역할)
+            // 이름에 검색어가 포함된 모든 펫을 찾습니다.
+            const filteredPets = petData.filter(pet => pet.name.includes(query));
+
+            if (filteredPets.length === 0) {
+                resultArea.innerHTML = "<p>검색 결과가 없습니다.</p>";
+                return;
+            }
+
+            // 3. 화면에 결과 뿌리기 (DOM 조작)
+            filteredPets.forEach(pet => {
+                const card = document.createElement('div');
+                card.className = 'pet-card';
+                card.innerHTML = `
+                    <h3>${pet.emoji || '🐾'} ${pet.name}</h3>
+                    <div class="stat-item">출처: ${pet.sub}</div>
+                    <div class="stat-item">성장률: <span class="highlight">${pet.total}</span></div>
+                    <div class="stat-item">공: ${pet.stats.atk} / 방: ${pet.stats.def} / 순: ${pet.stats.agi}</div>
+                    <div class="stat-item">체: ${pet.stats.hp}</div>
+                `;
+                resultArea.appendChild(card);
+            });
         }
     </script>
-
 </body>
 </html>
