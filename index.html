@@ -56,6 +56,73 @@
         .bg-수 { background-color: var(--elem-수); color: white; }
         .bg-화 { background-color: var(--elem-화); color: white; }
         .bg-풍 { background-color: var(--elem-풍); color: #0f172a; }
+                    /* 모바일 화면 대응 */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            .nav-tabs {
+                gap: 8px;
+            }
+
+            .nav-btn {
+                flex: 1;
+                padding: 12px 8px;
+                font-size: 0.9rem;
+            }
+
+            .search-panel {
+                padding: 16px;
+            }
+
+            /* 모바일에서는 검색 조건을 2칸씩 배치 */
+            .row-4,
+            .row-5 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .row-1 {
+                grid-template-columns: 1fr;
+            }
+
+            /* 전체 성장 입력칸은 혼자 한 줄 전체 사용 */
+            .row-5 .search-group:last-child {
+                grid-column: span 2;
+            }
+
+            input,
+            select {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .search-actions {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .btn-search,
+            .btn-reset {
+                width: 100%;
+                padding: 12px 8px;
+            }
+
+            #resultArea {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -1035,72 +1102,6 @@
                     </div>
                 `;
             });
-        }
-    }
-        /* 모바일 화면 대응 */
-    @media (max-width: 768px) {
-        body {
-            padding: 12px;
-        }
-
-        .container {
-            max-width: 100%;
-        }
-
-        .nav-tabs {
-            gap: 8px;
-        }
-
-        .nav-btn {
-            flex: 1;
-            padding: 12px 8px;
-            font-size: 0.9rem;
-        }
-
-        .search-panel {
-            padding: 16px;
-        }
-
-        /* 모바일에서는 검색 조건을 2칸씩 배치 */
-        .row-4,
-        .row-5 {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-
-        .row-1 {
-            grid-template-columns: 1fr;
-        }
-
-        /* 전체 성장 입력칸은 혼자 한 줄 전체 사용 */
-        .row-5 .search-group:last-child {
-            grid-column: span 2;
-        }
-
-        input,
-        select {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .search-actions {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .btn-search,
-        .btn-reset {
-            width: 100%;
-            padding: 12px 8px;
-        }
-
-        #resultArea {
-            grid-template-columns: 1fr;
-        }
-
-        .stat-grid {
-            grid-template-columns: repeat(2, 1fr);
         }
     }
 </script>
