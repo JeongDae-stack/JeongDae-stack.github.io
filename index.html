@@ -14,35 +14,39 @@
         body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); color: var(--text-main); margin: 0; padding: 20px; }
         .container { max-width: 1100px; margin: 0 auto; }
 
-        /* 네비게이션 */
+        /* 탭 메뉴 */
         .nav-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; }
         .nav-btn { padding: 12px 25px; border-radius: 30px; border: 2px solid #334155; background: transparent; color: var(--text-sub); cursor: pointer; font-weight: bold; transition: 0.3s; }
         .nav-btn.active-pet { background: var(--primary); color: #0f172a; border-color: var(--primary); }
         .nav-btn.active-item { background: var(--item-color); color: #0f172a; border-color: var(--item-color); }
 
-        /* 검색 패널 */
-        .search-panel { background: var(--card-bg); padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); margin-bottom: 30px; border: 1px solid #334155; }
-        .search-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 20px; }
-        .search-group { display: flex; flex-direction: column; gap: 5px; }
-        .search-group label { font-size: 0.7rem; color: var(--text-sub); font-weight: bold; text-transform: uppercase; }
+        /* 검색 패널 구조화 */
+        .search-panel { background: var(--card-bg); padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); margin-bottom: 30px; border: 1px solid #334155; }
+        .search-row { display: grid; gap: 15px; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #334155; }
+        .search-row:last-of-type { border-bottom: none; margin-bottom: 10px; }
+        
+        /* 줄별 그리드 설정 */
+        .row-name { grid-template-columns: 1fr; }
+        .row-elem { grid-template-columns: repeat(4, 1fr); }
+        .row-stat { grid-template-columns: repeat(5, 1fr); }
+
+        .search-group { display: flex; flex-direction: column; gap: 8px; }
+        .search-group label { font-size: 0.75rem; color: var(--text-sub); font-weight: bold; }
         .label-지 { color: var(--elem-지) !important; }
         .label-수 { color: var(--elem-수) !important; }
         .label-화 { color: var(--elem-화) !important; }
         .label-풍 { color: var(--elem-풍) !important; }
         
-        input { padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; outline: none; font-size: 14px; }
-        input:focus { border-color: var(--primary); }
+        input { padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; outline: none; font-size: 14px; }
+        input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2); }
 
-        .search-actions { display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid #334155; padding-top: 15px; }
-        .btn-search { padding: 12px 40px; border-radius: 8px; border: none; font-weight: bold; cursor: pointer; background: var(--primary); color: #0f172a; transition: 0.2s; }
-        .btn-search:hover { transform: scale(1.05); filter: brightness(1.1); }
+        .search-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 10px; }
+        .btn-search { padding: 12px 50px; border-radius: 8px; border: none; font-weight: bold; cursor: pointer; background: var(--primary); color: #0f172a; }
         .btn-reset { padding: 12px 20px; border-radius: 8px; border: 1px solid #334155; background: transparent; color: var(--text-sub); cursor: pointer; }
 
-        /* 카드 디자인 */
+        /* 결과 카드 */
         #resultArea { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid #334155; position: relative; transition: 0.3s; overflow: hidden; }
-        .card:hover { border-color: var(--primary); transform: translateY(-3px); }
-        
+        .card { background: var(--card-bg); border-radius: 16px; padding: 20px; border: 1px solid #334155; position: relative; transition: 0.3s; }
         .elem-badge { display: inline-block; padding: 2px 8px; border-radius: 5px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; margin-top: 8px; }
         .bg-지 { background-color: var(--elem-지); color: white; }
         .bg-수 { background-color: var(--elem-수); color: white; }
@@ -51,7 +55,7 @@
 
         .stat-group { margin-top: 15px; padding-top: 10px; border-top: 1px solid #334155; }
         .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; text-align: center; }
-        .stat-val { font-size: 0.8rem; display: flex; flex-direction: column; align-items: center; }
+        .stat-val { font-size: 0.8rem; display: flex; flex-direction: column; }
         .stat-label { color: var(--text-sub); font-size: 0.65rem; margin-bottom: 2px; }
         .stat-num { font-weight: bold; color: #fff; }
         .total-badge { position: absolute; top: 20px; right: 20px; background: var(--accent); color: white; padding: 3px 8px; border-radius: 6px; font-weight: bold; font-size: 0.85rem; }
@@ -67,33 +71,24 @@
         <button id="itemBtn" class="nav-btn" onclick="switchTab('item')">⚔️ 아이템 검색</button>
     </div>
 
-    <!-- 페트 상세 검색 패널 -->
+    <!-- 페트 검색 패널 -->
     <div id="petSearchPanel" class="search-panel">
-        <!-- 1행: 이름 및 속성 조건 -->
-        <div class="search-row">
-            <div class="search-group" style="grid-column: span 2;">
-                <label>페트 이름</label>
-                <input type="text" id="pName" placeholder="페트 이름을 입력하세요...">
-            </div>
+        <!-- 1줄: 페트 네임 -->
+        <div class="search-row row-name">
             <div class="search-group">
-                <label class="label-지">지속성(↑)</label>
-                <input type="number" id="eJi" placeholder="0" min="0" max="10">
-            </div>
-            <div class="search-group">
-                <label class="label-수">수속성(↑)</label>
-                <input type="number" id="eSu" placeholder="0" min="0" max="10">
-            </div>
-            <div class="search-group">
-                <label class="label-화">화속성(↑)</label>
-                <input type="number" id="eHwa" placeholder="0" min="0" max="10">
-            </div>
-            <div class="search-group">
-                <label class="label-풍">풍속성(↑)</label>
-                <input type="number" id="ePung" placeholder="0" min="0" max="10">
+                <label>페트 네임</label>
+                <input type="text" id="pName" placeholder="페트 이름을 입력하세요 (예: 백호)">
             </div>
         </div>
-        <!-- 2행: 성장률 조건 -->
-        <div class="search-row">
+        <!-- 2줄: 속성 관련 -->
+        <div class="search-row row-elem">
+            <div class="search-group"><label class="label-지">지속성 (이상)</label><input type="number" id="eJi" min="0" max="10" placeholder="0"></div>
+            <div class="search-group"><label class="label-수">수속성 (이상)</label><input type="number" id="eSu" min="0" max="10" placeholder="0"></div>
+            <div class="search-group"><label class="label-화">화속성 (이상)</label><input type="number" id="eHwa" min="0" max="10" placeholder="0"></div>
+            <div class="search-group"><label class="label-풍">풍속성 (이상)</label><input type="number" id="ePung" min="0" max="10" placeholder="0"></div>
+        </div>
+        <!-- 3줄: 능력치 관련 -->
+        <div class="search-row row-stat">
             <div class="search-group"><label>공격 성장률(↑)</label><input type="number" id="minAtk" step="0.1" placeholder="0.0"></div>
             <div class="search-group"><label>방어 성장률(↑)</label><input type="number" id="minDef" step="0.1" placeholder="0.0"></div>
             <div class="search-group"><label>순발 성장률(↑)</label><input type="number" id="minAgi" step="0.1" placeholder="0.0"></div>
@@ -102,21 +97,16 @@
         </div>
         <div class="search-actions">
             <button class="btn-reset" onclick="resetSearch()">초기화</button>
-            <button class="btn-search" onclick="doSearch()">조건 검색</button>
+            <button class="btn-search" onclick="doSearch()">조건 검색 (낮은순 정렬)</button>
         </div>
     </div>
 
     <!-- 아이템 검색 패널 -->
     <div id="itemSearchPanel" class="search-panel" style="display:none;">
-        <div class="search-row">
-            <div class="search-group" style="grid-column: span 2;">
-                <label>아이템 이름</label>
-                <input type="text" id="iName" placeholder="아이템 이름을 입력하세요...">
-            </div>
+        <div class="search-row row-name">
+            <div class="search-group"><label>아이템 이름</label><input type="text" id="iName" placeholder="아이템 이름을 입력하세요..."></div>
         </div>
-        <div class="search-actions">
-            <button class="btn-search" onclick="doSearch()" style="background:var(--item-color)">아이템 검색</button>
-        </div>
+        <div class="search-actions"><button class="btn-search" onclick="doSearch()" style="background:var(--item-color)">아이템 검색</button></div>
     </div>
 
     <div id="resultArea"></div>
@@ -125,16 +115,13 @@
 <script>
     let currentTab = 'pet';
 
-    // 데이터 구조 반영
+    // 데이터
     const petData = [
         { "name": "(신)백호", "sub": "영웅의 길", "elem": {"지":7, "수":3}, "total": 5.008, "stats": {"atk":2.229, "def":1.335, "agi":1.443, "hp":10.243}, "init": {"atk":12, "def":7, "agi":7, "hp":56}, "emoji": "🐅" },
         { "name": "SD언딘", "sub": "충전보상", "elem": {"수":1, "화":9}, "total": 5.160, "stats": {"atk":2.34, "def":1.27, "agi":1.55, "hp":10.55}, "init": {"atk":14, "def":6, "agi":9, "hp":56}, "emoji": "🧚‍♀️" },
         { "name": "SD언딘(진)", "sub": "페트진화", "elem": {"화":9, "풍":1}, "total": 5.288, "stats": {"atk":2.429, "def":1.079, "agi":1.77, "hp":10.144}, "init": {"atk":14, "def":6, "agi":10, "hp":60}, "emoji": "🧚‍♀️" },
         { "name": "골드테이노스(환)", "sub": "페트 환생", "elem": {"지":5, "화":5}, "total": 5.429, "stats": {"atk":2.362, "def":1.34, "agi":1.727, "hp":11.709}, "init": {"atk":15, "def":8, "agi":10, "hp":65}, "emoji": "🦖" }
-        // 여기에 전체 텍스트 파일 데이터[.txt]를 붙여넣으세요.
     ];
-
-    const itemData = [];
 
     function switchTab(tab) {
         currentTab = tab;
@@ -145,9 +132,7 @@
         document.getElementById('resultArea').innerHTML = "";
     }
 
-    function resetSearch() {
-        document.querySelectorAll('input').forEach(i => i.value = "");
-    }
+    function resetSearch() { document.querySelectorAll('input').forEach(i => i.value = ""); }
 
     function doSearch() {
         const area = document.getElementById('resultArea');
@@ -167,18 +152,19 @@
                 total: parseFloat(document.getElementById('minTotal').value) || 0
             };
 
-            const filtered = petData.filter(p => {
-                const matchName = p.name.toLowerCase().includes(filters.name);
-                const matchJi = (p.elem?.지 || 0) >= filters.지;
-                const matchSu = (p.elem?.수 || 0) >= filters.수;
-                const matchHwa = (p.elem?.화 || 0) >= filters.화;
-                const matchPung = (p.elem?.풍 || 0) >= filters.풍;
-                const matchStats = p.stats.atk >= filters.atk && p.stats.def >= filters.def && 
-                                  p.stats.agi >= filters.agi && p.stats.hp >= filters.hp &&
-                                  p.total >= filters.total;
-                
-                return matchName && matchJi && matchSu && matchHwa && matchPung && matchStats;
-            });
+            // 필터링 및 정렬 (total 기준 오름차순)
+            const filtered = petData
+                .filter(p => {
+                    return p.name.toLowerCase().includes(filters.name) &&
+                           (p.elem?.지 || 0) >= filters.지 &&
+                           (p.elem?.수 || 0) >= filters.수 &&
+                           (p.elem?.화 || 0) >= filters.화 &&
+                           (p.elem?.풍 || 0) >= filters.풍 &&
+                           p.stats.atk >= filters.atk && p.stats.def >= filters.def && 
+                           p.stats.agi >= filters.agi && p.stats.hp >= filters.hp &&
+                           p.total >= filters.total;
+                })
+                .sort((a, b) => a.total - b.total); // 낮은 순 정렬 추가[cite: 1]
 
             if(filtered.length === 0) {
                 area.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:50px; color:var(--text-sub);">조건에 맞는 페트가 없습니다.</div>`;
@@ -187,24 +173,19 @@
 
             filtered.forEach(p => {
                 let elemHtml = '';
-                for(const [k, v] of Object.entries(p.elem || {})) {
-                    if(v > 0) elemHtml += `<span class="elem-badge bg-${k}">${k} ${v}</span>`;
-                }
-                
+                for(const [k, v] of Object.entries(p.elem || {})) if(v > 0) elemHtml += `<span class="elem-badge bg-${k}">${k} ${v}</span>`;
                 area.innerHTML += `
                     <div class="card" style="border-left: 5px solid var(--primary)">
                         <div class="total-badge">${p.total}</div>
                         <div style="font-size:1.3rem; font-weight:bold; color:var(--primary);">${p.emoji || '🐾'} ${p.name}</div>
                         <div style="font-size:0.8rem; color:var(--text-sub); margin-bottom:5px;">${p.sub}</div>
                         <div>${elemHtml}</div>
-                        <div class="stat-group">
-                            <div class="stat-grid">
-                                <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.stats.atk}</span></div>
-                                <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.stats.def}</span></div>
-                                <div class="stat-val"><span class="stat-label">순</span><span class="stat-num">${p.stats.agi}</span></div>
-                                <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${p.stats.hp}</span></div>
-                            </div>
-                        </div>
+                        <div class="stat-group"><div class="stat-grid">
+                            <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.stats.atk}</span></div>
+                            <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.stats.def}</span></div>
+                            <div class="stat-val"><span class="stat-label">순</span><span class="stat-num">${p.stats.agi}</span></div>
+                            <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${p.stats.hp}</span></div>
+                        </div></div>
                     </div>`;
             });
         }
