@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스톤에이지 통합 도감</title>
+
     <style>
         :root {
             --bg-color: #0f172a;
@@ -165,6 +166,45 @@
             transition: 0.3s;
         }
 
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        }
+
+        .card-head {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding-right: 60px;
+        }
+
+        .item-card-head {
+            padding-right: 0;
+        }
+
+        .thumb-wrap {
+            width: 72px;
+            height: 72px;
+            border-radius: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .thumb-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .fallback-emoji {
+            font-size: 2rem;
+        }
+
         .stat-section {
             margin-top: 15px;
             padding-top: 10px;
@@ -274,6 +314,14 @@
             text-decoration: underline;
         }
 
+        .desc-box {
+            margin-top: 10px;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            white-space: pre-line;
+            line-height: 1.5;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 12px;
@@ -336,11 +384,16 @@
             .stat-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .thumb-wrap {
+                width: 64px;
+                height: 64px;
+            }
         }
     </style>
 </head>
-<body>
 
+<body>
 <div class="container">
     <h1 style="text-align:center; color:var(--primary); margin-bottom:30px;">StoneAge Database</h1>
 
@@ -513,6 +566,15 @@
         return String(value ?? '').toLowerCase();
     }
 
+    function escapeHtml(value) {
+        return String(value ?? '')
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#039;');
+    }
+
     function objectToSearchText(obj = {}) {
         const labelMap = {
             atk: '공 공격 공격력',
@@ -536,6 +598,37 @@
         return Object.entries(obj || {})
             .map(([key, value]) => `${key} ${labelMap[key] || ''} ${value}`)
             .join(' ');
+    }
+
+    function getImageUrl(data) {
+        return data?.imageUrl || data?.img || data?.image || data?.thumb || data?.thumbnail || '';
+    }
+
+    function renderThumb(data, fallbackEmoji) {
+        const imageUrl = getImageUrl(data);
+        const emoji = fallbackEmoji || data?.emoji || '🎒';
+        const name = data?.name || '';
+
+        if (!imageUrl) {
+            return `
+                <div class="thumb-wrap">
+                    <span class="fallback-emoji">${escapeHtml(emoji)}</span>
+                </div>
+            `;
+        }
+
+        return `
+            <div class="thumb-wrap">
+                <img
+                    class="thumb-img"
+                    src="${escapeHtml(imageUrl)}"
+                    alt="${escapeHtml(name)}"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                >
+                <span class="fallback-emoji" style="display:none;">${escapeHtml(emoji)}</span>
+            </div>
+        `;
     }
 
     function getItemType(item) {
@@ -588,12 +681,12 @@
 
         return `
             <div style="margin-top:8px;">
-                <div class="stat-row-label item-stat-label">${title}</div>
+                <div class="stat-row-label item-stat-label">${escapeHtml(title)}</div>
                 <div class="stat-grid">
                     ${entries.map(([key, value]) => `
                         <div class="stat-val">
-                            <span class="stat-label">${key}</span>
-                            <span class="stat-num">${value}</span>
+                            <span class="stat-label">${escapeHtml(key)}</span>
+                            <span class="stat-num">${escapeHtml(value)}</span>
                         </div>
                     `).join('')}
                 </div>
@@ -672,7 +765,7 @@
 
             for (const [key, value] of Object.entries(p.elem || {})) {
                 if (value > 0) {
-                    elemHtml += `<span class="elem-badge bg-${key}">${key} ${value}</span>`;
+                    elemHtml += `<span class="elem-badge bg-${escapeHtml(key)}">${escapeHtml(key)} ${escapeHtml(value)}</span>`;
                 }
             }
 
@@ -683,43 +776,49 @@
 
             area.innerHTML += `
                 <div class="card" style="border-left: 5px solid var(--primary)">
-                    <div class="total-badge">${p.total ?? '-'}</div>
+                    <div class="total-badge">${escapeHtml(p.total ?? '-')}</div>
 
-                    <div style="font-size:1.2rem; font-weight:bold; color:var(--primary); padding-right:60px;">
-                        ${p.emoji || '🐾'} ${p.name || ''}
-                    </div>
+                    <div class="card-head">
+                        ${renderThumb(p, p.emoji || '🐾')}
 
-                    <div style="font-size:0.75rem; color:var(--text-sub); margin-bottom:5px;">
-                        ${p.sub || ''}
-                    </div>
+                        <div>
+                            <div style="font-size:1.2rem; font-weight:bold; color:var(--primary);">
+                                ${escapeHtml(p.name || '')}
+                            </div>
 
-                    ${extraInfo ? `
-                        <div style="font-size:0.72rem; color:var(--text-sub); margin-bottom:5px;">
-                            ${extraInfo}
+                            <div style="font-size:0.75rem; color:var(--text-sub); margin-top:4px;">
+                                ${escapeHtml(p.sub || '')}
+                            </div>
+
+                            ${extraInfo ? `
+                                <div style="font-size:0.72rem; color:var(--text-sub); margin-top:4px;">
+                                    ${escapeHtml(extraInfo)}
+                                </div>
+                            ` : ''}
                         </div>
-                    ` : ''}
+                    </div>
 
-                    <div>${elemHtml}</div>
+                    <div style="margin-top:8px;">${elemHtml}</div>
 
                     <div class="stat-section">
                         <div class="stat-row-label">📈 성장률</div>
                         <div class="stat-grid">
-                            <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${p.stats?.atk ?? '-'}</span></div>
-                            <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${p.stats?.def ?? '-'}</span></div>
-                            <div class="stat-val"><span class="stat-label">순</span><span class="stat-num">${p.stats?.agi ?? '-'}</span></div>
-                            <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${p.stats?.hp ?? '-'}</span></div>
+                            <div class="stat-val"><span class="stat-label">공</span><span class="stat-num">${escapeHtml(p.stats?.atk ?? '-')}</span></div>
+                            <div class="stat-val"><span class="stat-label">방</span><span class="stat-num">${escapeHtml(p.stats?.def ?? '-')}</span></div>
+                            <div class="stat-val"><span class="stat-label">순</span><span class="stat-num">${escapeHtml(p.stats?.agi ?? '-')}</span></div>
+                            <div class="stat-val"><span class="stat-label">체</span><span class="stat-num">${escapeHtml(p.stats?.hp ?? '-')}</span></div>
                         </div>
 
                         <div class="stat-row-label">👶 초기치</div>
                         <div class="stat-grid">
-                            <div class="stat-val"><span class="stat-label">공</span><span class="stat-num" style="color:#fbbf24">${p.init?.atk ?? '-'}</span></div>
-                            <div class="stat-val"><span class="stat-label">방</span><span class="stat-num" style="color:#fbbf24">${p.init?.def ?? '-'}</span></div>
-                            <div class="stat-val"><span class="stat-label">순</span><span class="stat-num" style="color:#fbbf24">${p.init?.agi ?? '-'}</span></div>
-                            <div class="stat-val"><span class="stat-label">체</span><span class="stat-num" style="color:#fbbf24">${p.init?.hp ?? '-'}</span></div>
+                            <div class="stat-val"><span class="stat-label">공</span><span class="stat-num" style="color:#fbbf24">${escapeHtml(p.init?.atk ?? '-')}</span></div>
+                            <div class="stat-val"><span class="stat-label">방</span><span class="stat-num" style="color:#fbbf24">${escapeHtml(p.init?.def ?? '-')}</span></div>
+                            <div class="stat-val"><span class="stat-label">순</span><span class="stat-num" style="color:#fbbf24">${escapeHtml(p.init?.agi ?? '-')}</span></div>
+                            <div class="stat-val"><span class="stat-label">체</span><span class="stat-num" style="color:#fbbf24">${escapeHtml(p.init?.hp ?? '-')}</span></div>
                         </div>
                     </div>
 
-                    ${p.source ? `<a class="source-link" href="${p.source}" target="_blank" rel="noopener">원본 보기</a>` : ''}
+                    ${p.source ? `<a class="source-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
                 </div>
             `;
         });
@@ -755,22 +854,28 @@
 
             for (const [key, value] of Object.entries(item.elem || {})) {
                 if (value > 0) {
-                    elemHtml += `<span class="elem-badge bg-${key}">${key} ${value}</span>`;
+                    elemHtml += `<span class="elem-badge bg-${escapeHtml(key)}">${escapeHtml(key)} ${escapeHtml(value)}</span>`;
                 }
             }
 
             area.innerHTML += `
                 <div class="card" style="border-left: 5px solid var(--item-color)">
-                    <div style="font-size:0.7rem; color:var(--item-color); font-weight:bold; margin-bottom:5px;">
-                        ${type}
+                    <div style="font-size:0.7rem; color:var(--item-color); font-weight:bold; margin-bottom:8px;">
+                        ${escapeHtml(type)}
                     </div>
 
-                    <div style="font-size:1.3rem; font-weight:bold; color:var(--item-color);">
-                        ${item.emoji || '🎒'} ${item.name || ''}
-                    </div>
+                    <div class="card-head item-card-head">
+                        ${renderThumb(item, item.emoji || '🎒')}
 
-                    <div style="font-size:0.75rem; color:var(--text-sub); margin-top:4px;">
-                        ${item.sub || ''}
+                        <div>
+                            <div style="font-size:1.3rem; font-weight:bold; color:var(--item-color);">
+                                ${escapeHtml(item.name || '')}
+                            </div>
+
+                            <div style="font-size:0.75rem; color:var(--text-sub); margin-top:4px;">
+                                ${escapeHtml(item.sub || '')}
+                            </div>
+                        </div>
                     </div>
 
                     <div style="margin-top:8px;">
@@ -782,13 +887,13 @@
                         ${makeStatHtml('추가 효과', item.stats)}
 
                         ${item.desc ? `
-                            <div style="margin-top:10px; color:var(--text-sub); font-size:0.85rem; white-space:pre-line;">
-                                ${item.desc}
+                            <div class="desc-box">
+                                ${escapeHtml(item.desc)}
                             </div>
                         ` : ''}
                     </div>
 
-                    ${item.source ? `<a class="source-link" href="${item.source}" target="_blank" rel="noopener">원본 보기</a>` : ''}
+                    ${item.source ? `<a class="source-link" href="${escapeHtml(item.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
                 </div>
             `;
         });
