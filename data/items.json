@@ -1,0 +1,1681 @@
+[
+  {
+    "id": "94",
+    "name": "라돈타의 귀걸이(진)",
+    "type": "장신구",
+    "sub": "라돈타의 귀걸이(개) + 라돈타의 귀걸이 + 1,000만 스톤",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+10",
+      "방어": "+10",
+      "순발": "+10",
+      "체력": "+10",
+      "회피": "+5"
+    },
+    "desc": "공 +10 방 +10 민 +10 내 +10 회피 +5",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2508/37781c5710467f184508e10fd18bcc00_1754352312_2321.png",
+    "source": ""
+  },
+  {
+    "id": "93",
+    "name": "라돈타의 귀걸이(개)",
+    "type": "장신구",
+    "sub": "라돈타의 귀걸이 + 암흑 헤티아 파편",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+7",
+      "방어": "+7",
+      "순발": "+7",
+      "체력": "+10",
+      "회피": "+5"
+    },
+    "desc": "공 +7 방 +7 민 +7 내 +10 회피 +5",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2508/37781c5710467f184508e10fd18bcc00_1754352312_2321.png",
+    "source": ""
+  },
+  {
+    "id": "92",
+    "name": "봉인된 열쇠",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 헤티아(분노의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "정령왕에게 가는 열쇠 (사용시 정령왕의 방 이동)",
+    "emoji": "🎒",
+    "imageUrl": "images/items/bong_key.png",
+    "source": ""
+  },
+  {
+    "id": "91",
+    "name": "불꽃파편 목걸이",
+    "type": "장신구",
+    "sub": "낚시이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5",
+      "방어": "+7",
+      "순발": "-20",
+      "체력": "+10"
+    },
+    "desc": "공 +5, 방 +7, 순 -20, 체 +10",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352698_9642.png",
+    "source": ""
+  },
+  {
+    "id": "90",
+    "name": "불꽃파편 투구",
+    "type": "방어구",
+    "sub": "낚시이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+15",
+      "방어": "+35",
+      "순발": "-20",
+      "체력": "+10"
+    },
+    "desc": "공 +15, 방어 +35, 순 -20, 체 +10",
+    "emoji": "🛡️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352674_5313.png",
+    "source": ""
+  },
+  {
+    "id": "89",
+    "name": "불꽃파편 도끼",
+    "type": "무기",
+    "sub": "낚시이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+68",
+      "방어": "-20",
+      "순발": "-20",
+      "크리": "+5"
+    },
+    "desc": "공 +68, 방 -20, 순 -20, 크리 +5",
+    "emoji": "⚔️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352659_9447.png",
+    "source": ""
+  },
+  {
+    "id": "88",
+    "name": "신목의 목걸이",
+    "type": "장신구",
+    "sub": "낚시이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "방어": "+10",
+      "순발": "-20",
+      "체력": "+10"
+    },
+    "desc": "방 +10, 순 -20, 체 +10",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352488_2088.png",
+    "source": ""
+  },
+  {
+    "id": "87",
+    "name": "신목의 갑옷",
+    "type": "방어구",
+    "sub": "낚시이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "방어": "+60",
+      "순발": "-30",
+      "체력": "+10"
+    },
+    "desc": "방 +60, 순 -30, 체 +10",
+    "emoji": "🛡️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352479_7825.png",
+    "source": ""
+  },
+  {
+    "id": "86",
+    "name": "신목의 창",
+    "type": "무기",
+    "sub": "낚시이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+20",
+      "방어": "+30",
+      "순발": "-30",
+      "체력": "+10",
+      "크리": "+5"
+    },
+    "desc": "공 +20, 방 +30, 순 -30, 체 +10, 크리 +5",
+    "emoji": "⚔️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352466_3997.png",
+    "source": ""
+  },
+  {
+    "id": "85",
+    "name": "태풍의 목걸이",
+    "type": "장신구",
+    "sub": "낚시 이벤ㅡ",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "-10",
+      "방어": "+15",
+      "순발": "+10"
+    },
+    "desc": "공 -10, 방 +15, 순 +10",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352274_4409.png",
+    "source": ""
+  },
+  {
+    "id": "84",
+    "name": "태풍의 갑옷",
+    "type": "방어구",
+    "sub": "낚시 이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "-10",
+      "방어": "+20",
+      "순발": "+30",
+      "체력": "+5"
+    },
+    "desc": "공 -10, 방 +20, 순 +30, 체 +5",
+    "emoji": "🛡️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352257_6045.png",
+    "source": ""
+  },
+  {
+    "id": "83",
+    "name": "태풍의 창",
+    "type": "무기",
+    "sub": "낚시 이벤트",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+15",
+      "방어": "-10",
+      "순발": "+30",
+      "체력": "-15",
+      "크리": "+5"
+    },
+    "desc": "공 +15, 방 -10, 순 +30, 체 -15, 크리 +5",
+    "emoji": "⚔️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2512/ddb5f11521dcbafe8131a35d625ca1f0_1765352242_0449.png",
+    "source": ""
+  },
+  {
+    "id": "82",
+    "name": "정령왕의 활[7~8회]",
+    "type": "무기",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+30~+35",
+      "방어": "-10"
+    },
+    "desc": "공 +30~+35, 방 -10",
+    "emoji": "⚔️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2510/724709166af9b8f6b6150383634a96aa_1760687322_9729.png",
+    "source": ""
+  },
+  {
+    "id": "81",
+    "name": "붉은 라돈타 반지",
+    "type": "장신구",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5~+8",
+      "방어": "+6~+7",
+      "순발": "-3~-5"
+    },
+    "desc": "공 +5~+8, 방 +6~+7, 순 -3~-5 부활의 정령 Lv2",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2510/c842e709dc8efeacdeccb0373edd0525_1760687122_5186.png",
+    "source": ""
+  },
+  {
+    "id": "80",
+    "name": "정령왕의 성스러운 돌",
+    "type": "소모품",
+    "sub": "특수 레이드 암흑 헤티아(절망의 열쇠 사용)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "전설의 보석 신기한 힘을 가지고 있다.",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2510/115c2ccb28d4569703f15e45425469f7_1760687448_9148.png",
+    "source": ""
+  },
+  {
+    "id": "79",
+    "name": "암흑 헤티아의 창",
+    "type": "무기",
+    "sub": "특수 레이드 암흑 헤티아(절망의 열쇠 사용)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+62~67",
+      "순발": "-5~10",
+      "체력": "+5",
+      "크리": "+7%"
+    },
+    "desc": "공 +62~67 순 -5~10 내구력 +5 크리 +7%",
+    "emoji": "⚔️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2507/cbeeb1a85da6628eb68730a2660d74fd_1753951286_3674.png",
+    "source": ""
+  },
+  {
+    "id": "78",
+    "name": "암흑 초신성 갑옷",
+    "type": "방어구",
+    "sub": "특수 레이드 암흑 헤티아(절망의 열쇠 사용)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~5",
+      "방어": "+50~60",
+      "순발": "-5~10",
+      "체력": "+5~10"
+    },
+    "desc": "공 +3~5 방 +50~60 민 -5~10 내구력 +5~10 윤택의정령 LV5",
+    "emoji": "🛡️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2507/236465b2e1f78f0aec1cd307a093b8ec_1753951350_9832.png",
+    "source": ""
+  },
+  {
+    "id": "77",
+    "name": "암흑 헤티아 머리장식",
+    "type": "방어구",
+    "sub": "특수 레이드 암흑 헤티아(절망의 열쇠 사용)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5~8",
+      "방어": "+27~33",
+      "순발": "-0~3",
+      "체력": "+10~15"
+    },
+    "desc": "공 +5~8 방 +27~33 순 -0~3 내구력 +10~15 무지개정령",
+    "emoji": "🛡️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2507/7e35685f711d4dbf97951a52b440dfd1_1753951476_0221.png",
+    "source": ""
+  },
+  {
+    "id": "76",
+    "name": "전령의 낡은 열쇠",
+    "type": "소모품",
+    "sub": "일일 레이드",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "전령의 낡은 열쇠. 알수 없는 기운이 맴돈다. (흑갈푸스) (일일레이드 확률 보상)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714544996_9775.png",
+    "source": ""
+  },
+  {
+    "id": "75",
+    "name": "전리품(흑갈푸스)",
+    "type": "소모품",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭시 확률로 보상 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714544380_0453.png",
+    "source": ""
+  },
+  {
+    "id": "74",
+    "name": "전령의 룬",
+    "type": "소모품",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "전령의 기운이 담긴 룬. 알 수 없는 힘이 깃들어있다.",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/7b1465adfd5650d5c5f13c5e9d7c7487_1714544904_1325.png",
+    "source": ""
+  },
+  {
+    "id": "73",
+    "name": "흑갈푸스 계열 레어 알",
+    "type": "소모품",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "흑갈푸스/갈푸스/델푸스/울푸스/베르푸스 중 하나 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714544424_0584.png",
+    "source": ""
+  },
+  {
+    "id": "72",
+    "name": "캐릭터 흰색 염색약",
+    "type": "소모품",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "현재 캐릭터를 흰색 캐릭터로 변경",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714544337_3044.png",
+    "source": ""
+  },
+  {
+    "id": "71",
+    "name": "캐릭터 검정 염색약",
+    "type": "무기",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "현재 캐릭터를 검정 캐릭터로 변경",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714544337_567.png",
+    "source": ""
+  },
+  {
+    "id": "70",
+    "name": "정령의 귀걸이 (화)",
+    "type": "장신구",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {
+      "화": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~3",
+      "체력": "+3~6",
+      "회피": "+5"
+    },
+    "desc": "공+1~3 체+3~6 회피+5 화속성+2",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2403/bdd441839d0bd36945052b939e0f74ca_1711280708_5871.png",
+    "source": ""
+  },
+  {
+    "id": "69",
+    "name": "정령의 귀걸이 (지)",
+    "type": "장신구",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {
+      "지": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "방어": "+1~3",
+      "체력": "+3~6",
+      "회피": "+5"
+    },
+    "desc": "방+1~3 체+3~6 회피+5 지속성+2",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2403/f02515978e0a7bd79e8474a4bf402dd1_1711281762_1473.png",
+    "source": ""
+  },
+  {
+    "id": "68",
+    "name": "정령의 귀걸이 (풍)",
+    "type": "장신구",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {
+      "풍": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "순발": "+1~3",
+      "체력": "+3~6",
+      "회피": "+5"
+    },
+    "desc": "순+1~3 체+3~6 회피+5 풍속성+2",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2403/58212bff1fbaebca3964b2ed697b198a_1711281881_7175.png",
+    "source": ""
+  },
+  {
+    "id": "67",
+    "name": "정령의 귀걸이 (수)",
+    "type": "장신구",
+    "sub": "전령의 낡은 열쇠 소지 후 흑갈푸스",
+    "elem": {
+      "수": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "체력": "+10~20",
+      "회피": "+5"
+    },
+    "desc": "체+10~20 회피+5 수속성+2",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/7b1465adfd5650d5c5f13c5e9d7c7487_1714544276_3998.png",
+    "source": ""
+  },
+  {
+    "id": "66",
+    "name": "해방의 귀걸이[지]",
+    "type": "장신구",
+    "sub": "전령의 룬 + 정령의 귀걸이 4개로 제작",
+    "elem": {
+      "지": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3",
+      "방어": "+3",
+      "순발": "+3",
+      "체력": "+8",
+      "회피": "+5"
+    },
+    "desc": "공+3 방+3 순+3 체+8 회피+5 [지+2]",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714545562_6669.png",
+    "source": ""
+  },
+  {
+    "id": "65",
+    "name": "해방의 귀걸이[수]",
+    "type": "장신구",
+    "sub": "전령의 룬 + 정령의 귀걸이 4개로 제작",
+    "elem": {
+      "수": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3",
+      "방어": "+3",
+      "순발": "+3",
+      "체력": "+8",
+      "회피": "+5"
+    },
+    "desc": "공+3 방+3 순+3 체+8 회피+5 [수+2]",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714545562_36.png",
+    "source": ""
+  },
+  {
+    "id": "64",
+    "name": "해방의 귀걸이[화]",
+    "type": "장신구",
+    "sub": "전령의 룬 + 정령의 귀걸이 4개로 제작",
+    "elem": {
+      "화": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3",
+      "방어": "+3",
+      "순발": "+3",
+      "체력": "+8",
+      "회피": "+5"
+    },
+    "desc": "공+3 방+3 순+3 체+8 회피+5 [화+2]",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714545563_2448.png",
+    "source": ""
+  },
+  {
+    "id": "63",
+    "name": "해방의 귀걸이[풍]",
+    "type": "장신구",
+    "sub": "전령의 룬 + 정령의 귀걸이 4개로 제작",
+    "elem": {
+      "풍": 2
+    },
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3",
+      "방어": "+3",
+      "순발": "+3",
+      "체력": "+8",
+      "회피": "+5"
+    },
+    "desc": "공+3 방+3 순+3 체+8 회피+5 [풍+2]",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/3641f3a2fdc1bc16e760c04025dd971c_1714545562_9555.png",
+    "source": ""
+  },
+  {
+    "id": "62",
+    "name": "기계 심장",
+    "type": "소모품",
+    "sub": "주간레이드 메켄타르 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "메켄타르를 무찌르고 얻은 기계심장. 기계장갑에 사용하는 것일지도?",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2404/1d41b97f26dfb6ddaffaaa6aa4d29a0c_1712486704_9338.png",
+    "source": ""
+  },
+  {
+    "id": "61",
+    "name": "마모된 기계 장갑",
+    "type": "방어구",
+    "sub": "주간레이드 메켄타르 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~3",
+      "체력": "+3~5"
+    },
+    "desc": "체력 +3~5 공격력 +1~3",
+    "emoji": "🛡️",
+    "imageUrl": "https://hwansoo.net/data/editor/2404/ce45817c31e2d003b30f70b631ee50c8_1712486693_2289.png",
+    "source": ""
+  },
+  {
+    "id": "60",
+    "name": "가열된 기계 심장",
+    "type": "소모품",
+    "sub": "기계 심장 + 마모된 기계 장갑으로 제작",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "이 기계심장을 열면 무슨일이 벌어질것 같다. (50%확률로 개방)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2404/1d41b97f26dfb6ddaffaaa6aa4d29a0c_1712486704_9338.png",
+    "source": ""
+  },
+  {
+    "id": "59",
+    "name": "반짝이는 기계 장갑",
+    "type": "방어구",
+    "sub": "가열된 기계 심장 사용",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~6",
+      "방어": "+1~2",
+      "순발": "+1~2",
+      "체력": "+5~8"
+    },
+    "desc": "체력 +5~8 공 +3~6 방 +1~2 순 +1~2",
+    "emoji": "🛡️",
+    "imageUrl": "https://hwansoo.net/data/editor/2404/05748a2e53212acc2d01927deec3f025_1712486819_4748.png",
+    "source": ""
+  },
+  {
+    "id": "58",
+    "name": "인어 비늘 벨트",
+    "type": "장신구",
+    "sub": "주간레이드 어인의 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~3",
+      "방어": "+1~3",
+      "순발": "+1~3",
+      "체력": "+3~5",
+      "명중": "+2"
+    },
+    "desc": "공+1~3 방+1~3 순+1~3 내+3~5 명중+2",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/56bf74734db22aaa9f76b751ff6a6543_1717662559_3319.png",
+    "source": ""
+  },
+  {
+    "id": "57",
+    "name": "인어 비늘",
+    "type": "소모품",
+    "sub": "주간레이드 어인의 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "인어 비늘 벨트를 더욱 강하게 만들어 줄 수 있는 비늘",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/56bf74734db22aaa9f76b751ff6a6543_1717662558_8575.png",
+    "source": ""
+  },
+  {
+    "id": "56",
+    "name": "인어 계열 레어 알",
+    "type": "소모품",
+    "sub": "주간레이드 어인의 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "타스무미/오시모미/주니무미/에르모미 중 1개 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717662578_7225.png",
+    "source": ""
+  },
+  {
+    "id": "55",
+    "name": "빛나는 인어 비늘",
+    "type": "소모품",
+    "sub": "인어 비늘 벨트 + 인어 비늘로 제작",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "이 응축된 힘의 결정을 열어볼까? (50% 확률로 개방)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/56bf74734db22aaa9f76b751ff6a6543_1717662558_8575.png",
+    "source": ""
+  },
+  {
+    "id": "54",
+    "name": "빛나는 인어 벨트",
+    "type": "장신구",
+    "sub": "빛나는 인어 비늘 사용",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~5",
+      "방어": "+3~5",
+      "순발": "+3~5",
+      "체력": "+5~10",
+      "명중": "+4"
+    },
+    "desc": "공+3~5 방+3~5 순+3~5 내+5~10 명중+4",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/56bf74734db22aaa9f76b751ff6a6543_1717662559_0953.png",
+    "source": ""
+  },
+  {
+    "id": "53",
+    "name": "초신성 갑옷",
+    "type": "방어구",
+    "sub": "얼음성 주간레이드 언딘(질투의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~5",
+      "방어": "+45~55",
+      "순발": "-7~15",
+      "체력": "+1~10"
+    },
+    "desc": "공 +1~5 방 +45~55 민 -7~15 내 +1~10 윤택의 정령 LV5",
+    "emoji": "🛡️",
+    "imageUrl": "https://hwansoo.net/data/editor/2409/a9a6dad482b5e7ad9dcbbecabf87a920_1726147476_9424.png",
+    "source": ""
+  },
+  {
+    "id": "52",
+    "name": "삼위일체(개)의 구슬",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 언딘(질투의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "삼위일체(개)를 만들 수 있는 구슬",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2409/a9a6dad482b5e7ad9dcbbecabf87a920_1726147476_719.png",
+    "source": ""
+  },
+  {
+    "id": "51",
+    "name": "헤티아의 창",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 헤티아(분노의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+60~65",
+      "순발": "-10~15",
+      "체력": "+1~5",
+      "크리": "+7%"
+    },
+    "desc": "공 +60~65 민 -10~15 내 +1~5 크리 +7%",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2409/a9a6dad482b5e7ad9dcbbecabf87a920_1726147476_608.png",
+    "source": ""
+  },
+  {
+    "id": "50",
+    "name": "삼위일체(진)의 심장",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 헤티아(분노의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "삼위일체(진)을 만들 수 있는 조각",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2409/a9a6dad482b5e7ad9dcbbecabf87a920_1726147476_8248.png",
+    "source": ""
+  },
+  {
+    "id": "49",
+    "name": "헤티아의 머리장식",
+    "type": "방어구",
+    "sub": "얼음성 주간레이드 헤티아(분노의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~5",
+      "방어": "+25~30",
+      "순발": "-1~5",
+      "체력": "+5~10"
+    },
+    "desc": "공 +3~5 방 +25~30 민 -1~5 내구 +5~10 무지개 정령",
+    "emoji": "🛡️",
+    "imageUrl": "https://hwansoo.net/data/editor/2409/a9a6dad482b5e7ad9dcbbecabf87a920_1726147476_1508.png",
+    "source": ""
+  },
+  {
+    "id": "48",
+    "name": "절망의 열쇠",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 헤티아(분노의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "절망의 방(암흑 헤티아)로 이동",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2409/a9a6dad482b5e7ad9dcbbecabf87a920_1726147476_3935.png",
+    "source": ""
+  },
+  {
+    "id": "47",
+    "name": "냉동 참다랑어",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 흑기린(오만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+30~35",
+      "방어": "+5",
+      "순발": "+5",
+      "회피": "+1"
+    },
+    "desc": "공 +30~35 방 +5 순 +5 회피 +1 고등정화 정령 Lv2",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717661441_2962.png",
+    "source": ""
+  },
+  {
+    "id": "46",
+    "name": "티아트의 대지",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 흑기린(오만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "방어": "+2~6",
+      "체력": "+5"
+    },
+    "desc": "방 +2~6 내 +5 치유의 정령 Lv5",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717661440_2426.png",
+    "source": ""
+  },
+  {
+    "id": "45",
+    "name": "바르의 바람",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 흑기린(오만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "순발": "+2~6",
+      "체력": "+5"
+    },
+    "desc": "순 +2~6 내 +5 치유의 정령 Lv5",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717661440_5693.png",
+    "source": ""
+  },
+  {
+    "id": "44",
+    "name": "이라의 불꽃",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 흑기린(오만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+2~6",
+      "체력": "+5"
+    },
+    "desc": "공 +2~6 내+5 치유의 정령 Lv5",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717661440_9959.png",
+    "source": ""
+  },
+  {
+    "id": "43",
+    "name": "흑룡의 발톱",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 흑룡(나태의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+20",
+      "순발": "+20~25",
+      "체력": "+10~15",
+      "크리": "+3"
+    },
+    "desc": "공 +20 순 +20~25 체 +10~15 크리 +3 은혜의 정령 Lv6",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717662010_3887.png",
+    "source": ""
+  },
+  {
+    "id": "42",
+    "name": "검은불꽃 장궁",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 흑룡(나태의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+25~30",
+      "방어": "-15"
+    },
+    "desc": "공 +25~30 방 -15 [6회 고정]",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717662010_147.png",
+    "source": ""
+  },
+  {
+    "id": "41",
+    "name": "미리네아의 거울",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 흑룡(나태의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~3",
+      "방어": "+1~3",
+      "순발": "+1~3",
+      "체력": "+3~5"
+    },
+    "desc": "공 +1~3 방 +1~3 순 +1~3 체 +3~5 거울의 정령 Lv2",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2406/fe5c14e6c85c86bae43c9a5df567d100_1717662009_9098.png",
+    "source": ""
+  },
+  {
+    "id": "40",
+    "name": "얼음손톱",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 크로아치(편견의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+25~27",
+      "체력": "+5~10"
+    },
+    "desc": "공 +25~27 내 +5~10 은혜의 정령 Lv.5",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747472_759.png",
+    "source": ""
+  },
+  {
+    "id": "39",
+    "name": "얼음 옷",
+    "type": "방어구",
+    "sub": "얼음성 주간레이드 테로노돈(교만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~3",
+      "방어": "+23~25",
+      "순발": "+1~3"
+    },
+    "desc": "공 +1~3 방 +23~25 순 +1~3 무지개의 정령",
+    "emoji": "🛡️",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747488_3172.png",
+    "source": ""
+  },
+  {
+    "id": "38",
+    "name": "미라쥬",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 테로노돈(교만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~3"
+    },
+    "desc": "공 +1~3 거울의 정령 (1회)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747494_9015.png",
+    "source": ""
+  },
+  {
+    "id": "37",
+    "name": "번개의 반지",
+    "type": "장신구",
+    "sub": "얼음성 주간레이드 테로노돈(교만의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "순발": "+5~8",
+      "체력": "+3~5",
+      "크리": "+3~5%"
+    },
+    "desc": "순 +5~8 내 +3~5 크리 +3~5%",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747502_7072.png",
+    "source": ""
+  },
+  {
+    "id": "36",
+    "name": "삼위일체",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 메피노(탐욕의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3",
+      "방어": "+3",
+      "순발": "+3",
+      "체력": "+5"
+    },
+    "desc": "공+3 방+3 순+3 내+5",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747510_6708.png",
+    "source": ""
+  },
+  {
+    "id": "35",
+    "name": "열공의 도끼",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 메피노(탐욕의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+65~70",
+      "방어": "-12~14",
+      "순발": "-30",
+      "크리": "+7%"
+    },
+    "desc": "공 +65~70 방 -12~14 순 -30 크리+7%",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747518_079.png",
+    "source": ""
+  },
+  {
+    "id": "34",
+    "name": "머슬링 귀걸이",
+    "type": "장신구",
+    "sub": "얼음성 주간레이드 메피노(탐욕의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~5",
+      "회피": "+7%"
+    },
+    "desc": "공 +1~5 회피 +7%",
+    "emoji": "💍",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747526_6021.png",
+    "source": ""
+  },
+  {
+    "id": "33",
+    "name": "얼음 부메랑",
+    "type": "무기",
+    "sub": "얼음성 주간레이드 메피노(탐욕의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+30",
+      "방어": "+10",
+      "체력": "+10"
+    },
+    "desc": "공 +30 방 +10 내 +10 맹독의 정령 Lv5",
+    "emoji": "⚔️",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747534_4001.png",
+    "source": ""
+  },
+  {
+    "id": "32",
+    "name": "삼위일체(진)",
+    "type": "소모품",
+    "sub": "삼위일체(개) + 삼위일체(진)의 심장으로 제작 (확률 30%)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+7~10",
+      "방어": "+7~10",
+      "순발": "+7~10",
+      "체력": "+10~15"
+    },
+    "desc": "공 +7~10 방 +7~10 순 +7~10 체+10~15",
+    "emoji": "🎒",
+    "imageUrl": "http://pooyas.com/files/attach/outimage/sypoo.com/icecastle/icecastle_three/item_03.gif",
+    "source": ""
+  },
+  {
+    "id": "31",
+    "name": "삼위일체(개)",
+    "type": "소모품",
+    "sub": "삼위일체 + 삼위일체(개)의 구슬로 제작 (확률 50%)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5~7",
+      "방어": "+5~7",
+      "순발": "+5~7",
+      "체력": "+5~10"
+    },
+    "desc": "공 +5~7 방 +5~7 순 +5~7 체+5~10",
+    "emoji": "🎒",
+    "imageUrl": "http://pooyas.com/files/attach/outimage/sypoo.com/icecastle/icecastle_three/item_02.gif",
+    "source": ""
+  },
+  {
+    "id": "30",
+    "name": "기계 파편(A)",
+    "type": "소모품",
+    "sub": "주간 레이드 기계의 침공",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "방어": "+1~5",
+      "순발": "+1~5",
+      "체력": "+5~10"
+    },
+    "desc": "방 +1~5 순 +1~5 체 +5~10 (메카 페트를 얻기 위한 재료)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/51edc0161297200937786461e4cede2a_1750063732_9283.png",
+    "source": ""
+  },
+  {
+    "id": "29",
+    "name": "기계 파편(B)",
+    "type": "소모품",
+    "sub": "주간 레이드 기계의 침공",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "방어": "+5~10",
+      "체력": "+5~10"
+    },
+    "desc": "방 +5~10  체 +5~10 (메카 페트를 얻기 위한 재료)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/796992fad613ccc2daa11a7975812f68_1750063781_2109.png",
+    "source": ""
+  },
+  {
+    "id": "28",
+    "name": "기계 파편(C)",
+    "type": "소모품",
+    "sub": "주간 레이드 기계의 침공",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+1~5",
+      "방어": "+1~5",
+      "체력": "+5~10"
+    },
+    "desc": "공 +1~5 방 +1~5 체 +5~10 (메카 페트를 얻기 위한 재료)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/1f5ea411b8a08116fddd29a71bde154a_1750063826_2491.png",
+    "source": ""
+  },
+  {
+    "id": "27",
+    "name": "기계 코어 모듈",
+    "type": "소모품",
+    "sub": "주간 레이드 기계의 침공",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "빛나는 장갑을 한 단계 더 해방 시키는데 필요한 코어",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ccc612322dbdf0094d2ae863f6616d0b_1750063874_4502.png",
+    "source": ""
+  },
+  {
+    "id": "26",
+    "name": "강화석 (+10%)",
+    "type": "소모품",
+    "sub": "레이드",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "특정 부위 장비의 능력치를 강화시킨다. (+10%)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750063991_3671.png",
+    "source": ""
+  },
+  {
+    "id": "25",
+    "name": "강화석 (+25%)",
+    "type": "소모품",
+    "sub": "레이드",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "특정 부위 장비의 능력치를 강화시킨다. (+25%)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750063991_3671.png",
+    "source": ""
+  },
+  {
+    "id": "24-2",
+    "name": "크리스탈 (1000P)",
+    "type": "소모품",
+    "sub": "레이드 및 다양한 컨텐츠",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 크리스탈 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750064004_4976.png",
+    "source": ""
+  },
+  {
+    "id": "24-1",
+    "name": "크리스탈 (1200P)",
+    "type": "소모품",
+    "sub": "레이드 및 다양한 컨텐츠",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 크리스탈 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750064004_4976.png",
+    "source": ""
+  },
+  {
+    "id": "24",
+    "name": "크리스탈 (100 ~ 10,000P)",
+    "type": "소모품",
+    "sub": "레이드 및 다양한 컨텐츠",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 크리스탈 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750064004_4976.png",
+    "source": ""
+  },
+  {
+    "id": "23-2",
+    "name": "경험치 구슬 (1시간)",
+    "type": "소모품",
+    "sub": "레이드 및 다양한 컨텐츠",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용한 시간만큼 경험치 +100% 증가",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750064016_2987.png",
+    "source": ""
+  },
+  {
+    "id": "23-1",
+    "name": "경험치 구슬 (2시간)",
+    "type": "소모품",
+    "sub": "레이드 및 다양한 컨텐츠",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용한 시간만큼 경험치 +100% 증가",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750064016_2987.png",
+    "source": ""
+  },
+  {
+    "id": "23",
+    "name": "경험치 구슬 (30분 ~ 24시간)",
+    "type": "소모품",
+    "sub": "레이드 및 다양한 컨텐츠",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용한 시간만큼 경험치 +100% 증가",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/6f9899ba87db8556c620ac793803214b_1750064016_2987.png",
+    "source": ""
+  },
+  {
+    "id": "22",
+    "name": "코어 응축 덩어리",
+    "type": "소모품",
+    "sub": "반짝이는 장갑 + 기계 코어 모듈로 제작",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "코어 장갑을 얻거나, 모든 재료가 파괴된다.",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/7d865dff2ac8c6181be8e7af26ea6fc6_1750064475_9488.png",
+    "source": ""
+  },
+  {
+    "id": "21",
+    "name": "기계 코어 장갑",
+    "type": "방어구",
+    "sub": "코어 응축 덩어리 사용 확률(50%)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5~8",
+      "방어": "+2~4",
+      "순발": "+2~4",
+      "체력": "+8~12"
+    },
+    "desc": "공 +5~8 방 +2~4 순 +2~4 체 +8~12",
+    "emoji": "🛡️",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/7d865dff2ac8c6181be8e7af26ea6fc6_1750064482_5309.png",
+    "source": ""
+  },
+  {
+    "id": "20",
+    "name": "페트 알 (메가 카키)",
+    "type": "소모품",
+    "sub": "기계 파편(A) + 기계 파편(B) + 기계 파편(C)로 제작",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 '메가 카키' 페트 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ded29cd43185bd9452015a5c3d0b4ba2_1750065085_5512.png",
+    "source": ""
+  },
+  {
+    "id": "19",
+    "name": "페트 알 (테이토스)",
+    "type": "소모품",
+    "sub": "기계 파편(A) + 기계 파편(B) + 기계 파편(C)로 제작",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 '테이토스' 페트 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ded29cd43185bd9452015a5c3d0b4ba2_1750065085_5512.png",
+    "source": ""
+  },
+  {
+    "id": "18",
+    "name": "켄타르의 알",
+    "type": "소모품",
+    "sub": "주간레이드 메켄타르 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 켄타르 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ded29cd43185bd9452015a5c3d0b4ba2_1750065085_5512.png",
+    "source": ""
+  },
+  {
+    "id": "17",
+    "name": "그리스네의 알",
+    "type": "소모품",
+    "sub": "주간레이드 메켄타르 은신처",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 그리스네 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ded29cd43185bd9452015a5c3d0b4ba2_1750065085_5512.png",
+    "source": ""
+  },
+  {
+    "id": "16",
+    "name": "페트 알(우라노스)",
+    "type": "소모품",
+    "sub": "얼음성 주간레이드 언딘(질투의 방)",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 우라노스 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ded29cd43185bd9452015a5c3d0b4ba2_1750065085_5512.png",
+    "source": ""
+  },
+  {
+    "id": "15-2",
+    "name": "얼음성 포인트 (3P)",
+    "type": "소모품",
+    "sub": "주간레이드 얼음성 및 암흑 헤티아",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용 시, 얼음의 포인트 1~3P 획득 (언딘, 헤티아 2P), (암흑 헤티아 3P), (그 외 1P)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747984_2955.png",
+    "source": ""
+  },
+  {
+    "id": "15-1",
+    "name": "얼음성 포인트 (2P)",
+    "type": "소모품",
+    "sub": "주간레이드 얼음성 및 암흑 헤티아",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용 시, 얼음의 포인트 1~3P 획득 (언딘, 헤티아 2P), (암흑 헤티아 3P), (그 외 1P)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747984_2955.png",
+    "source": ""
+  },
+  {
+    "id": "15",
+    "name": "얼음성 포인트 (1P)",
+    "type": "소모품",
+    "sub": "주간레이드 얼음성 및 암흑 헤티아",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용 시, 얼음의 포인트 1~3P 획득 (언딘, 헤티아 2P), (암흑 헤티아 3P), (그 외 1P)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2405/f510aee67b4cc347ae4131a06bc2c847_1715747984_2955.png",
+    "source": ""
+  },
+  {
+    "id": "14",
+    "name": "파란 라돈타 반지",
+    "type": "장신구",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~5",
+      "방어": "-3~5",
+      "순발": "+6~7",
+      "체력": "+10",
+      "크리": "+6"
+    },
+    "desc": "공 +3~5 방 -3~5 민 +6~7 내 +10 크리 +6",
+    "emoji": "💍",
+    "imageUrl": "https://media.discordapp.net/attachments/1337456342373236766/1418036176706732072/IMG_6031.png?ex=68cca89a&is=68cb571a&hm=05cf62da646e70bf3ddd06809b37dabf3d5fb3ab4fc4d5ddc1bd0e6a8edd9a5a&=&format=webp&quality=lossless&width=86&height=86",
+    "source": ""
+  },
+  {
+    "id": "13",
+    "name": "붉은 라돈타 반지",
+    "type": "장신구",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~5",
+      "방어": "-3~5",
+      "순발": "+5~7",
+      "체력": "+10",
+      "크리": "+6"
+    },
+    "desc": "공 +3~5 방 -3~5 민 +5~7 내 +10 크리 +6",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2508/37781c5710467f184508e10fd18bcc00_1754352296_067.png",
+    "source": ""
+  },
+  {
+    "id": "12",
+    "name": "라돈타의 귀걸이",
+    "type": "장신구",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5",
+      "방어": "+5",
+      "순발": "+5",
+      "체력": "+10",
+      "회피": "+5"
+    },
+    "desc": "공 +5 방 +5 민 +5 내 +10 회피 +5",
+    "emoji": "💍",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2508/37781c5710467f184508e10fd18bcc00_1754352312_2321.png",
+    "source": ""
+  },
+  {
+    "id": "11",
+    "name": "라돈타의 찬란한 파편",
+    "type": "소모품",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+5",
+      "방어": "+5",
+      "순발": "+5"
+    },
+    "desc": "암흑헤티아 아이템 강화에 사용된다. 창: 공+5, 투구: 민+5, 갑옷: 방+5(2회 가능, 1회는 '100% 성공', 2회차 부터는 '50% 성공', '25% 아이템 파괴')",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2508/6a697936fc11a77febf1f45a93923ebf_1754489979_0256.jpg",
+    "source": ""
+  },
+  {
+    "id": "10",
+    "name": "페트 알 '사리온'",
+    "type": "소모품",
+    "sub": "라돈타 전리품 개봉시 랜덤 아이템 획득 가능",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "더블 클릭 시 페트 '사리온' 획득",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ded29cd43185bd9452015a5c3d0b4ba2_1750065085_5512.png",
+    "source": ""
+  },
+  {
+    "id": "9",
+    "name": "아이테르의 빛",
+    "type": "소모품",
+    "sub": "하이하모 영웅의 길 퀘스트 클리어 보상",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "순발": "+3~5",
+      "회피": "+5"
+    },
+    "desc": "민 +3~5 회피 +5",
+    "emoji": "🎒",
+    "imageUrl": "https://media.discordapp.net/attachments/1337456342373236766/1418036176975036567/IMG_6030.png?ex=68cca89a&is=68cb571a&hm=e83325416e2b3ddeb9a399d3946b9b520aedd9631745c8d41484a374242b2363&=&format=webp&quality=lossless&width=88&height=88",
+    "source": ""
+  },
+  {
+    "id": "8",
+    "name": "네메시스 소울 펜던트",
+    "type": "장신구",
+    "sub": "타니토스의 신전에서 네메시스의 길로 퀘스트 클리어 보상",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {
+      "공격": "+3~5",
+      "명중": "+3"
+    },
+    "desc": "공 +3~5 회피 명중 +3",
+    "emoji": "💍",
+    "imageUrl": "https://cdn.discordapp.com/attachments/1337456342373236766/1418031979521249290/image.png?ex=68cca4b1&is=68cb5331&hm=6bd1c3bd2b25f9441c770f112d468cd69e2cb28deefe3c98fd517aeb21a47f59&",
+    "source": ""
+  },
+  {
+    "id": "7",
+    "name": "정장 툰가 변신 패드",
+    "type": "소모품",
+    "sub": "맘모스 쿠폰",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "캐릭터를 변경합니다. (정장툰가)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/7cdf3dfe013dad6dfc7ecf62cb26dfd5_1750048235_3339.png",
+    "source": ""
+  },
+  {
+    "id": "6",
+    "name": "인디언 툰가 변신 패드",
+    "type": "소모품",
+    "sub": "아이템",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "캐릭터를 변경합니다. (인디언 툰가)",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/40531fb36c4a7f733684c9f2e95667a3_1750048337_3288.png",
+    "source": ""
+  },
+  {
+    "id": "5",
+    "name": "교복 울보소녀 변신패드(3일)",
+    "type": "소모품",
+    "sub": "맘모스 쿠폰",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용 시 교복 울보로 변신(경험치 +30%)",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2505/acb2054d2a680138fbf7ba4938bea2f3_1747365608_7999.png",
+    "source": ""
+  },
+  {
+    "id": "4",
+    "name": "페트 초기화 횟수 증가석",
+    "type": "소모품",
+    "sub": "맘모스 쿠폰",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "초기화를 모두 소진한 페트의 횟수를 늘린다. (50% 성공) 실패 시 페트 소멸",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/f7936ea8800fc88b38a9d3c8d50f2f70_1750834443_924.png",
+    "source": ""
+  },
+  {
+    "id": "3",
+    "name": "페트 학습 팔찌 7일",
+    "type": "소모품",
+    "sub": "맘모스 쿠폰",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "페트의 경험치 50%추가 획득, 매력 +5",
+    "emoji": "🎒",
+    "imageUrl": "https://hwansoo.net/data/editor/2505/a6638680ccebb74786b645d7fba0f50e_1748413163_8348.png",
+    "source": ""
+  },
+  {
+    "id": "2",
+    "name": "배수의 진3",
+    "type": "소모품",
+    "sub": "맘모스 쿠폰",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용 시 배수의 진 3을 배울 수 있음",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ea5cdfa6c66a6a20e9be9220cb0ab0b7_1750834568_494.png",
+    "source": ""
+  },
+  {
+    "id": "1",
+    "name": "가드 브레이크2",
+    "type": "소모품",
+    "sub": "맘모스 쿠폰",
+    "elem": {},
+    "total": 0,
+    "init": {},
+    "stats": {},
+    "desc": "사용 시 가드 브레이크 2 기술을 배울 수 있음",
+    "emoji": "🎒",
+    "imageUrl": "https://www.hwansoo.top/data/editor/2506/ea5cdfa6c66a6a20e9be9220cb0ab0b7_1750834568_494.png",
+    "source": ""
+  }
+]
