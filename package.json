@@ -1,0 +1,24 @@
+{
+  "name": "jeongdae-stack.github.io",
+  "version": "1.0.0",
+  "description": "JeongDae's Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeongDae-stack/JeongDae-stack.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JeongDae-stack/JeongDae-stack.github.io/issues"
+  },
+  "homepage": "https://github.com/JeongDae-stack/JeongDae-stack.github.io#readme",
+  "dependencies": {
+    "puppeteer": "^24.42.0"
+  }
+}
