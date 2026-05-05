@@ -9,7 +9,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function parseNumbers(line) {
+function parseNumberList(line) {
     return [...line.matchAll(/-?\d+(?:\.\d+)?/g)].map(m => Number(m[0]));
 }
 
@@ -23,137 +23,159 @@ function emojiForName(name) {
     return "🐾";
 }
 
-function getWrId(url) {
+function normalizeDetailUrl(rawHref) {
     try {
-        return new URL(url).searchParams.get("wr_id");
+        const url = new URL(rawHref, "https://www.hwansoo.top");
+        const wrId = url.searchParams.get("wr_id");
+
+        if (!wrId) return null;
+
+        return `https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=${encodeURIComponent(wrId)}`;
     } catch {
         return null;
     }
 }
 
-function parsePetsFromPage(bodyText, linkGroups) {
-    const lines = bodyText
+function cleanLines(text) {
+    return String(text || "")
         .split(/\n+/)
         .map(line => line.trim())
         .filter(Boolean);
-
-    const pets = [];
-    let cursor = 0;
-
-    for (const group of linkGroups) {
-        const name = group.texts[0];
-        const sub = group.texts[1] || "";
-
-        if (!name) continue;
-
-        const start = lines.findIndex((line, idx) => idx >= cursor && line.includes(name));
-        if (start === -1) {
-            console.log(`[WARN] 이름 위치 못 찾음: ${name}`);
-            continue;
-        }
-
-        const end = lines.findIndex((line, idx) => idx >= start && line.startsWith("판매등급"));
-        if (end === -1) {
-            console.log(`[WARN] 판매등급 위치 못 찾음: ${name}`);
-            continue;
-        }
-
-        const block = lines.slice(start, end + 1);
-
-        const elem = {};
-        for (const line of block) {
-            const m = line.match(/^(지|수|화|풍)\s*\(Lv\.?\s*(\d+)\)/);
-            if (m) {
-                elem[m[1]] = Number(m[2]);
-            }
-        }
-
-        const initLine = block.find(line => line.startsWith("초기치"));
-        const statLine = block.find(line => line.startsWith("성장률"));
-        const rideTotalLine = block.find(line => line.includes("탑승여부") && line.includes("총성장률"));
-        const gradeLine = block.find(line => line.startsWith("판매등급"));
-
-        if (!initLine || !statLine || !rideTotalLine || !gradeLine) {
-            console.log(`[WARN] 필수 정보 부족: ${name}`);
-            cursor = end + 1;
-            continue;
-        }
-
-        const initNums = parseNumbers(initLine);
-        const statNums = parseNumbers(statLine);
-
-        const rideMatch = rideTotalLine.match(/탑승여부\s+(\S+)/);
-        const totalMatch = rideTotalLine.match(/총성장률\s+(-?\d+(?:\.\d+)?)/);
-
-        if (initNums.length < 4 || statNums.length < 4 || !totalMatch) {
-            console.log(`[WARN] 숫자 파싱 실패: ${name}`);
-            cursor = end + 1;
-            continue;
-        }
-
-        pets.push({
-            name,
-            sub,
-            elem,
-            total: Number(totalMatch[1]),
-            stats: {
-                atk: statNums[0],
-                def: statNums[1],
-                agi: statNums[2],
-                hp: statNums[3],
-            },
-            init: {
-                atk: initNums[0],
-                def: initNums[1],
-                agi: initNums[2],
-                hp: initNums[3],
-            },
-            ride: rideMatch ? rideMatch[1] : "",
-            grade: gradeLine.replace("판매등급", "").trim(),
-            emoji: emojiForName(name),
-            source: group.href,
-        });
-
-        cursor = end + 1;
-    }
-
-    return pets;
 }
 
-async function getPageInfo(page) {
-    return await page.evaluate(() => {
-        const anchors = Array.from(document.querySelectorAll('a[href*="bo_table=pets"][href*="wr_id="]'));
+function parsePetFromPayload(payload, sourceUrl) {
+    const lines = cleanLines(payload.bodyText);
+    const titleText = String(payload.titleText || "").trim();
 
-        const map = new Map();
+    let name = titleText;
+    let methodIdx = lines.findIndex(line => line.startsWith("획득방법"));
 
-        for (const a of anchors) {
-            const href = a.href;
-            const text = a.innerText.trim();
-
-            const url = new URL(href);
-            const wrId = url.searchParams.get("wr_id");
-
-            if (!wrId) continue;
-
-            if (!map.has(wrId)) {
-                map.set(wrId, {
-                    wrId,
-                    href,
-                    texts: [],
-                });
+    if (!name && methodIdx !== -1) {
+        for (let i = methodIdx - 1; i >= 0; i--) {
+            const line = lines[i];
+            if (
+                !line.startsWith("###") &&
+                line !== "Image" &&
+                line !== "본문" &&
+                !line.includes("목록") &&
+                !line.includes("댓글")
+            ) {
+                name = line;
+                break;
             }
+        }
+    }
 
-            if (text && !map.get(wrId).texts.includes(text)) {
-                map.get(wrId).texts.push(text);
+    if (!name) {
+        throw new Error("이름을 찾지 못했습니다.");
+    }
+
+    let sub = "";
+    if (methodIdx !== -1) {
+        const methodLine = lines[methodIdx];
+        const methodMatch = methodLine.match(/^획득방법\s*:?\s*(.+)$/);
+        if (methodMatch) {
+            sub = methodMatch[1].trim();
+        }
+    }
+
+    const elem = {};
+    for (const line of lines) {
+        const matches = [...line.matchAll(/(지|수|화|풍)\s*\(Lv\.?\s*(\d+)\)/g)];
+        for (const match of matches) {
+            elem[match[1]] = Number(match[2]);
+        }
+    }
+
+    let init = null;
+    let stats = null;
+    let total = null;
+    let ride = "";
+    let grade = "";
+
+    for (const line of lines) {
+        if (line.startsWith("초기치")) {
+            const nums = parseNumberList(line);
+            if (nums.length >= 4) {
+                init = {
+                    atk: nums[0],
+                    def: nums[1],
+                    agi: nums[2],
+                    hp: nums[3],
+                };
             }
         }
 
-        const pageNumbers = Array.from(document.querySelectorAll('a[href*="bo_table=pets"]'))
+        if (line.startsWith("성장률")) {
+            const nums = parseNumberList(line);
+            if (nums.length >= 4) {
+                stats = {
+                    atk: nums[0],
+                    def: nums[1],
+                    agi: nums[2],
+                    hp: nums[3],
+                };
+            }
+        }
+
+        if (line.includes("탑승여부")) {
+            const rideMatch = line.match(/탑승여부\s+(\S+)/);
+            if (rideMatch) {
+                ride = rideMatch[1];
+            }
+        }
+
+        if (line.includes("총성장률")) {
+            const totalMatch = line.match(/총성장률\s+(-?\d+(?:\.\d+)?)/);
+            if (totalMatch) {
+                total = Number(totalMatch[1]);
+            }
+        }
+
+        if (line.startsWith("판매등급")) {
+            grade = line.replace(/^판매등급\s*/, "").trim();
+        }
+    }
+
+    if (!init) {
+        throw new Error("초기치 파싱 실패");
+    }
+
+    if (!stats) {
+        throw new Error("성장률 파싱 실패");
+    }
+
+    if (total === null) {
+        throw new Error("총성장률 파싱 실패");
+    }
+
+    return {
+        name,
+        sub,
+        elem,
+        total,
+        stats,
+        init,
+        ride,
+        grade,
+        emoji: emojiForName(name),
+        imageUrl: payload.imageUrl || "",
+        source: sourceUrl,
+    };
+}
+
+async function getListPageInfo(page) {
+    return await page.evaluate(() => {
+        const detailUrls = Array.from(
+            document.querySelectorAll('a[href*="bo_table=pets"][href*="wr_id="]')
+        ).map(a => a.href);
+
+        const pageNumbers = Array.from(
+            document.querySelectorAll('a[href*="bo_table=pets"]')
+        )
             .map(a => {
                 try {
-                    const url = new URL(a.href);
-                    const p = url.searchParams.get("page");
-                    return p ? Number(p) : null;
+                    return Number(new URL(a.href).searchParams.get("page"));
                 } catch {
                     return null;
                 }
@@ -161,11 +183,87 @@ async function getPageInfo(page) {
             .filter(n => Number.isInteger(n) && n > 0);
 
         return {
-            bodyText: document.body.innerText,
-            linkGroups: Array.from(map.values()).filter(g => g.texts.length > 0),
+            detailUrls,
             maxPage: pageNumbers.length ? Math.max(...pageNumbers) : 1,
         };
     });
+}
+
+async function scrapePetDetail(page, url) {
+    await page.goto(url, {
+        waitUntil: "networkidle2",
+        timeout: 60000,
+    });
+
+    await sleep(200);
+
+    const payload = await page.evaluate(() => {
+        const titleSelectors = [
+            "#bo_v_title",
+            ".bo_v_tit",
+            ".view_tit",
+            "h1",
+            "h2",
+            "h3",
+        ];
+
+        let titleText = "";
+        for (const selector of titleSelectors) {
+            const el = document.querySelector(selector);
+            if (el && el.innerText.trim()) {
+                titleText = el.innerText.trim();
+                break;
+            }
+        }
+
+        let imageUrl = "";
+
+        const imageSelectors = [
+            "#bo_v_atc img",
+            "#bo_v_con img",
+            ".board-view img",
+            ".view-content img",
+            ".tbl_frm01 img",
+            "article img",
+            "img"
+        ];
+
+        for (const selector of imageSelectors) {
+            const imgs = Array.from(document.querySelectorAll(selector));
+
+            for (const img of imgs) {
+                const src = img.getAttribute("src") || img.src || "";
+                const w = img.naturalWidth || img.width || 0;
+                const h = img.naturalHeight || img.height || 0;
+
+                if (!src) continue;
+                if (w < 40 || h < 40) continue;
+                if (src.includes("logo")) continue;
+                if (src.includes("icon")) continue;
+
+                imageUrl = src;
+                break;
+            }
+
+            if (imageUrl) break;
+        }
+
+        return {
+            titleText,
+            bodyText: document.body.innerText || "",
+            imageUrl,
+        };
+    });
+
+    if (payload.imageUrl) {
+        try {
+            payload.imageUrl = new URL(payload.imageUrl, url).href;
+        } catch {
+            // 그대로 둠
+        }
+    }
+
+    return parsePetFromPayload(payload, url);
 }
 
 async function main() {
@@ -186,47 +284,66 @@ async function main() {
         "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     );
 
-    console.log("[시작] 페트정보 1페이지 접속 중...");
+    console.log("[시작] 페트 목록 페이지 접속 중...");
 
     await page.goto(`${BASE_URL}&page=1`, {
         waitUntil: "networkidle2",
         timeout: 60000,
     });
 
-    let firstInfo = await getPageInfo(page);
+    const firstInfo = await getListPageInfo(page);
     const lastPage = firstInfo.maxPage;
 
     console.log(`마지막 페이지 추정: ${lastPage}`);
-    console.log(`[1/${lastPage}] 페이지 파싱 중...`);
 
-    const allPets = [];
-    allPets.push(...parsePetsFromPage(firstInfo.bodyText, firstInfo.linkGroups));
+    const detailUrlSet = new Set();
 
-    for (let pageNo = 2; pageNo <= lastPage; pageNo++) {
-        const url = `${BASE_URL}&page=${pageNo}`;
+    for (let pageNo = 1; pageNo <= lastPage; pageNo++) {
+        console.log(`[목록 ${pageNo}/${lastPage}] 수집 중...`);
 
-        console.log(`[${pageNo}/${lastPage}] 접속 중...`);
-
-        await page.goto(url, {
+        await page.goto(`${BASE_URL}&page=${pageNo}`, {
             waitUntil: "networkidle2",
             timeout: 60000,
         });
 
-        const info = await getPageInfo(page);
-        const pets = parsePetsFromPage(info.bodyText, info.linkGroups);
+        const info = await getListPageInfo(page);
 
-        console.log(`[${pageNo}/${lastPage}] ${pets.length}개 수집`);
+        for (const rawUrl of info.detailUrls) {
+            const normalized = normalizeDetailUrl(rawUrl);
+            if (normalized) {
+                detailUrlSet.add(normalized);
+            }
+        }
 
-        allPets.push(...pets);
+        console.log(`[목록 ${pageNo}/${lastPage}] 누적 상세 URL: ${detailUrlSet.size}`);
+        await sleep(250);
+    }
 
-        await sleep(500);
+    const detailUrls = Array.from(detailUrlSet);
+    console.log(`상세 페이지 수집 대상: ${detailUrls.length}개`);
+
+    const pets = [];
+
+    for (let i = 0; i < detailUrls.length; i++) {
+        const url = detailUrls[i];
+
+        try {
+            const pet = await scrapePetDetail(page, url);
+            pets.push(pet);
+            console.log(`[상세 ${i + 1}/${detailUrls.length}] OK - ${pet.name} ${pet.imageUrl ? "(img)" : "(no img)"}`);
+        } catch (error) {
+            console.log(`[상세 ${i + 1}/${detailUrls.length}] FAIL - ${url}`);
+            console.log(`  이유: ${error.message}`);
+        }
+
+        await sleep(250);
     }
 
     await browser.close();
 
     const uniqueMap = new Map();
 
-    for (const pet of allPets) {
+    for (const pet of pets) {
         const key = `${pet.name}__${pet.sub}`;
         uniqueMap.set(key, pet);
     }
@@ -242,7 +359,7 @@ async function main() {
     console.log(`저장된 페트 수: ${result.length}`);
 }
 
-main().catch(err => {
-    console.error("실패:", err);
+main().catch(error => {
+    console.error("실패:", error);
     process.exit(1);
 });
