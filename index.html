@@ -1095,7 +1095,19 @@
         }
     }
 
-    loadData();
+	loadData();
+	setupEnterKeySearch();
+
+	function setupEnterKeySearch() {
+	    document.querySelectorAll('.search-panel input').forEach(input => {
+	        input.addEventListener('keydown', event => {
+	            if (event.key === 'Enter') {
+	                event.preventDefault();
+	                doSearch();
+	            }
+	        });
+	    });
+	}
 
     function switchTab(tab) {
         currentTab = tab;
