@@ -10,32 +10,50 @@ echo   StoneAge 페트 랭킹 데이터 갱신
 echo ========================================
 echo.
 
-REM Node.js 설치 확인
 where node >nul 2>nul
 if errorlevel 1 (
     echo [ERROR] Node.js가 설치되어 있지 않습니다.
-    echo https://nodejs.org 에서 Node.js LTS 버전을 설치해주세요.
     pause
     exit /b 1
 )
 
-REM 랭킹 수집 스크립트 확인
 if not exist "tools\scrape_pet_rankings.js" (
     echo [ERROR] tools\scrape_pet_rankings.js 파일이 없습니다.
-    echo 먼저 페트 랭킹 수집 스크립트를 만들어주세요.
     pause
     exit /b 1
 )
 
-REM pets.json 확인
+if not exist "tools\compare_pet_rankings.js" (
+    echo [ERROR] tools\compare_pet_rankings.js 파일이 없습니다.
+    pause
+    exit /b 1
+)
+
 if not exist "data\pets.json" (
     echo [ERROR] data\pets.json 파일이 없습니다.
-    echo 먼저 기본 페트 데이터를 생성해주세요.
     pause
     exit /b 1
 )
 
-echo [1/2] 페트 랭킹 데이터 수집 중...
+if not exist "data" (
+    mkdir data
+)
+
+if not exist "tmp" (
+    mkdir tmp
+)
+
+set BEFORE_FILE=tmp\pet_rankings.before.json
+set AFTER_FILE=data\pet_rankings.json
+
+if exist "%AFTER_FILE%" (
+    copy "%AFTER_FILE%" "%BEFORE_FILE%" >nul
+) else (
+    echo [INFO] 기존 data\pet_rankings.json 파일이 없습니다.
+    if exist "%BEFORE_FILE%" del "%BEFORE_FILE%"
+)
+
+echo [1/3] 페트 랭킹 데이터 수집 중...
 echo Chrome 창이 뜨면 닫지 말고 기다려주세요.
 echo.
 
@@ -49,7 +67,42 @@ if errorlevel 1 (
 )
 
 echo.
-echo [2/2] 갱신 결과 확인 중...
+echo [2/3] 실제 랭킹 변경 여부 확인 중...
+echo.
+
+node tools\compare_pet_rankings.js "%BEFORE_FILE%" "%AFTER_FILE%"
+set COMPARE_RESULT=%errorlevel%
+
+if "%COMPARE_RESULT%"=="0" (
+    echo.
+    echo 실제 랭킹 변화가 없으므로 기존 파일로 되돌립니다.
+
+    if exist "%BEFORE_FILE%" (
+        copy "%BEFORE_FILE%" "%AFTER_FILE%" >nul
+    )
+
+    echo.
+    echo ========================================
+    echo   변경사항 없음
+    echo ========================================
+    echo.
+    git status
+    pause
+    exit /b 0
+)
+
+if "%COMPARE_RESULT%"=="2" (
+    echo.
+    echo 실제 랭킹 변화가 확인되었습니다.
+) else (
+    echo.
+    echo [ERROR] 랭킹 비교 중 오류가 발생했습니다.
+    pause
+    exit /b 1
+)
+
+echo.
+echo [3/3] 갱신 결과 확인 중...
 echo.
 
 node -e "const r=require('./data/pet_rankings.json'); console.log(r.summary); const p=r.pets.find(x=>x.rankings.length>0); if(p){ console.log('예시:', p.petName, p.rankings[0]); }"
