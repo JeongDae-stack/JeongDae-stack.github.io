@@ -483,6 +483,148 @@
                 width: 64px;
                 height: 64px;
             }
+
+            .rank-summary {
+                padding: 12px;
+                font-size: 0.8rem;
+                line-height: 1.6;
+            }
+
+            .rank-card {
+                padding: 16px;
+            }
+
+            .rank-card .card-head {
+                padding-right: 0;
+                align-items: flex-start;
+            }
+
+            .rank-card .thumb-wrap {
+                width: 58px;
+                height: 58px;
+            }
+
+            .rank-score {
+                font-size: 0.78rem;
+                line-height: 1.4;
+            }
+
+            .rank-table-wrap {
+                margin-top: 14px;
+                overflow-x: visible;
+                border: none;
+                background: transparent;
+            }
+
+            .rank-table {
+                min-width: 0;
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0 10px;
+                background: transparent;
+            }
+
+            .rank-table thead {
+                display: none;
+            }
+
+            .rank-table,
+            .rank-table tbody,
+            .rank-table tr,
+            .rank-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .rank-table tr {
+                background: #0f172a;
+                border: 1px solid #334155;
+                border-radius: 12px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .rank-table td {
+                display: grid;
+                grid-template-columns: 72px 1fr;
+                gap: 8px;
+                padding: 6px 4px;
+                border-bottom: 1px dashed #334155;
+                text-align: right;
+                font-size: 0.82rem;
+                box-sizing: border-box;
+                white-space: normal;
+            }
+
+            .rank-table td:last-child {
+                border-bottom: none;
+            }
+
+            .rank-table td::before {
+                color: var(--text-sub);
+                font-size: 0.72rem;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            .rank-table td:nth-child(1)::before {
+                content: "순위";
+            }
+
+            .rank-table td:nth-child(2)::before {
+                content: "닉네임";
+            }
+
+            .rank-table td:nth-child(3)::before {
+                content: "Lv";
+            }
+
+            .rank-table td:nth-child(4)::before {
+                content: "공격";
+            }
+
+            .rank-table td:nth-child(5)::before {
+                content: "방어";
+            }
+
+            .rank-table td:nth-child(6)::before {
+                content: "순발";
+            }
+
+            .rank-table td:nth-child(7)::before {
+                content: "내구";
+            }
+
+            .rank-table td:nth-child(8)::before {
+                content: "전투력";
+            }
+
+            .rank-table td.nickname {
+                text-align: right;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .rank-table .combat {
+                color: #fbbf24;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            #rankSearchPanel .row-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .rank-card .card-head {
+                gap: 10px;
+            }
+
+            .rank-table td {
+                grid-template-columns: 64px 1fr;
+                font-size: 0.78rem;
+            }
         }
     </style>
 </head>
@@ -713,7 +855,12 @@
     function resetSearch() {
         document.querySelectorAll('input').forEach(input => input.value = "");
         document.querySelectorAll('select').forEach(select => select.value = "");
-        document.getElementById('rankLimit').value = "20";
+
+        const rankLimit = document.getElementById('rankLimit');
+        if (rankLimit) {
+            rankLimit.value = "20";
+        }
+
         document.getElementById('resultArea').innerHTML = "";
     }
 
