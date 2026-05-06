@@ -19,6 +19,9 @@
             --elem-수: #2196f3;
             --elem-화: #f44336;
             --elem-풍: #facc15;
+            --plus: #38bdf8;
+            --minus: #fb7185;
+            --zero: #94a3b8;
         }
 
         body {
@@ -367,7 +370,7 @@
         .rank-table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 720px;
+            min-width: 860px;
             background: #0f172a;
         }
 
@@ -414,6 +417,41 @@
 
         .rank-summary strong {
             color: var(--rank-color);
+        }
+
+        .value-with-diff {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            align-items: center;
+            line-height: 1.25;
+        }
+
+        .value-main {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .value-diff {
+            font-size: 0.72rem;
+            font-weight: bold;
+        }
+
+        .value-diff.plus {
+            color: var(--plus);
+        }
+
+        .value-diff.minus {
+            color: var(--minus);
+        }
+
+        .value-diff.zero {
+            color: var(--zero);
+        }
+
+        .s-base {
+            font-size: 0.65rem;
+            color: var(--text-sub);
         }
 
         @media (max-width: 768px) {
@@ -610,6 +648,10 @@
                 font-weight: bold;
                 font-size: 0.9rem;
             }
+
+            .value-with-diff {
+                align-items: flex-end;
+            }
         }
 
         @media (max-width: 420px) {
@@ -748,7 +790,7 @@
 
             <div class="search-group">
                 <label>닉네임</label>
-                <input type="text" id="rankNickname" placeholder="예: 정대">
+                <input type="text" id="rankNickname" placeholder="예: 스톤최강">
             </div>
 
             <div class="search-group">
@@ -1063,6 +1105,89 @@
         return num.toFixed(2);
     }
 
+    function calcSValue(initValue, growthValue, level) {
+        const init = Number(initValue || 0);
+        const growth = Number(growthValue || 0);
+        const lv = Number(level || 1);
+
+        return Math.floor(init + growth * (lv - 1));
+    }
+
+    function calcCombatPowerFromStats(stats) {
+        const atk = Number(stats.atk || 0);
+        const def = Number(stats.def || 0);
+        const agi = Number(stats.agi || 0);
+        const hp = Number(stats.hp || 0);
+
+        return Math.round((atk + def + agi + (hp / 4)) * 100) / 100;
+    }
+
+    function calcSComparison(basePet, row) {
+        if (!basePet || !basePet.init || !basePet.stats) {
+            return null;
+        }
+
+        const sStats = {
+            atk: calcSValue(basePet.init?.atk, basePet.stats?.atk, row.level),
+            def: calcSValue(basePet.init?.def, basePet.stats?.def, row.level),
+            agi: calcSValue(basePet.init?.agi, basePet.stats?.agi, row.level),
+            hp: calcSValue(basePet.init?.hp, basePet.stats?.hp, row.level)
+        };
+
+        const currentStats = {
+            atk: Number(row.atk || 0),
+            def: Number(row.def || 0),
+            agi: Number(row.agi || 0),
+            hp: Number(row.hp || 0)
+        };
+
+        const currentCombatPower = calcCombatPowerFromStats(currentStats);
+        const sCombatPower = calcCombatPowerFromStats(sStats);
+
+        return {
+            sStats,
+            sCombatPower,
+            currentCombatPower,
+            diff: {
+                atk: currentStats.atk - sStats.atk,
+                def: currentStats.def - sStats.def,
+                agi: currentStats.agi - sStats.agi,
+                hp: currentStats.hp - sStats.hp,
+                combatPower: Math.round((currentCombatPower - sCombatPower) * 100) / 100
+            }
+        };
+    }
+
+    function formatSigned(value) {
+        const num = Number(value || 0);
+        const text = Number.isInteger(num) ? String(num) : num.toFixed(2);
+
+        if (num > 0) return `+${text}`;
+        return text;
+    }
+
+    function getDiffClass(value) {
+        const num = Number(value || 0);
+
+        if (num > 0) return 'plus';
+        if (num < 0) return 'minus';
+        return 'zero';
+    }
+
+    function renderValueWithDiff(currentValue, diffValue, sValue) {
+        if (diffValue === null || diffValue === undefined || sValue === null || sValue === undefined) {
+            return escapeHtml(currentValue);
+        }
+
+        return `
+            <div class="value-with-diff">
+                <span class="value-main">${escapeHtml(currentValue)}</span>
+                <span class="value-diff ${getDiffClass(diffValue)}">${escapeHtml(formatSigned(diffValue))}</span>
+                <span class="s-base">S ${escapeHtml(sValue)}</span>
+            </div>
+        `;
+    }
+
     function getPetAutoSortMetric() {
         const minTotal = document.getElementById('minTotal').value.trim();
         const minAtk = document.getElementById('minAtk').value.trim();
@@ -1373,6 +1498,7 @@
             <div class="rank-summary">
                 <strong>펫 랭킹 검색 결과</strong><br>
                 검색된 페트: ${matchedPets.length}개 · 검색된 랭킹 기록: ${totalRowsBeforeLimit}개 · 정렬 기준: ${escapeHtml(metricLabel)}<br>
+                S기준: <strong>Math.floor(초기치 + 성장률 × (Lv - 1))</strong><br>
                 전투력 계산식: <strong>공격력 + 방어력 + 순발력 + (내구력 / 4)</strong>
             </div>
         `;
@@ -1399,18 +1525,39 @@
 
             const tableRows = rows.map((row, index) => {
                 const displayRank = metric === 'rank' ? row.rank : index + 1;
-                const combatPower = formatRankingValue(row.combatPower);
+                const comparison = calcSComparison(basePet, row);
+
+                const atkCell = comparison
+                    ? renderValueWithDiff(row.atk, comparison.diff.atk, comparison.sStats.atk)
+                    : escapeHtml(row.atk);
+
+                const defCell = comparison
+                    ? renderValueWithDiff(row.def, comparison.diff.def, comparison.sStats.def)
+                    : escapeHtml(row.def);
+
+                const agiCell = comparison
+                    ? renderValueWithDiff(row.agi, comparison.diff.agi, comparison.sStats.agi)
+                    : escapeHtml(row.agi);
+
+                const hpCell = comparison
+                    ? renderValueWithDiff(row.hp, comparison.diff.hp, comparison.sStats.hp)
+                    : escapeHtml(row.hp);
+
+                const currentCombat = comparison ? comparison.currentCombatPower : row.combatPower;
+                const combatCell = comparison
+                    ? renderValueWithDiff(formatRankingValue(currentCombat), comparison.diff.combatPower, formatRankingValue(comparison.sCombatPower))
+                    : escapeHtml(formatRankingValue(row.combatPower));
 
                 return `
                     <tr>
                         <td>${escapeHtml(displayRank)}</td>
                         <td class="nickname">${escapeHtml(row.nickname)}</td>
                         <td>${escapeHtml(row.level)}</td>
-                        <td>${escapeHtml(row.atk)}</td>
-                        <td>${escapeHtml(row.def)}</td>
-                        <td>${escapeHtml(row.agi)}</td>
-                        <td>${escapeHtml(row.hp)}</td>
-                        <td class="combat">${escapeHtml(combatPower)}</td>
+                        <td>${atkCell}</td>
+                        <td>${defCell}</td>
+                        <td>${agiCell}</td>
+                        <td>${hpCell}</td>
+                        <td class="combat">${combatCell}</td>
                     </tr>
                 `;
             }).join('');
