@@ -12,6 +12,7 @@
             --primary: #38bdf8;
             --item-color: #10b981;
             --rank-color: #a78bfa;
+            --radonta-color: #f97316;
             --accent: #f43f5e;
             --text-main: #f1f5f9;
             --text-sub: #94a3b8;
@@ -42,6 +43,7 @@
             justify-content: center;
             gap: 10px;
             margin-bottom: 25px;
+            flex-wrap: wrap;
         }
 
         .nav-btn {
@@ -71,6 +73,12 @@
             background: var(--rank-color);
             color: #0f172a;
             border-color: var(--rank-color);
+        }
+
+        .nav-btn.active-radonta {
+            background: var(--radonta-color);
+            color: #0f172a;
+            border-color: var(--radonta-color);
         }
 
         .search-panel {
@@ -454,6 +462,65 @@
             color: var(--text-sub);
         }
 
+        .radonta-card {
+            grid-column: 1 / -1;
+            border-left: 5px solid var(--radonta-color);
+        }
+
+        .radonta-floor-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--radonta-color);
+            margin-bottom: 6px;
+        }
+
+        .radonta-set-badge {
+            display: inline-block;
+            padding: 3px 9px;
+            border-radius: 999px;
+            background: #0f172a;
+            border: 1px solid var(--radonta-color);
+            color: #fed7aa;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 6px;
+        }
+
+        .radonta-section {
+            margin-top: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .radonta-label {
+            color: #fed7aa;
+            font-size: 0.78rem;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .radonta-text {
+            color: var(--text-main);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        .radonta-variant {
+            margin-top: 12px;
+            border-top: 1px dashed #334155;
+            padding-top: 12px;
+        }
+
+        .radonta-variant-title {
+            color: #fbbf24;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 12px;
@@ -468,7 +535,7 @@
             }
 
             .nav-btn {
-                flex: 1;
+                flex: 1 1 calc(50% - 8px);
                 padding: 12px 8px;
                 font-size: 0.78rem;
             }
@@ -652,10 +719,28 @@
             .value-with-diff {
                 align-items: flex-end;
             }
+
+            .radonta-card {
+                padding: 16px;
+            }
+
+            .radonta-floor-title {
+                font-size: 1.05rem;
+            }
+
+            .radonta-section {
+                padding: 10px;
+            }
+
+            .radonta-text {
+                font-size: 0.82rem;
+                line-height: 1.55;
+            }
         }
 
         @media (max-width: 420px) {
-            #rankSearchPanel .row-4 {
+            #rankSearchPanel .row-4,
+            #radontaSearchPanel .row-4 {
                 grid-template-columns: 1fr;
             }
 
@@ -679,6 +764,7 @@
         <button id="petBtn" class="nav-btn active-pet" onclick="switchTab('pet')">🐾 페트 검색</button>
         <button id="itemBtn" class="nav-btn" onclick="switchTab('item')">⚔️ 아이템 검색</button>
         <button id="rankBtn" class="nav-btn" onclick="switchTab('rank')">🏆 펫 랭킹</button>
+        <button id="radontaBtn" class="nav-btn" onclick="switchTab('radonta')">🗼 라돈타 공략</button>
     </div>
 
     <div id="petSearchPanel" class="search-panel">
@@ -818,6 +904,42 @@
         </div>
     </div>
 
+    <div id="radontaSearchPanel" class="search-panel" style="display:none;">
+        <div class="search-row row-4">
+            <div class="search-group">
+                <label>층 검색</label>
+                <input type="text" id="radontaFloor" placeholder="예: 10, 60, 90, 101">
+            </div>
+
+            <div class="search-group">
+                <label>셋 필터</label>
+                <select id="radontaSet">
+                    <option value="">전체</option>
+                    <option value="수셋">수셋</option>
+                    <option value="지셋">지셋</option>
+                </select>
+            </div>
+
+            <div class="search-group">
+                <label>키워드</label>
+                <input type="text" id="radontaKeyword" placeholder="예: 부활, 혼란, 무지개">
+            </div>
+
+            <div class="search-group">
+                <label>표시</label>
+                <select id="radontaViewMode">
+                    <option value="all">전체 보기</option>
+                    <option value="simple">간단 보기</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="search-actions">
+            <button class="btn-reset" onclick="resetSearch()">초기화</button>
+            <button class="btn-search" onclick="doSearch()" style="background:var(--radonta-color)">공략 보기</button>
+        </div>
+    </div>
+
     <div id="resultArea"></div>
 </div>
 
@@ -830,6 +952,91 @@
         summary: null,
         pets: []
     };
+
+    const radontaGuideData = [
+        {
+            floor: "10층",
+            set: "수셋",
+            spellOrder: "수우대 → 홉킨스 무지개 → 카라쿠 무지개×2",
+            attackOrder: "카라쿠[지10](부활) → 토라쿠[화8/수2], 차라쿠[지6/수4] 딸피 → 홉킨스[지8/수2]"
+        },
+        {
+            floor: "20층",
+            set: "수셋",
+            spellOrder: "수우대 → 적 오로라 → 헷지 무지개×2",
+            attackOrder: "헷지[지2/풍8] → 베르고[지7/풍3](지구일주) → 지고르[지9/수1], 토라티스[지8/풍1] 딸피 → 파사트[지6/수1]"
+        },
+        {
+            floor: "30층",
+            set: "지셋",
+            spellOrder: "지우대",
+            attackOrder: "아라[화7/풍3](부활) → 피노[화6/수4](혼란) → 보투케스[화5/풍5], 쿨코카스[수10] 딸피 → 케라스[수6/화4]"
+        },
+        {
+            floor: "40층",
+            set: "지셋",
+            spellOrder: "지우대",
+            attackOrder: "매그노[수8/화2](부활) → 청기로[수?/화?](혼란) → 기란[수5/화5](혼란) → 메가로돈[수9/화1](연속공격) → 격수[수7/화3]"
+        },
+        {
+            floor: "50층",
+            set: "수셋",
+            spellOrder: "수우대 → 마그노 무지개 → 매트노 무지개×2",
+            attackOrder: "머그노[풍10](부활/혼란) → 마그노[지9/풍1](부활/혼란) → 매트노[지9/풍1](혼란), 맘트노[화5/수5](석화) 딸피 → 카무르[화9/풍1]"
+        },
+        {
+            floor: "60층",
+            set: "수셋",
+            variants: [
+                {
+                    title: "완캐 순 못 맞추는 경우(활 착용)",
+                    spellOrder: "수우대",
+                    attackOrder: "보투케스[화5/풍5](부활) → 스켈렉스[화4/풍6](석화) → 가론고르[화8/수2] → 엘크룬[화7/풍3](부활)"
+                },
+                {
+                    title: "완캐 순 맞출 수 있는 경우(창 착용)",
+                    spellOrder: "수우대",
+                    attackOrder: "순캐 공격순서 : 보투케스[화5/풍5](부활) → 스켈렉스[화4/풍6](석화) → 가론고르[화8/수2] → 엘크룬[화7/풍3](부활)\n완캐 공격순서 : 완캐는 엘크룬[화7/풍3](부활) 일공, 탱펫은 가론고르[화8/수2] 충견 → 보투케스[화5/풍5](부활) → 스켈렉스[화4/풍6](석화)"
+                }
+            ]
+        },
+        {
+            floor: "70층",
+            set: "지셋",
+            spellOrder: "지우대 → 적 오로라 → 혈기노 무지개×2, 흑갈푸스 무지개\n※ 1, 2턴동안 주술사 제외하고 전부 가드",
+            attackOrder: "혈기노[수10] → 라이쿠스[화3/풍7] → 만보돈[지2/풍8], 르돈[지2/풍8] 딸피 → 흑갈푸스[화8/풍2] → 스피온[지3/풍7]"
+        },
+        {
+            floor: "80층",
+            set: "수셋",
+            spellOrder: "수우대 → 기로 무지개×2 → 잔비노 무지개 → 비노 무지개×2\n※ 1, 2턴동안 주술사 제외하고 전부 가드",
+            attackOrder: "공격순서(완캐 첫턴 가드) : 기노[화8/풍2] → 잔비노[지?/풍?] → 비노[지8/수2] → 기로[화1/수9] → 기보로[화?/수?] → 메가테라냐[지1/풍9]"
+        },
+        {
+            floor: "90층",
+            set: "수셋",
+            spellOrder: "수우대 → 자피온 무지개",
+            attackOrder: "스켈로그[화10] → 싸가트[화9/수1] → 쿠라스[화7/수3](혼란) → 자피온[지9/수1](가블) → 킹고르[지?/풍?] → 타무르[지3/풍7](부활)"
+        },
+        {
+            floor: "90층",
+            set: "지셋",
+            spellOrder: "지우대 → 타무르 무지개 → 자피온 무지개 → 킹고르 무지개",
+            attackOrder: "공격순서(첫턴 완캐, 펫 가드) : 스켈로그[화10] → 싸가트[화9/수1] → 쿠라스[화7/수3](혼란) → 자피온[지9/수1](가블) → 킹고르[지?/풍?] → 타무르[지3/풍7](부활)"
+        },
+        {
+            floor: "100층",
+            set: "수셋",
+            spellOrder: "수우대 → 본드래곤 무지개×2 → 어스드래곤 무지개×1 → 아이스드래곤 무지개",
+            attackOrder: "공격순서(1, 2턴 완캐, 펫 가드) : 본드래곤[지4/수6](부활) → 어스드래곤[지8/풍2] → 아이스드래곤[수8/화2](수면) → 파이어킹드래곤[화9/풍1] → 헬무르[화?/풍?] → 블랙드래곤[화8/수2](혼란) → 레드드래곤[화9/풍1] → 바르굴[화8/풍2]"
+        },
+        {
+            floor: "101층",
+            set: "지셋",
+            spellOrder: "지우대 → 적 오로라 → 엘크룬 무지개 → 카무르 무지개 → 스노블 무지개 → 케라스 무지개",
+            attackOrder: "공격순서(1, 2턴 완캐, 펫 가드) : 엘크룬[화7/풍3](부활) → 멍클[지3/풍7](부활) → 홉킨스[화8/풍2](부활) → 스노블[화3/수7](수면) → 파사트[지6/수4](혼란) → 카무르[화9/풍1](부활) → 케라스[화4/수6](수면) → 메가테라냐[화1/수9] → 스피온[지3/풍7] → 정령왕[지?/풍?]"
+        }
+    ];
 
     async function loadData() {
         const area = document.getElementById('resultArea');
@@ -896,12 +1103,18 @@
         document.getElementById('petSearchPanel').style.display = tab === 'pet' ? 'block' : 'none';
         document.getElementById('itemSearchPanel').style.display = tab === 'item' ? 'block' : 'none';
         document.getElementById('rankSearchPanel').style.display = tab === 'rank' ? 'block' : 'none';
+        document.getElementById('radontaSearchPanel').style.display = tab === 'radonta' ? 'block' : 'none';
 
         document.getElementById('petBtn').className = tab === 'pet' ? 'nav-btn active-pet' : 'nav-btn';
         document.getElementById('itemBtn').className = tab === 'item' ? 'nav-btn active-item' : 'nav-btn';
         document.getElementById('rankBtn').className = tab === 'rank' ? 'nav-btn active-rank' : 'nav-btn';
+        document.getElementById('radontaBtn').className = tab === 'radonta' ? 'nav-btn active-radonta' : 'nav-btn';
 
         document.getElementById('resultArea').innerHTML = "";
+
+        if (tab === 'radonta') {
+            renderRadontaGuide();
+        }
     }
 
     function resetSearch() {
@@ -924,6 +1137,10 @@
         }
 
         document.getElementById('resultArea').innerHTML = "";
+
+        if (currentTab === 'radonta') {
+            renderRadontaGuide();
+        }
     }
 
     function safeText(value) {
@@ -1261,6 +1478,8 @@
             searchItems();
         } else if (currentTab === 'rank') {
             searchPetOwnerRankings();
+        } else if (currentTab === 'radonta') {
+            renderRadontaGuide();
         }
     }
 
@@ -1603,6 +1822,111 @@
                     </div>
 
                     ${petRank.source ? `<a class="source-link" href="${escapeHtml(petRank.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
+                </div>
+            `;
+        });
+    }
+
+    function getRadontaSearchText(entry) {
+        const variantText = (entry.variants || [])
+            .map(v => `${v.title} ${v.spellOrder} ${v.attackOrder}`)
+            .join(' ');
+
+        return [
+            entry.floor,
+            entry.set,
+            entry.spellOrder,
+            entry.attackOrder,
+            variantText
+        ].join(' ').toLowerCase();
+    }
+
+    function renderRadontaNormalSections(entry, simpleMode) {
+        if (simpleMode) {
+            return `
+                <div class="radonta-section">
+                    <div class="radonta-label">공격순서</div>
+                    <div class="radonta-text">${escapeHtml(entry.attackOrder || '')}</div>
+                </div>
+            `;
+        }
+
+        return `
+            <div class="radonta-section">
+                <div class="radonta-label">주술순서</div>
+                <div class="radonta-text">${escapeHtml(entry.spellOrder || '')}</div>
+            </div>
+
+            <div class="radonta-section">
+                <div class="radonta-label">공격순서</div>
+                <div class="radonta-text">${escapeHtml(entry.attackOrder || '')}</div>
+            </div>
+        `;
+    }
+
+    function renderRadontaVariantSections(entry, simpleMode) {
+        return (entry.variants || []).map(variant => `
+            <div class="radonta-variant">
+                <div class="radonta-variant-title">${escapeHtml(variant.title || '')}</div>
+
+                ${simpleMode ? '' : `
+                    <div class="radonta-section">
+                        <div class="radonta-label">주술순서</div>
+                        <div class="radonta-text">${escapeHtml(variant.spellOrder || '')}</div>
+                    </div>
+                `}
+
+                <div class="radonta-section">
+                    <div class="radonta-label">공격순서</div>
+                    <div class="radonta-text">${escapeHtml(variant.attackOrder || '')}</div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function renderRadontaGuide() {
+        const area = document.getElementById('resultArea');
+        area.innerHTML = "";
+
+        const floorQuery = document.getElementById('radontaFloor')?.value.trim().toLowerCase() || "";
+        const setFilter = document.getElementById('radontaSet')?.value || "";
+        const keyword = document.getElementById('radontaKeyword')?.value.trim().toLowerCase() || "";
+        const viewMode = document.getElementById('radontaViewMode')?.value || "all";
+        const simpleMode = viewMode === "simple";
+
+        const filtered = radontaGuideData.filter(entry => {
+            const matchFloor = floorQuery === "" || safeText(entry.floor).includes(floorQuery);
+            const matchSet = setFilter === "" || entry.set === setFilter;
+            const matchKeyword = keyword === "" || getRadontaSearchText(entry).includes(keyword);
+
+            return matchFloor && matchSet && matchKeyword;
+        });
+
+        if (filtered.length === 0) {
+            renderEmptyMessage("라돈타 공략 검색 결과가 없습니다.");
+            return;
+        }
+
+        area.innerHTML += `
+            <div class="rank-summary" style="border-color:var(--radonta-color);">
+                <strong style="color:var(--radonta-color);">라돈타 공략</strong><br>
+                검색 결과: ${filtered.length}개 · 층/셋/키워드로 필터링할 수 있습니다.
+            </div>
+        `;
+
+        filtered.forEach(entry => {
+            const bodyHtml = entry.variants
+                ? renderRadontaVariantSections(entry, simpleMode)
+                : renderRadontaNormalSections(entry, simpleMode);
+
+            area.innerHTML += `
+                <div class="card radonta-card">
+                    <div class="radonta-floor-title">
+                        ${escapeHtml(entry.floor)}
+                        <span class="radonta-set-badge">${escapeHtml(entry.set)}</span>
+                    </div>
+
+                    ${bodyHtml}
                 </div>
             `;
         });
