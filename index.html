@@ -11,6 +11,7 @@
             --card-bg: #1e293b;
             --primary: #38bdf8;
             --item-color: #10b981;
+            --rank-color: #a78bfa;
             --accent: #f43f5e;
             --text-main: #f1f5f9;
             --text-sub: #94a3b8;
@@ -61,6 +62,12 @@
             background: var(--item-color);
             color: #0f172a;
             border-color: var(--item-color);
+        }
+
+        .nav-btn.active-rank {
+            background: var(--rank-color);
+            color: #0f172a;
+            border-color: var(--rank-color);
         }
 
         .search-panel {
@@ -222,6 +229,10 @@
             color: var(--item-color);
         }
 
+        .rank-stat-label {
+            color: var(--rank-color);
+        }
+
         .stat-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -261,6 +272,25 @@
             border-radius: 6px;
             font-weight: bold;
             font-size: 0.85rem;
+        }
+
+        .rank-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--rank-color);
+            color: #0f172a;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .rank-score {
+            margin-top: 8px;
+            color: #c4b5fd;
+            font-size: 0.85rem;
+            font-weight: bold;
         }
 
         .elem-badge {
@@ -322,6 +352,70 @@
             line-height: 1.5;
         }
 
+        .rank-card {
+            grid-column: 1 / -1;
+            border-left: 5px solid var(--rank-color);
+        }
+
+        .rank-table-wrap {
+            margin-top: 15px;
+            overflow-x: auto;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .rank-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 720px;
+            background: #0f172a;
+        }
+
+        .rank-table th,
+        .rank-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #334155;
+            text-align: center;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .rank-table th {
+            color: var(--rank-color);
+            font-size: 0.75rem;
+            background: #111827;
+        }
+
+        .rank-table td.nickname {
+            color: #fff;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .rank-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .rank-table .combat {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+
+        .rank-summary {
+            grid-column: 1 / -1;
+            background: #111827;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 14px 16px;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .rank-summary strong {
+            color: var(--rank-color);
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 12px;
@@ -338,7 +432,7 @@
             .nav-btn {
                 flex: 1;
                 padding: 12px 8px;
-                font-size: 0.9rem;
+                font-size: 0.78rem;
             }
 
             .search-panel {
@@ -400,6 +494,7 @@
     <div class="nav-tabs">
         <button id="petBtn" class="nav-btn active-pet" onclick="switchTab('pet')">🐾 페트 검색</button>
         <button id="itemBtn" class="nav-btn" onclick="switchTab('item')">⚔️ 아이템 검색</button>
+        <button id="rankBtn" class="nav-btn" onclick="switchTab('rank')">🏆 펫 랭킹</button>
     </div>
 
     <div id="petSearchPanel" class="search-panel">
@@ -492,6 +587,43 @@
         </div>
     </div>
 
+    <div id="rankSearchPanel" class="search-panel" style="display:none;">
+        <div class="search-row row-4">
+            <div class="search-group">
+                <label>페트 이름</label>
+                <input type="text" id="rankPetName" placeholder="예: 백호, 레드프라키">
+            </div>
+
+            <div class="search-group">
+                <label>닉네임</label>
+                <input type="text" id="rankNickname" placeholder="예: 스톤최강">
+            </div>
+
+            <div class="search-group">
+                <label>정렬 기준</label>
+                <select id="rankMetric">
+                    <option value="combatPower">전투력</option>
+                    <option value="level">Lv</option>
+                    <option value="atk">공격력</option>
+                    <option value="def">방어력</option>
+                    <option value="agi">순발력</option>
+                    <option value="hp">내구력</option>
+                    <option value="rank">원본 순위</option>
+                </select>
+            </div>
+
+            <div class="search-group">
+                <label>표시 개수</label>
+                <input type="number" id="rankLimit" value="20" min="1" max="200">
+            </div>
+        </div>
+
+        <div class="search-actions">
+            <button class="btn-reset" onclick="resetSearch()">초기화</button>
+            <button class="btn-search" onclick="doSearch()" style="background:var(--rank-color)">랭킹 보기</button>
+        </div>
+    </div>
+
     <div id="resultArea"></div>
 </div>
 
@@ -500,6 +632,10 @@
 
     let petData = [];
     let itemData = [];
+    let petRankingData = {
+        summary: null,
+        pets: []
+    };
 
     async function loadData() {
         const area = document.getElementById('resultArea');
@@ -524,9 +660,25 @@
                 itemData = [];
             }
 
+            try {
+                const rankResponse = await fetch("./data/pet_rankings.json");
+                petRankingData = await rankResponse.json();
+                console.log("펫 랭킹 데이터 로딩 완료:", getRankingPetsArray().length);
+            } catch (rankError) {
+                console.warn("펫 랭킹 데이터 로딩 실패. 펫 랭킹 탭은 비어 있을 수 있습니다.", rankError);
+                petRankingData = {
+                    summary: null,
+                    pets: []
+                };
+            }
+
+            const rankingPets = getRankingPetsArray();
+            const rankingRows = rankingPets.reduce((sum, pet) => sum + (pet.rankings?.length || 0), 0);
+
             area.innerHTML = `
                 <div class="message-box">
                     페트 데이터 ${petData.length}개, 아이템 데이터 ${itemData.length}개 로딩 완료.<br>
+                    펫 랭킹 데이터 ${rankingPets.length}개 페트 / ${rankingRows}개 기록 로딩 완료.<br>
                     검색 조건을 입력해보세요.
                 </div>
             `;
@@ -549,9 +701,11 @@
 
         document.getElementById('petSearchPanel').style.display = tab === 'pet' ? 'block' : 'none';
         document.getElementById('itemSearchPanel').style.display = tab === 'item' ? 'block' : 'none';
+        document.getElementById('rankSearchPanel').style.display = tab === 'rank' ? 'block' : 'none';
 
         document.getElementById('petBtn').className = tab === 'pet' ? 'nav-btn active-pet' : 'nav-btn';
         document.getElementById('itemBtn').className = tab === 'item' ? 'nav-btn active-item' : 'nav-btn';
+        document.getElementById('rankBtn').className = tab === 'rank' ? 'nav-btn active-rank' : 'nav-btn';
 
         document.getElementById('resultArea').innerHTML = "";
     }
@@ -559,6 +713,7 @@
     function resetSearch() {
         document.querySelectorAll('input').forEach(input => input.value = "");
         document.querySelectorAll('select').forEach(select => select.value = "");
+        document.getElementById('rankLimit').value = "20";
         document.getElementById('resultArea').innerHTML = "";
     }
 
@@ -607,7 +762,7 @@
     function renderThumb(data, fallbackEmoji) {
         const imageUrl = getImageUrl(data);
         const emoji = fallbackEmoji || data?.emoji || '🎒';
-        const name = data?.name || '';
+        const name = data?.name || data?.petName || '';
 
         if (!imageUrl) {
             return `
@@ -703,6 +858,44 @@
         `;
     }
 
+    function getRankingPetsArray() {
+        if (Array.isArray(petRankingData)) return petRankingData;
+        if (Array.isArray(petRankingData?.pets)) return petRankingData.pets;
+        return [];
+    }
+
+    function getPetBaseByName(petName) {
+        return petData.find(p => p.name === petName) ||
+               petData.find(p => safeText(p.name) === safeText(petName)) ||
+               petData.find(p => safeText(p.name).includes(safeText(petName))) ||
+               null;
+    }
+
+    function getRankingMetricLabel(metric) {
+        const labels = {
+            combatPower: '전투력',
+            level: 'Lv',
+            atk: '공격력',
+            def: '방어력',
+            agi: '순발력',
+            hp: '내구력',
+            rank: '원본 순위'
+        };
+
+        return labels[metric] || metric;
+    }
+
+    function getRankingMetricValue(row, metric) {
+        if (metric === 'rank') return Number(row.rank || 0);
+        return Number(row[metric] || 0);
+    }
+
+    function formatRankingValue(value) {
+        const num = Number(value || 0);
+        if (Number.isInteger(num)) return String(num);
+        return num.toFixed(2);
+    }
+
     function doSearch() {
         const area = document.getElementById('resultArea');
         area.innerHTML = "";
@@ -717,10 +910,17 @@
             return;
         }
 
+        if (currentTab === 'rank' && getRankingPetsArray().length === 0) {
+            renderEmptyMessage("아직 펫 랭킹 데이터가 로딩되지 않았습니다.<br>data/pet_rankings.json 파일이 있는지 확인해주세요.");
+            return;
+        }
+
         if (currentTab === 'pet') {
             searchPets();
-        } else {
+        } else if (currentTab === 'item') {
             searchItems();
+        } else if (currentTab === 'rank') {
+            searchPetOwnerRankings();
         }
     }
 
@@ -894,6 +1094,132 @@
                     </div>
 
                     ${item.source ? `<a class="source-link" href="${escapeHtml(item.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
+                </div>
+            `;
+        });
+    }
+
+    function searchPetOwnerRankings() {
+        const area = document.getElementById('resultArea');
+
+        const petNameQuery = document.getElementById('rankPetName').value.trim().toLowerCase();
+        const nicknameQuery = document.getElementById('rankNickname').value.trim().toLowerCase();
+        const metric = document.getElementById('rankMetric').value;
+        const limit = parseInt(document.getElementById('rankLimit').value) || 20;
+        const metricLabel = getRankingMetricLabel(metric);
+
+        const rankingPets = getRankingPetsArray();
+
+        let matchedPets = rankingPets.filter(pet => {
+            const matchPetName = petNameQuery === '' || safeText(pet.petName).includes(petNameQuery);
+            const hasRows = Array.isArray(pet.rankings) && pet.rankings.length > 0;
+
+            return matchPetName && hasRows;
+        });
+
+        if (nicknameQuery) {
+            matchedPets = matchedPets
+                .map(pet => ({
+                    ...pet,
+                    rankings: pet.rankings.filter(row => safeText(row.nickname).includes(nicknameQuery))
+                }))
+                .filter(pet => pet.rankings.length > 0);
+        }
+
+        if (matchedPets.length === 0) {
+            renderEmptyMessage("랭킹 결과가 없습니다.");
+            return;
+        }
+
+        const totalRowsBeforeLimit = matchedPets.reduce((sum, pet) => sum + pet.rankings.length, 0);
+
+        area.innerHTML += `
+            <div class="rank-summary">
+                <strong>펫 랭킹 검색 결과</strong><br>
+                검색된 페트: ${matchedPets.length}개 · 검색된 랭킹 기록: ${totalRowsBeforeLimit}개 · 정렬 기준: ${escapeHtml(metricLabel)}<br>
+                전투력 계산식: <strong>공격력 + 방어력 + 순발력 + (내구력 / 4)</strong>
+            </div>
+        `;
+
+        matchedPets.forEach(petRank => {
+            const basePet = getPetBaseByName(petRank.petName);
+            const displayPet = {
+                name: petRank.petName,
+                petName: petRank.petName,
+                sub: petRank.sub || basePet?.sub || '',
+                imageUrl: petRank.imageUrl || basePet?.imageUrl || '',
+                emoji: basePet?.emoji || '🐾'
+            };
+
+            const sortedRows = [...petRank.rankings].sort((a, b) => {
+                if (metric === 'rank') {
+                    return Number(a.rank || 0) - Number(b.rank || 0);
+                }
+
+                return getRankingMetricValue(b, metric) - getRankingMetricValue(a, metric);
+            });
+
+            const rows = sortedRows.slice(0, limit);
+
+            const tableRows = rows.map((row, index) => {
+                const displayRank = metric === 'rank' ? row.rank : index + 1;
+                const combatPower = formatRankingValue(row.combatPower);
+
+                return `
+                    <tr>
+                        <td>${escapeHtml(displayRank)}</td>
+                        <td class="nickname">${escapeHtml(row.nickname)}</td>
+                        <td>${escapeHtml(row.level)}</td>
+                        <td>${escapeHtml(row.atk)}</td>
+                        <td>${escapeHtml(row.def)}</td>
+                        <td>${escapeHtml(row.agi)}</td>
+                        <td>${escapeHtml(row.hp)}</td>
+                        <td class="combat">${escapeHtml(combatPower)}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            area.innerHTML += `
+                <div class="card rank-card">
+                    <div class="card-head item-card-head">
+                        ${renderThumb(displayPet, displayPet.emoji)}
+
+                        <div>
+                            <div style="font-size:1.25rem; font-weight:bold; color:var(--rank-color);">
+                                ${escapeHtml(petRank.petName)}
+                            </div>
+
+                            <div style="font-size:0.75rem; color:var(--text-sub); margin-top:4px;">
+                                ${escapeHtml(petRank.sub || basePet?.sub || '')}
+                            </div>
+
+                            <div class="rank-score">
+                                ${escapeHtml(metricLabel)} 기준 TOP ${rows.length}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-table-wrap">
+                        <table class="rank-table">
+                            <thead>
+                                <tr>
+                                    <th>순위</th>
+                                    <th>닉네임</th>
+                                    <th>Lv</th>
+                                    <th>공격력</th>
+                                    <th>방어력</th>
+                                    <th>순발력</th>
+                                    <th>내구력</th>
+                                    <th>전투력</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${tableRows}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    ${petRank.source ? `<a class="source-link" href="${escapeHtml(petRank.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
                 </div>
             `;
         });
