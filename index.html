@@ -689,6 +689,16 @@
             </div>
         </div>
 
+        <div class="search-row row-1">
+            <div class="search-group">
+                <label>정렬 방향</label>
+                <select id="pSortOrder">
+                    <option value="desc">검색 기준 높은순</option>
+                    <option value="asc">검색 기준 낮은순</option>
+                </select>
+            </div>
+        </div>
+
         <div class="search-actions">
             <button class="btn-reset" onclick="resetSearch()">초기화</button>
             <button class="btn-search" onclick="doSearch()" style="background:var(--primary)">페트 조건 검색</button>
@@ -859,6 +869,16 @@
         const rankLimit = document.getElementById('rankLimit');
         if (rankLimit) {
             rankLimit.value = "20";
+        }
+
+        const rankMetric = document.getElementById('rankMetric');
+        if (rankMetric) {
+            rankMetric.value = "combatPower";
+        }
+
+        const pSortOrder = document.getElementById('pSortOrder');
+        if (pSortOrder) {
+            pSortOrder.value = "desc";
         }
 
         document.getElementById('resultArea').innerHTML = "";
@@ -1043,6 +1063,54 @@
         return num.toFixed(2);
     }
 
+    function getPetAutoSortMetric() {
+        const minTotal = document.getElementById('minTotal').value.trim();
+        const minAtk = document.getElementById('minAtk').value.trim();
+        const minDef = document.getElementById('minDef').value.trim();
+        const minAgi = document.getElementById('minAgi').value.trim();
+        const minHp = document.getElementById('minHp').value.trim();
+
+        const eJi = document.getElementById('eJi').value.trim();
+        const eSu = document.getElementById('eSu').value.trim();
+        const eHwa = document.getElementById('eHwa').value.trim();
+        const ePung = document.getElementById('ePung').value.trim();
+
+        if (minTotal !== '') return 'total';
+        if (minAtk !== '') return 'stats.atk';
+        if (minDef !== '') return 'stats.def';
+        if (minAgi !== '') return 'stats.agi';
+        if (minHp !== '') return 'stats.hp';
+
+        if (eJi !== '') return 'elem.지';
+        if (eSu !== '') return 'elem.수';
+        if (eHwa !== '') return 'elem.화';
+        if (ePung !== '') return 'elem.풍';
+
+        return 'total';
+    }
+
+    function getPetValueByPath(pet, path) {
+        return path.split('.').reduce((current, key) => {
+            return current && current[key] !== undefined ? current[key] : 0;
+        }, pet);
+    }
+
+    function getPetSortLabel(metric) {
+        const labels = {
+            total: '전체 성장률',
+            'stats.atk': '공격 성장률',
+            'stats.def': '방어 성장률',
+            'stats.agi': '순발 성장률',
+            'stats.hp': '체력 성장률',
+            'elem.지': '지속성',
+            'elem.수': '수속성',
+            'elem.화': '화속성',
+            'elem.풍': '풍속성'
+        };
+
+        return labels[metric] || metric;
+    }
+
     function doSearch() {
         const area = document.getElementById('resultArea');
         area.innerHTML = "";
@@ -1087,6 +1155,11 @@
             total: parseFloat(document.getElementById('minTotal').value) || 0
         };
 
+        const sortMetric = getPetAutoSortMetric();
+        const sortOrder = document.getElementById('pSortOrder')?.value || 'desc';
+        const sortLabel = getPetSortLabel(sortMetric);
+        const sortOrderLabel = sortOrder === 'asc' ? '낮은순' : '높은순';
+
         const filtered = petData
             .filter(p => {
                 return safeText(p.name).includes(filters.name) &&
@@ -1100,12 +1173,28 @@
                     (p.stats?.hp || 0) >= filters.hp &&
                     (p.total || 0) >= filters.total;
             })
-            .sort((a, b) => parseFloat(a.total || 0) - parseFloat(b.total || 0));
+            .sort((a, b) => {
+                const aValue = Number(getPetValueByPath(a, sortMetric) || 0);
+                const bValue = Number(getPetValueByPath(b, sortMetric) || 0);
+
+                if (sortOrder === 'asc') {
+                    return aValue - bValue;
+                }
+
+                return bValue - aValue;
+            });
 
         if (filtered.length === 0) {
             renderEmptyMessage("검색 결과가 없습니다.");
             return;
         }
+
+        area.innerHTML += `
+            <div class="rank-summary" style="border-color:var(--primary);">
+                검색 결과: <strong>${filtered.length}</strong>개 ·
+                정렬 기준: <strong>${escapeHtml(sortLabel)} ${escapeHtml(sortOrderLabel)}</strong>
+            </div>
+        `;
 
         filtered.forEach(p => {
             let elemHtml = '';
