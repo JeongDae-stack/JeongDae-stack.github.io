@@ -204,90 +204,7 @@
         pets: []
     };
 
-    const radontaGuideData = [
-        {
-            floor: "10층",
-            set: "수셋",
-            spellOrder: "수우대 (1순) → 홉킨스 무지개 (2순) → 카라쿠 무지개×2 (3순)",
-            attackOrder: "카라쿠(부활) → 토라쿠, 차라쿠, 딸피 → 홉킨스"
-        },
-        {
-            floor: "20층",
-            set: "수셋",
-            spellOrder: "수우대 (1순) → 적 오로라 (2순) → 헷지 무지개×2 (3순)",
-            attackOrder: "헷지 → 베르고(지구일주) → 지고르, 토라티스 딸피 → 파사트"
-        },
-        {
-            floor: "30층",
-            set: "지셋",
-            spellOrder: "지우대 (1순)",
-            attackOrder: "아라(부활) → 피노(혼란) → 보투케스, 쿨코카스, 딸피 → 케라스"
-        },
-        {
-            floor: "40층",
-            set: "지셋",
-            spellOrder: "지우대 (1순)",
-            attackOrder: "매그노(부활) → 청기로(혼란) → 기란(혼란) → 메가로돈(연속공격) → 격수"
-        },
-        {
-            floor: "50층",
-            set: "수셋",
-            spellOrder: "수우대 (1순) → 마그노 무지개 (2순) → 매트노 무지개×2 (3순)",
-            attackOrder: "머그노(부활/혼란) → 마그노(부활/혼란) → 매트노(혼란), 맘트노석화), 딸피 → 카무르"
-        },
-        {
-            floor: "60층",
-            set: "수셋",
-            variants: [
-                {
-                    title: "완캐 순 못 맞추는 경우(활 착용)",
-                    spellOrder: "수우대 (1순)",
-                    attackOrder: "보투케스(부활) → 스켈렉스(석화) → 가론고르 → 엘크룬(부활)"
-                },
-                {
-                    title: "완캐 순 맞출 수 있는 경우(창 착용)",
-                    spellOrder: "수우대",
-                    attackOrder: "순캐 공격순서 : 보투케스(부활) → 스켈렉스(석화) → 가론고르 → 엘크룬(부활)\n완캐 공격순서 : 완캐는 엘크룬(부활) 일공, 탱펫은 가론고르 충견 → 보투케스(부활) → 스켈렉스(석화)"
-                }
-            ]
-        },
-        {
-            floor: "70층",
-            set: "지셋",
-            spellOrder: "지우대 (1순) → 적 오로라 (2순) → 흑갈푸스 무지개 (2순), 혈기노 무지개×2 (3순)\n※ 1, 2턴동안 주술사 제외하고 전부 가드",
-            attackOrder: "혈기노 → 라이쿠스 → 만보돈, 르돈, 딸피 → 흑갈푸스 → 스피온"
-        },
-        {
-            floor: "80층",
-            set: "수셋",
-            spellOrder: "수우대 (1순) → 기로 무지개×2 (2순) → 잔비노 무지개 (3순) → 비노 무지개×2 (3순)\n※ 1, 2턴동안 주술사 제외하고 전부 가드",
-            attackOrder: "공격순서(완캐 첫턴 가드) : 기노 → 잔비노 → 비노 → 기로 → 기보로 → 메가테라냐"
-        },
-        {
-            floor: "90층",
-            set: "수셋",
-            spellOrder: "수우대 (1순) → 자피온 무지개 (2순)",
-            attackOrder: "스켈로그 → 싸가트 → 쿠라스(혼란) → 자피온(가블) → 킹고르 → 타무르(부활)"
-        },
-        {
-            floor: "90층",
-            set: "지셋",
-            spellOrder: "지우대 (1순) → 타무르 무지개 (2순) → 자피온 무지개 (3순) → 킹고르 무지개 (3순)",
-            attackOrder: "공격순서(첫턴 완캐, 펫 가드) : 스켈로그 → 싸가트 → 쿠라스(혼란) → 자피온(가블) → 킹고르 → 타무르(부활)"
-        },
-        {
-            floor: "100층",
-            set: "수셋",
-            spellOrder: "수우대 (1순) → 본드래곤 무지개×2 (2순) → 어스드래곤 무지개×1 (3순) → 아이스드래곤 무지개 (3순)",
-            attackOrder: "공격순서(1, 2턴 완캐, 펫 가드) : 본드래곤(부활) → 어스드래곤 → 아이스드래곤(수면) → 파이어킹드래곤 → 헬무르 → 블랙드래곤(혼란) → 레드드래곤 → 바르굴"
-        },
-        {
-            floor: "101층",
-            set: "지셋",
-            spellOrder: "지우대 (1순) → 적 오로라 (2순) → 엘크룬 무지개 (2순) → 카무르 무지개 (3순) → 스노블 무지개 (3순) → 케라스 무지개 (3순)",
-            attackOrder: "공격순서(1, 2턴 완캐, 펫 가드) : 엘크룬(부활) → 멍클(부활) → 홉킨스(부활) → 스노블(수면) → 파사트(혼란) → 카무르(부활) → 케라스(수면) → 메가테라냐 → 스피온 → 정령왕"
-        }
-    ];
+    let radontaGuideData = [];
 
     async function loadData() {
         const area = document.getElementById('resultArea');
@@ -324,6 +241,15 @@
                 };
             }
 
+            try {
+                const radontaResponse = await fetch("./data/radonta_guide.json");
+                radontaGuideData = await radontaResponse.json();
+                console.log("라돈타 공략 데이터 로딩 완료:", radontaGuideData.length);
+            } catch (radontaError) {
+                console.warn("라돈타 공략 데이터 로딩 실패. 라돈타 탭은 비어 있을 수 있습니다.", radontaError);
+                radontaGuideData = [];
+            }
+
             const rankingPets = getRankingPetsArray();
             const rankingRows = rankingPets.reduce((sum, pet) => sum + (pet.rankings?.length || 0), 0);
 
@@ -349,16 +275,16 @@
     loadData();
     setupEnterKeySearch();
 
-	function setupEnterKeySearch() {
-	    document.querySelectorAll('.search-panel input').forEach(input => {
-	        input.addEventListener('keydown', event => {
-	            if (event.key === 'Enter') {
-	                event.preventDefault();
-	                doSearch();
-	            }
-	        });
-	    });
-	}
+    function setupEnterKeySearch() {
+        document.querySelectorAll('.search-panel input').forEach(input => {
+            input.addEventListener('keydown', event => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    doSearch();
+                }
+            });
+        });
+    }
 
     function switchTab(tab) {
         currentTab = tab;
@@ -1150,6 +1076,11 @@
     function renderRadontaGuide() {
         const area = document.getElementById('resultArea');
         area.innerHTML = "";
+
+        if (!Array.isArray(radontaGuideData) || radontaGuideData.length === 0) {
+            renderEmptyMessage("라돈타 공략 데이터가 로딩되지 않았습니다.<br>data/radonta_guide.json 파일이 있는지 확인해주세요.");
+            return;
+        }
 
         const floorQuery = document.getElementById('radontaFloor')?.value.trim().toLowerCase() || "";
         const setFilter = document.getElementById('radontaSet')?.value || "";
