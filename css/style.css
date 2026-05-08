@@ -823,3 +823,153 @@ select:focus {
         font-size: 0.85rem;
     }
 }
+
+.mobile-rank-row {
+    display: none;
+}
+
+.mobile-rank-card-cell {
+    padding: 0 !important;
+}
+
+.mobile-rank-card {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.mobile-rank-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mobile-rank-name {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.mobile-rank-meta {
+    color: var(--text-sub);
+    font-size: 0.72rem;
+    white-space: nowrap;
+}
+
+.mobile-rank-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.mobile-rank-stat {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 9px;
+    padding: 7px 4px;
+    text-align: center;
+    min-width: 0;
+}
+
+.mobile-rank-stat-label {
+    color: var(--text-sub);
+    font-size: 0.62rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.mobile-rank-current {
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+.mobile-rank-stat .value-diff {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.63rem;
+    line-height: 1.1;
+}
+
+.mobile-rank-sbase {
+    color: var(--text-sub);
+    font-size: 0.56rem;
+    margin-top: 2px;
+    line-height: 1.1;
+}
+
+.mobile-rank-stat.combat {
+    border-color: rgba(251, 191, 36, 0.45);
+}
+
+.mobile-rank-stat.combat .mobile-rank-current {
+    color: #fbbf24;
+}
+
+@media (max-width: 768px) {
+    .rank-table .desktop-rank-row {
+        display: none !important;
+    }
+
+    .rank-table .mobile-rank-row {
+        display: block !important;
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .rank-table .mobile-rank-card-cell {
+        display: block !important;
+        width: 100%;
+        border-bottom: none;
+        padding: 0 !important;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .rank-table .mobile-rank-card-cell::before {
+        content: none !important;
+    }
+
+    .rank-table .mobile-rank-row:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .mobile-rank-card {
+        padding: 10px;
+    }
+
+    .mobile-rank-stats {
+        gap: 4px;
+    }
+
+    .mobile-rank-stat {
+        padding: 6px 3px;
+    }
+
+    .mobile-rank-stat-label {
+        font-size: 0.58rem;
+    }
+
+    .mobile-rank-current {
+        font-size: 0.76rem;
+    }
+
+    .mobile-rank-stat .value-diff {
+        font-size: 0.58rem;
+    }
+
+    .mobile-rank-sbase {
+        font-size: 0.52rem;
+    }
+}

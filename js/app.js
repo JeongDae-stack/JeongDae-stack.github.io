@@ -397,6 +397,77 @@
         `;
     }
 
+	function renderMobileRankStat(label, currentValue, diffValue, sValue, extraClass = "") {
+	    if (diffValue === null || diffValue === undefined || sValue === null || sValue === undefined) {
+	        return `
+	            <div class="mobile-rank-stat ${escapeHtml(extraClass)}">
+	                <div class="mobile-rank-stat-label">${escapeHtml(label)}</div>
+	                <div class="mobile-rank-current">${escapeHtml(currentValue)}</div>
+	            </div>
+	        `;
+	    }
+
+    	return `
+    	    <div class="mobile-rank-stat ${escapeHtml(extraClass)}">
+    	        <div class="mobile-rank-stat-label">${escapeHtml(label)}</div>
+    	        <div class="mobile-rank-current">${escapeHtml(currentValue)}</div>
+    	        <span class="value-diff ${getDiffClass(diffValue)}">${escapeHtml(formatSigned(diffValue))}</span>
+    	        <div class="mobile-rank-sbase">S ${escapeHtml(sValue)}</div>
+    	    </div>
+   	 `;
+	}	
+
+	function renderMobileRankCard(row, displayRank, comparison) {
+	    const currentCombat = comparison ? comparison.currentCombatPower : row.combatPower;
+	
+	    const atkStat = comparison
+	        ? renderMobileRankStat('공', row.atk, comparison.diff.atk, comparison.sStats.atk)
+	        : renderMobileRankStat('공', row.atk, null, null);
+	
+	    const defStat = comparison
+	        ? renderMobileRankStat('방', row.def, comparison.diff.def, comparison.sStats.def)
+	        : renderMobileRankStat('방', row.def, null, null);
+	
+	    const agiStat = comparison
+	        ? renderMobileRankStat('순', row.agi, comparison.diff.agi, comparison.sStats.agi)
+	        : renderMobileRankStat('순', row.agi, null, null);
+	
+	    const hpStat = comparison
+	        ? renderMobileRankStat('체', row.hp, comparison.diff.hp, comparison.sStats.hp)
+	        : renderMobileRankStat('체', row.hp, null, null);
+	
+	    const combatStat = comparison
+	        ? renderMobileRankStat(
+	            '전투',
+	            formatRankingValue(currentCombat),
+	            comparison.diff.combatPower,
+	            formatRankingValue(comparison.sCombatPower),
+	            'combat'
+	        )
+	        : renderMobileRankStat('전투', formatRankingValue(currentCombat), null, null, 'combat');
+	
+	    return `
+	        <div class="mobile-rank-card">
+	            <div class="mobile-rank-top">
+	                <div class="mobile-rank-name">
+	                    #${escapeHtml(displayRank)} ${escapeHtml(row.nickname)}
+	                </div>
+	                <div class="mobile-rank-meta">
+	                    Lv ${escapeHtml(row.level)}
+	                </div>
+	            </div>
+	
+	            <div class="mobile-rank-stats">
+	                ${atkStat}
+	                ${defStat}
+	                ${agiStat}
+	                ${hpStat}
+	                ${combatStat}
+	            </div>
+	        </div>
+	    `;
+	}
+
     function getPetAutoSortMetric() {
         const minTotal = document.getElementById('minTotal').value.trim();
         const minAtk = document.getElementById('minAtk').value.trim();
@@ -759,18 +830,26 @@
                     ? renderValueWithDiff(formatRankingValue(currentCombat), comparison.diff.combatPower, formatRankingValue(comparison.sCombatPower))
                     : escapeHtml(formatRankingValue(row.combatPower));
 
-                return `
-                    <tr>
-                        <td>${escapeHtml(displayRank)}</td>
-                        <td class="nickname">${escapeHtml(row.nickname)}</td>
-                        <td>${escapeHtml(row.level)}</td>
-                        <td>${atkCell}</td>
-                        <td>${defCell}</td>
-                        <td>${agiCell}</td>
-                        <td>${hpCell}</td>
-                        <td class="combat">${combatCell}</td>
-                    </tr>
-                `;
+const mobileCard = renderMobileRankCard(row, displayRank, comparison);
+
+	return `
+	    <tr class="desktop-rank-row">
+	        <td>${escapeHtml(displayRank)}</td>
+	        <td class="nickname">${escapeHtml(row.nickname)}</td>
+	        <td>${escapeHtml(row.level)}</td>
+	        <td>${atkCell}</td>
+	        <td>${defCell}</td>
+	        <td>${agiCell}</td>
+	        <td>${hpCell}</td>
+	        <td class="combat">${combatCell}</td>
+	    </tr>
+	
+	    <tr class="mobile-rank-row">
+	        <td class="mobile-rank-card-cell" colspan="8">
+	            ${mobileCard}
+	        </td>
+	    </tr>
+	`;
             }).join('');
 
             area.innerHTML += `
