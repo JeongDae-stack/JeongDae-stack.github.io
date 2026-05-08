@@ -955,6 +955,12 @@ const mobileCard = renderMobileRankCard(row, displayRank, comparison);
         `).join('');
     }
 
+	function getRadontaSetBadgeClass(setName) {
+	    if (setName === "수셋") return "set-water";
+	    if (setName === "지셋") return "set-earth";
+	    return "";
+	}
+
     function renderRadontaGuide() {
         const area = document.getElementById('resultArea');
         area.innerHTML = "";
@@ -1006,7 +1012,7 @@ const mobileCard = renderMobileRankCard(row, displayRank, comparison);
                 <div class="card radonta-card">
                     <div class="radonta-floor-title">
                         ${escapeHtml(entry.floor)}
-                        <span class="radonta-set-badge">${escapeHtml(entry.set)}</span>
+                        <span class="radonta-set-badge ${getRadontaSetBadgeClass(entry.set)}">${escapeHtml(entry.set)}</span>
                     </div>
 
                     ${bodyHtml}
