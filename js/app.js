@@ -941,3 +941,37 @@
 window.switchTab = switchTab;
 window.resetSearch = resetSearch;
 window.doSearch = doSearch;
+
+async function shareSite() {
+    const shareUrl = `${window.location.origin}${window.location.pathname}`;
+    const shareTitle = "StoneAge Database";
+    const shareText = "스톤에이지 페트 / 아이템 / 랭킹 / 라돈타 공략 정보 사이트";
+
+    try {
+        if (navigator.share) {
+            await navigator.share({
+                title: shareTitle,
+                text: shareText,
+                url: shareUrl
+            });
+            return;
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(shareUrl);
+            alert("사이트 링크가 복사되었습니다.");
+            return;
+        }
+
+        window.prompt("아래 링크를 복사하세요.", shareUrl);
+    } catch (error) {
+        console.warn("공유 실패:", error);
+        window.prompt("아래 링크를 복사하세요.", shareUrl);
+    }
+}
+
+function refreshSite() {
+    const url = new URL(window.location.href);
+    url.searchParams.set("v", Date.now());
+    window.location.href = url.toString();
+}

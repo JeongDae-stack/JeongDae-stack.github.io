@@ -774,3 +774,52 @@ select:focus {
         object-fit: cover;
     }
 }
+
+.top-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: -10px 0 18px 0;
+}
+
+.top-action-btn {
+    padding: 9px 15px;
+    border-radius: 999px;
+    border: 1px solid #334155;
+    background: #111827;
+    color: #f1f5f9;
+    font-size: 0.82rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+    transition: 0.2s;
+}
+
+.top-action-btn:hover {
+    transform: translateY(-1px);
+}
+
+.share-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.refresh-btn:hover {
+    border-color: var(--radonta-color);
+    color: var(--radonta-color);
+}
+
+@media (max-width: 768px) {
+    .top-actions {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: -6px 0 16px 0;
+    }
+
+    .top-action-btn {
+        width: 100%;
+        padding: 11px 12px;
+        font-size: 0.85rem;
+    }
+}
