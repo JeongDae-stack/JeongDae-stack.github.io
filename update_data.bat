@@ -71,6 +71,20 @@ echo.
 node tools\scrape_pets.js
 
 if errorlevel 1 (
+    echo [ERROR] 페트 데이터 갱신 실패
+    pause
+    exit /b 1
+)
+
+node tools\fill_missing_pet_images.js
+
+if errorlevel 1 (
+    echo [ERROR] 펫 이미지 URL 보완 실패
+    pause
+    exit /b 1
+)
+
+if errorlevel 1 (
     echo.
     echo [ERROR] 페트 데이터 갱신 실패
     pause
