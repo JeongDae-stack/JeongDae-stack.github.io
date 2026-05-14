@@ -575,9 +575,10 @@ try {
             searchPetOwnerRankings();
         } else if (currentTab === 'radonta') {
             renderRadontaGuide();
-	} else if (currentTab === 'riding') {
-    		renderRidingInfo();   
-	}
+        } else if (currentTab === 'riding') {
+            renderRidingInfo();
+        }
+    }
 
     function searchPets() {
         const area = document.getElementById('resultArea');
