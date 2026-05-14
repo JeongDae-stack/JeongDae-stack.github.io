@@ -6,6 +6,10 @@
         summary: null,
         pets: []
     };
+let ridingInfoData = {
+    summary: null,
+    characters: []
+};
 
     let radontaGuideData = [];
 
@@ -53,6 +57,20 @@
                 radontaGuideData = [];
             }
 
+try {
+    const ridingResponse = await fetch(`./data/riding_info.json?v=${Date.now()}`, {
+        cache: "no-store"
+    });
+    ridingInfoData = await ridingResponse.json();
+    console.log("탑승펫 데이터 로딩 완료:", getRidingCharactersArray().length);
+} catch (ridingError) {
+    console.warn("탑승펫 데이터 로딩 실패. 탑승펫 안내 탭은 비어 있을 수 있습니다.", ridingError);
+    ridingInfoData = {
+        summary: null,
+        characters: []
+    };
+}
+
             const rankingPets = getRankingPetsArray();
             const rankingRows = rankingPets.reduce((sum, pet) => sum + (pet.rankings?.length || 0), 0);
 
@@ -96,17 +114,23 @@
         document.getElementById('itemSearchPanel').style.display = tab === 'item' ? 'block' : 'none';
         document.getElementById('rankSearchPanel').style.display = tab === 'rank' ? 'block' : 'none';
         document.getElementById('radontaSearchPanel').style.display = tab === 'radonta' ? 'block' : 'none';
+	document.getElementById('ridingSearchPanel').style.display = tab === 'riding' ? 'block' : 'none';
+
 
         document.getElementById('petBtn').className = tab === 'pet' ? 'nav-btn active-pet' : 'nav-btn';
         document.getElementById('itemBtn').className = tab === 'item' ? 'nav-btn active-item' : 'nav-btn';
         document.getElementById('rankBtn').className = tab === 'rank' ? 'nav-btn active-rank' : 'nav-btn';
         document.getElementById('radontaBtn').className = tab === 'radonta' ? 'nav-btn active-radonta' : 'nav-btn';
+	document.getElementById('ridingBtn').className = tab === 'riding' ? 'nav-btn active-riding' : 'nav-btn';
 
         document.getElementById('resultArea').innerHTML = "";
 
         if (tab === 'radonta') {
             renderRadontaGuide();
         }
+	if (tab === 'riding') {
+	    renderRidingInfo();
+	}
     }
 
     function resetSearch() {
@@ -133,6 +157,9 @@
         if (currentTab === 'radonta') {
             renderRadontaGuide();
         }
+	if (currentTab === 'riding') {
+	    renderRidingInfo();
+	}
     }
 
     function safeText(value) {
@@ -535,6 +562,11 @@
             return;
         }
 
+	if (currentTab === 'riding' && getRidingCharactersArray().length === 0) {
+	    renderEmptyMessage("아직 탑승펫 데이터가 로딩되지 않았습니다.<br>data/riding_info.json 파일이 있는지 확인해주세요.");
+	    return;
+	}
+
         if (currentTab === 'pet') {
             searchPets();
         } else if (currentTab === 'item') {
@@ -543,8 +575,9 @@
             searchPetOwnerRankings();
         } else if (currentTab === 'radonta') {
             renderRadontaGuide();
-        }
-    }
+	} else if (currentTab === 'riding') {
+    		renderRidingInfo();   
+	}
 
     function searchPets() {
         const area = document.getElementById('resultArea');
@@ -1059,4 +1092,163 @@ function refreshSite() {
     const url = new URL(window.location.href);
     url.searchParams.set("v", Date.now());
     window.location.href = url.toString();
+}
+
+function getRidingCharactersArray() {
+    if (Array.isArray(ridingInfoData)) return ridingInfoData;
+    if (Array.isArray(ridingInfoData?.characters)) return ridingInfoData.characters;
+    return [];
+}
+
+function normalizeRidingName(value) {
+    return String(value ?? "")
+        .toLowerCase()
+        .replace(/[［\[]/g, "(")
+        .replace(/[］\]]/g, ")")
+        .replace(/\s+/g, "")
+        .trim();
+}
+
+function findPetForRiding(petName) {
+    const targetKey = normalizeRidingName(petName);
+
+    if (!targetKey) return null;
+
+    return petData.find(pet => normalizeRidingName(pet.name) === targetKey) ||
+           petData.find(pet => normalizeRidingName(pet.name).includes(targetKey)) ||
+           petData.find(pet => targetKey.includes(normalizeRidingName(pet.name))) ||
+           null;
+}
+
+function getRidingPetNames(characterInfo) {
+    if (Array.isArray(characterInfo.pets)) {
+        return characterInfo.pets;
+    }
+
+    return [
+        ...(characterInfo.matchedPets || []),
+        ...(characterInfo.unmatchedPets || [])
+    ];
+}
+
+function renderRidingPetCard(petName) {
+    const pet = findPetForRiding(petName);
+
+    if (!pet) {
+        return `
+            <div class="riding-pet-card unmatched">
+                <div class="thumb-wrap">
+                    <span class="fallback-emoji">❓</span>
+                </div>
+
+                <div>
+                    <div class="riding-pet-name">${escapeHtml(petName)}</div>
+                    <div class="riding-unmatched-label">이미지 미매칭</div>
+                </div>
+            </div>
+        `;
+    }
+
+    const elemText = Object.entries(pet.elem || {})
+        .filter(([_, value]) => Number(value) > 0)
+        .map(([key, value]) => `${key}${value}`)
+        .join(" / ");
+
+    return `
+        <div class="riding-pet-card">
+            ${renderThumb(pet, pet.emoji || "🐾")}
+
+            <div>
+                <div class="riding-pet-name">${escapeHtml(pet.name)}</div>
+                <div class="riding-pet-sub">
+                    ${escapeHtml(elemText || pet.sub || "")}
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderRidingInfo() {
+    const area = document.getElementById('resultArea');
+    area.innerHTML = "";
+
+    const characterQuery = document.getElementById('ridingCharacter')?.value.trim().toLowerCase() || "";
+    const petQuery = document.getElementById('ridingPetName')?.value.trim().toLowerCase() || "";
+    const viewMode = document.getElementById('ridingViewMode')?.value || "all";
+    const sortMode = document.getElementById('ridingSortMode')?.value || "character";
+
+    let characters = getRidingCharactersArray()
+        .map(characterInfo => {
+            let petNames = getRidingPetNames(characterInfo);
+
+            if (petQuery) {
+                petNames = petNames.filter(name => safeText(name).includes(petQuery));
+            }
+
+            if (viewMode === "matched") {
+                petNames = petNames.filter(name => !!findPetForRiding(name));
+            } else if (viewMode === "unmatched") {
+                petNames = petNames.filter(name => !findPetForRiding(name));
+            }
+
+            return {
+                ...characterInfo,
+                displayPets: petNames
+            };
+        })
+        .filter(characterInfo => {
+            const matchCharacter =
+                characterQuery === "" ||
+                safeText(characterInfo.character).includes(characterQuery) ||
+                safeText(characterInfo.title).includes(characterQuery);
+
+            return matchCharacter && characterInfo.displayPets.length > 0;
+        });
+
+    if (sortMode === "count") {
+        characters.sort((a, b) => b.displayPets.length - a.displayPets.length);
+    } else {
+        characters.sort((a, b) => String(a.character || "").localeCompare(String(b.character || ""), "ko"));
+    }
+
+    if (characters.length === 0) {
+        renderEmptyMessage("탑승펫 안내 검색 결과가 없습니다.");
+        return;
+    }
+
+    const totalPetRefs = characters.reduce((sum, item) => sum + item.displayPets.length, 0);
+
+    area.innerHTML += `
+        <div class="rank-summary" style="border-color:#14b8a6;">
+            <strong style="color:#14b8a6;">탑승펫 안내</strong><br>
+            검색된 캐릭터: ${characters.length}명 · 표시된 탑승펫: ${totalPetRefs}개<br>
+            펫 이미지는 기존 pets.json의 imageUrl을 기준으로 표시합니다.
+        </div>
+    `;
+
+    characters.forEach(characterInfo => {
+        const petCardsHtml = characterInfo.displayPets
+            .map(name => renderRidingPetCard(name))
+            .join("");
+
+        area.innerHTML += `
+            <div class="card riding-card">
+                <div class="riding-title">
+                    <div class="riding-character-name">
+                        ${escapeHtml(characterInfo.character || characterInfo.title || "")}
+                    </div>
+
+                    <div class="riding-count-badge">
+                        탑승펫 ${characterInfo.displayPets.length}개
+                    </div>
+                </div>
+
+                <div class="riding-pet-grid">
+                    ${petCardsHtml}
+                </div>
+
+                ${characterInfo.source ? `<a class="source-link" href="${escapeHtml(characterInfo.source)}" target="_blank" rel="noopener">원본 보기</a>` : ""}
+            </div>
+        `;
+    });
 }

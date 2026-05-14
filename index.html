@@ -23,7 +23,8 @@
         <button id="petBtn" class="nav-btn active-pet" onclick="switchTab('pet')">🐾 페트 검색</button>
         <button id="itemBtn" class="nav-btn" onclick="switchTab('item')">⚔️ 아이템 검색</button>
         <button id="rankBtn" class="nav-btn" onclick="switchTab('rank')">🏆 펫 랭킹</button>
-        <button id="radontaBtn" class="nav-btn" onclick="switchTab('radonta')">🗼 라돈타 공략</button>
+        <button id="radontaBtn" class="nav-btn" onclick="switchTab('radonta')">🗼 라돈타 공략
+	<button id="ridingBtn" class="nav-btn" onclick="switchTab('riding')">🦖 탑승펫 안내</button></button>
     </div>
 
     <div id="petSearchPanel" class="search-panel">
@@ -198,6 +199,42 @@
             <button class="btn-search" onclick="doSearch()" style="background:var(--radonta-color)">공략 보기</button>
         </div>
     </div>
+
+<div id="ridingSearchPanel" class="search-panel" style="display:none;">
+    <div class="search-row row-4">
+        <div class="search-group">
+            <label>캐릭터 이름</label>
+            <input type="text" id="ridingCharacter" placeholder="예: 툰가, 꼬맹이, 울보소녀">
+        </div>
+
+        <div class="search-group">
+            <label>펫 이름</label>
+            <input type="text" id="ridingPetName" placeholder="예: 백호, 디어룬, 현무">
+        </div>
+
+        <div class="search-group">
+            <label>표시 방식</label>
+            <select id="ridingViewMode">
+                <option value="all">전체 보기</option>
+                <option value="matched">이미지 있는 펫만</option>
+                <option value="unmatched">미매칭만</option>
+            </select>
+        </div>
+
+        <div class="search-group">
+            <label>정렬</label>
+            <select id="ridingSortMode">
+                <option value="character">캐릭터명순</option>
+                <option value="count">탑승펫 많은순</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="search-actions">
+        <button class="btn-reset" onclick="resetSearch()">초기화</button>
+        <button class="btn-search" onclick="doSearch()" style="background:#14b8a6">탑승펫 보기</button>
+    </div>
+</div>
 
     <div id="resultArea"></div>
 </div>

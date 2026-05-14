@@ -985,3 +985,135 @@ select:focus {
         font-size: 0.52rem;
     }
 }
+
+.nav-btn.active-riding {
+    background: #14b8a6;
+    color: #0f172a;
+    border-color: #14b8a6;
+}
+
+.riding-card {
+    grid-column: 1 / -1;
+    border-left: 5px solid #14b8a6;
+}
+
+.riding-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.riding-character-name {
+    color: #5eead4;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.riding-count-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #0f172a;
+    border: 1px solid #14b8a6;
+    color: #99f6e4;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.riding-pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.riding-pet-card {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+}
+
+.riding-pet-card.unmatched {
+    opacity: 0.72;
+    border-style: dashed;
+}
+
+.riding-pet-card .thumb-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+}
+
+.riding-pet-name {
+    color: #fff;
+    font-size: 0.86rem;
+    font-weight: bold;
+    line-height: 1.35;
+    word-break: keep-all;
+}
+
+.riding-pet-sub {
+    color: var(--text-sub);
+    font-size: 0.68rem;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+
+.riding-unmatched-label {
+    color: #fb7185;
+    font-size: 0.65rem;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+    .riding-title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .riding-character-name {
+        font-size: 1.05rem;
+    }
+
+    .riding-pet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .riding-pet-card {
+        padding: 8px;
+        gap: 7px;
+    }
+
+    .riding-pet-card .thumb-wrap {
+        width: 46px;
+        height: 46px;
+    }
+
+    .riding-pet-name {
+        font-size: 0.78rem;
+    }
+
+    .riding-pet-sub {
+        font-size: 0.62rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #ridingSearchPanel .row-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .riding-pet-grid {
+        grid-template-columns: 1fr;
+    }
+}
