@@ -1074,6 +1074,43 @@ select:focus {
     margin-top: 3px;
 }
 
+.riding-pet-card.hidden-extra {
+    border-color: #fbbf24;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.16), #0f172a 65%);
+    box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.22), 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.riding-hidden-extra-label {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 2px 6px;
+    border-radius: 999px;
+    background: #fbbf24;
+    color: #111827;
+    font-size: 0.62rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.riding-hidden-character-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #fbbf24;
+    color: #111827;
+    font-size: 0.7rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.riding-base-character-note {
+    margin-top: 4px;
+    color: #fef3c7;
+    font-size: 0.74rem;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .riding-title {
         align-items: flex-start;

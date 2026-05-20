@@ -13,6 +13,19 @@ const PET_NAME_ALIASES = {
     "쿠루로": "쿠로로"
 };
 
+const MANUAL_HIDDEN_CHARACTERS = [
+    {
+        character: "울보소녀(히든)",
+        baseCharacter: "울보소녀",
+        extraPets: ["예르체", "풍백"]
+    },
+    {
+        character: "석기미남(히든)",
+        baseCharacter: "석기미남",
+        extraPets: ["풍백"]
+    }
+];
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -89,12 +102,9 @@ function buildPetLookup(pets) {
 }
 
 function matchPetName(name, petLookup) {
-    const originalKey = normalizeName(name);
-    const aliasTarget = PET_NAME_ALIASES[name] || PET_NAME_ALIASES[originalKey] || "";
-    const key = aliasTarget ? normalizeName(aliasTarget) : originalKey;
+    const pet = findPetByRidingName(name, petLookup);
 
-    if (petLookup.has(key)) {
-        const pet = petLookup.get(key);
+    if (pet) {
         return {
             matched: true,
             matchedName: pet.name
@@ -106,6 +116,88 @@ function matchPetName(name, petLookup) {
         matchedName: ""
     };
 }
+
+function findPetByRidingName(name, petLookup) {
+    const originalKey = normalizeName(name);
+    const aliasTarget = PET_NAME_ALIASES[name] || PET_NAME_ALIASES[originalKey] || "";
+    const key = aliasTarget ? normalizeName(aliasTarget) : originalKey;
+
+    if (!key) return null;
+
+    if (petLookup.has(key)) {
+        return petLookup.get(key);
+    }
+
+    for (const pet of petLookup.values()) {
+        const petKey = normalizeName(pet.name);
+        if (petKey && (petKey.includes(key) || key.includes(petKey))) {
+            return pet;
+        }
+    }
+
+    return null;
+}
+
+function buildRidingMatchLists(petNames, petLookup) {
+    const matchedPets = [];
+    const unmatchedPets = [];
+
+    for (const name of petNames) {
+        const pet = findPetByRidingName(name, petLookup);
+
+        if (pet) {
+            matchedPets.push(pet.name);
+        } else {
+            unmatchedPets.push(name);
+        }
+    }
+
+    return {
+        matchedPets: uniqueArray(matchedPets),
+        unmatchedPets: uniqueArray(unmatchedPets)
+    };
+}
+
+function applyManualHiddenCharacters(characters, petLookup) {
+    const result = characters.filter(characterInfo => {
+        return !MANUAL_HIDDEN_CHARACTERS.some(hidden => hidden.character === characterInfo.character);
+    });
+
+    for (const hidden of MANUAL_HIDDEN_CHARACTERS) {
+        const base = result.find(characterInfo => characterInfo.character === hidden.baseCharacter);
+
+        if (!base) {
+            console.log(`[WARN] 히든 캐릭터 기준 데이터를 찾지 못했습니다: ${hidden.baseCharacter}`);
+            continue;
+        }
+
+        const petNames = uniqueArray([...(base.pets || []), ...hidden.extraPets]);
+        const { matchedPets, unmatchedPets } = buildRidingMatchLists(petNames, petLookup);
+
+        result.push({
+            ...base,
+            character: hidden.character,
+            title: `${hidden.character} 탑승 정보`,
+            hidden: true,
+            baseCharacter: hidden.baseCharacter,
+            hiddenExtraPets: hidden.extraPets,
+            petCount: petNames.length,
+            matchedCount: matchedPets.length,
+            unmatchedCount: unmatchedPets.length,
+            pets: petNames,
+            matchedPets,
+            unmatchedPets
+        });
+
+        console.log(
+            `[MANUAL] ${hidden.character}: ${petNames.length}개 ` +
+            `(히든 추가 ${hidden.extraPets.join(", ")})`
+        );
+    }
+
+    return result;
+}
+
 async function gotoWithRetry(page, url, options = {}) {
     const maxTry = 3;
 
@@ -409,22 +501,24 @@ async function main() {
 
     await browser.close();
 
-    characters.sort((a, b) => a.character.localeCompare(b.character, "ko"));
+    const finalCharacters = applyManualHiddenCharacters(characters, petLookup)
+        .sort((a, b) => a.character.localeCompare(b.character, "ko"));
 
-    const totalPetRefs = characters.reduce((sum, item) => sum + item.petCount, 0);
-    const totalMatched = characters.reduce((sum, item) => sum + item.matchedCount, 0);
-    const totalUnmatched = characters.reduce((sum, item) => sum + item.unmatchedCount, 0);
+    const totalPetRefs = finalCharacters.reduce((sum, item) => sum + item.petCount, 0);
+    const totalMatched = finalCharacters.reduce((sum, item) => sum + item.matchedCount, 0);
+    const totalUnmatched = finalCharacters.reduce((sum, item) => sum + item.unmatchedCount, 0);
 
     const output = {
         summary: {
             generatedAt: new Date().toISOString(),
             sourceBoard: BOARD_URL,
-            characterCount: characters.length,
+            characterCount: finalCharacters.length,
             totalPetRefs,
             totalMatched,
-            totalUnmatched
+            totalUnmatched,
+            manualHiddenCharacterCount: MANUAL_HIDDEN_CHARACTERS.length
         },
-        characters
+        characters: finalCharacters
     };
 
     fs.writeFileSync(OUT_JSON, JSON.stringify(output, null, 2), "utf-8");

@@ -1132,18 +1132,36 @@ function getRidingPetNames(characterInfo) {
     ];
 }
 
-function renderRidingPetCard(petName) {
+function isRidingHiddenExtraPet(characterInfo, petName) {
+    const extras = Array.isArray(characterInfo?.hiddenExtraPets)
+        ? characterInfo.hiddenExtraPets
+        : [];
+
+    const petKey = normalizeRidingName(petName);
+
+    return extras.some(extraName => {
+        const extraKey = normalizeRidingName(extraName);
+        return extraKey && (petKey === extraKey || petKey.includes(extraKey) || extraKey.includes(petKey));
+    });
+}
+
+function renderRidingPetCard(petName, isHiddenExtra = false) {
     const pet = findPetForRiding(petName);
+    const hiddenClass = isHiddenExtra ? " hidden-extra" : "";
+    const hiddenLabel = isHiddenExtra
+        ? `<div class="riding-hidden-extra-label">히든 추가 탑승</div>`
+        : "";
 
     if (!pet) {
         return `
-            <div class="riding-pet-card unmatched">
+            <div class="riding-pet-card unmatched${hiddenClass}">
                 <div class="thumb-wrap">
                     <span class="fallback-emoji">❓</span>
                 </div>
 
                 <div>
                     <div class="riding-pet-name">${escapeHtml(petName)}</div>
+                    ${hiddenLabel}
                     <div class="riding-unmatched-label">이미지 미매칭</div>
                 </div>
             </div>
@@ -1156,11 +1174,12 @@ function renderRidingPetCard(petName) {
         .join(" / ");
 
     return `
-        <div class="riding-pet-card">
+        <div class="riding-pet-card${hiddenClass}">
             ${renderThumb(pet, pet.emoji || "🐾")}
 
             <div>
                 <div class="riding-pet-name">${escapeHtml(pet.name)}</div>
+                ${hiddenLabel}
                 <div class="riding-pet-sub">
                     ${escapeHtml(elemText || pet.sub || "")}
                 </div>
@@ -1229,14 +1248,26 @@ function renderRidingInfo() {
 
     characters.forEach(characterInfo => {
         const petCardsHtml = characterInfo.displayPets
-            .map(name => renderRidingPetCard(name))
+            .map(name => renderRidingPetCard(name, isRidingHiddenExtraPet(characterInfo, name)))
             .join("");
+
+        const hiddenBadgeHtml = characterInfo.hidden
+            ? `<span class="riding-hidden-character-badge">히든</span>`
+            : "";
+
+        const baseCharacterHtml = characterInfo.hidden && characterInfo.baseCharacter
+            ? `<div class="riding-base-character-note">기준: ${escapeHtml(characterInfo.baseCharacter)} + 히든 추가 탑승펫</div>`
+            : "";
 
         area.innerHTML += `
             <div class="card riding-card">
                 <div class="riding-title">
-                    <div class="riding-character-name">
-                        ${escapeHtml(characterInfo.character || characterInfo.title || "")}
+                    <div>
+                        <div class="riding-character-name">
+                            ${escapeHtml(characterInfo.character || characterInfo.title || "")}
+                            ${hiddenBadgeHtml}
+                        </div>
+                        ${baseCharacterHtml}
                     </div>
 
                     <div class="riding-count-badge">
