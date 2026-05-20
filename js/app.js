@@ -95,6 +95,7 @@ try {
 
     loadData();
     setupEnterKeySearch();
+    setupGlobalClickHandlers();
 
     function setupEnterKeySearch() {
         document.querySelectorAll('.search-panel input').forEach(input => {
@@ -104,6 +105,43 @@ try {
                     doSearch();
                 }
             });
+        });
+    }
+
+    function setupGlobalClickHandlers() {
+        document.addEventListener('click', event => {
+            const rankButton = event.target.closest('[data-action="pet-ranking"]');
+
+            if (!rankButton) return;
+
+            event.preventDefault();
+            openPetRanking(rankButton.dataset.petName || '');
+        });
+    }
+
+    function openPetRanking(petName) {
+        const name = String(petName || '').trim();
+
+        if (!name) return;
+
+        switchTab('rank');
+
+        const rankPetNameInput = document.getElementById('rankPetName');
+        const rankMetricSelect = document.getElementById('rankMetric');
+
+        if (rankPetNameInput) {
+            rankPetNameInput.value = name;
+        }
+
+        if (rankMetricSelect) {
+            rankMetricSelect.value = 'combatPower';
+        }
+
+        doSearch();
+
+        document.getElementById('rankSearchPanel')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
     }
 
@@ -695,7 +733,10 @@ try {
                         </div>
                     </div>
 
-                    ${p.source ? `<a class="source-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
+                    <div class="pet-card-actions">
+                        ${p.source ? `<a class="source-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener">원본 보기</a>` : ''}
+                        <button type="button" class="source-link pet-rank-link" data-action="pet-ranking" data-pet-name="${escapeHtml(p.name || '')}">랭킹 보기</button>
+                    </div>
                 </div>
             `;
         });
@@ -1060,6 +1101,7 @@ const mobileCard = renderMobileRankCard(row, displayRank, comparison);
 window.switchTab = switchTab;
 window.resetSearch = resetSearch;
 window.doSearch = doSearch;
+window.openPetRanking = openPetRanking;
 
 async function shareSite() {
     const shareUrl = `${window.location.origin}${window.location.pathname}`;

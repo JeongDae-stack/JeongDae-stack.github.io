@@ -1154,3 +1154,32 @@ select:focus {
         grid-template-columns: 1fr;
     }
 }
+
+.pet-card-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pet-card-actions .source-link {
+    margin-top: 0;
+}
+
+button.source-link {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.pet-rank-link {
+    color: var(--rank-color);
+    font-weight: bold;
+}
+
+.pet-rank-link:hover {
+    color: #c4b5fd;
+}
