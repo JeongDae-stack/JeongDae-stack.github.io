@@ -99,6 +99,10 @@ body {
     grid-template-columns: 1fr;
 }
 
+.row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .row-4 {
     grid-template-columns: repeat(4, 1fr);
 }
@@ -548,6 +552,7 @@ select:focus {
         padding: 16px;
     }
 
+    .row-3,
     .row-4,
     .row-5 {
         grid-template-columns: repeat(2, 1fr);
@@ -1182,4 +1187,10 @@ button.source-link {
 
 .pet-rank-link:hover {
     color: #c4b5fd;
+}
+
+@media (max-width: 420px) {
+    #petSearchPanel .row-3 {
+        grid-template-columns: 1fr;
+    }
 }

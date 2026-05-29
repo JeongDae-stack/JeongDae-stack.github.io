@@ -581,6 +581,44 @@ try {
         return labels[metric] || metric;
     }
 
+    function parsePetNameQueries() {
+        const fields = [
+            document.getElementById('pName1')?.value || '',
+            document.getElementById('pName2')?.value || '',
+            document.getElementById('pName3')?.value || ''
+        ];
+
+        return fields
+            .map(value => value.trim())
+            .filter(Boolean)
+            .slice(0, 3);
+    }
+
+    function findBestPetNameMatch(pets, query) {
+        const normalizedQuery = safeText(query).trim();
+
+        if (!normalizedQuery) return null;
+
+        return pets.find(pet => safeText(pet.name).trim() === normalizedQuery) ||
+               pets.find(pet => safeText(pet.name).includes(normalizedQuery)) ||
+               null;
+    }
+
+    function uniquePetsByName(pets) {
+        const seen = new Set();
+        const result = [];
+
+        pets.forEach(pet => {
+            const key = safeText(pet.name).trim();
+            if (!key || seen.has(key)) return;
+
+            seen.add(key);
+            result.push(pet);
+        });
+
+        return result;
+    }
+
     function doSearch() {
         const area = document.getElementById('resultArea');
         area.innerHTML = "";
@@ -620,9 +658,9 @@ try {
 
     function searchPets() {
         const area = document.getElementById('resultArea');
+        const petNameQueries = parsePetNameQueries();
 
         const filters = {
-            name: document.getElementById('pName').value.toLowerCase(),
             지: parseInt(document.getElementById('eJi').value) || 0,
             수: parseInt(document.getElementById('eSu').value) || 0,
             화: parseInt(document.getElementById('eHwa').value) || 0,
@@ -639,20 +677,28 @@ try {
         const sortLabel = getPetSortLabel(sortMetric);
         const sortOrderLabel = sortOrder === 'asc' ? '낮은순' : '높은순';
 
-        const filtered = petData
-            .filter(p => {
-                return safeText(p.name).includes(filters.name) &&
-                    (p.elem?.지 || 0) >= filters.지 &&
-                    (p.elem?.수 || 0) >= filters.수 &&
-                    (p.elem?.화 || 0) >= filters.화 &&
-                    (p.elem?.풍 || 0) >= filters.풍 &&
-                    (p.stats?.atk || 0) >= filters.atk &&
-                    (p.stats?.def || 0) >= filters.def &&
-                    (p.stats?.agi || 0) >= filters.agi &&
-                    (p.stats?.hp || 0) >= filters.hp &&
-                    (p.total || 0) >= filters.total;
-            })
-            .sort((a, b) => {
+        const baseFiltered = petData.filter(p => {
+            return (p.elem?.지 || 0) >= filters.지 &&
+                (p.elem?.수 || 0) >= filters.수 &&
+                (p.elem?.화 || 0) >= filters.화 &&
+                (p.elem?.풍 || 0) >= filters.풍 &&
+                (p.stats?.atk || 0) >= filters.atk &&
+                (p.stats?.def || 0) >= filters.def &&
+                (p.stats?.agi || 0) >= filters.agi &&
+                (p.stats?.hp || 0) >= filters.hp &&
+                (p.total || 0) >= filters.total;
+        });
+
+        let filtered;
+
+        if (petNameQueries.length > 0) {
+            filtered = uniquePetsByName(
+                petNameQueries
+                    .map(query => findBestPetNameMatch(baseFiltered, query))
+                    .filter(Boolean)
+            );
+        } else {
+            filtered = [...baseFiltered].sort((a, b) => {
                 const aValue = Number(getPetValueByPath(a, sortMetric) || 0);
                 const bValue = Number(getPetValueByPath(b, sortMetric) || 0);
 
@@ -662,16 +708,20 @@ try {
 
                 return bValue - aValue;
             });
+        }
 
         if (filtered.length === 0) {
             renderEmptyMessage("검색 결과가 없습니다.");
             return;
         }
 
+        const petNameSummary = petNameQueries.length > 0
+            ? ` · 이름 검색: <strong>${escapeHtml(petNameQueries.join(', '))}</strong> · 최대 3마리 표시`
+            : ` · 정렬 기준: <strong>${escapeHtml(sortLabel)} ${escapeHtml(sortOrderLabel)}</strong>`;
+
         area.innerHTML += `
             <div class="rank-summary" style="border-color:var(--primary);">
-                검색 결과: <strong>${filtered.length}</strong>개 ·
-                정렬 기준: <strong>${escapeHtml(sortLabel)} ${escapeHtml(sortOrderLabel)}</strong>
+                검색 결과: <strong>${filtered.length}</strong>개${petNameSummary}
             </div>
         `;
 
