@@ -594,14 +594,30 @@ try {
             .slice(0, 3);
     }
 
-    function findBestPetNameMatch(pets, query) {
+    function getPetNameMatches(pets, query, sortMetric, sortOrder) {
         const normalizedQuery = safeText(query).trim();
 
-        if (!normalizedQuery) return null;
+        if (!normalizedQuery) return [];
 
-        return pets.find(pet => safeText(pet.name).trim() === normalizedQuery) ||
-               pets.find(pet => safeText(pet.name).includes(normalizedQuery)) ||
-               null;
+        return pets
+            .filter(pet => safeText(pet.name).includes(normalizedQuery))
+            .sort((a, b) => {
+                const aExact = safeText(a.name).trim() === normalizedQuery ? 1 : 0;
+                const bExact = safeText(b.name).trim() === normalizedQuery ? 1 : 0;
+
+                if (aExact !== bExact) {
+                    return bExact - aExact;
+                }
+
+                const aValue = Number(getPetValueByPath(a, sortMetric) || 0);
+                const bValue = Number(getPetValueByPath(b, sortMetric) || 0);
+
+                if (aValue !== bValue) {
+                    return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
+                }
+
+                return String(a.name || '').localeCompare(String(b.name || ''), 'ko');
+            });
     }
 
     function uniquePetsByName(pets) {
@@ -693,9 +709,7 @@ try {
 
         if (petNameQueries.length > 0) {
             filtered = uniquePetsByName(
-                petNameQueries
-                    .map(query => findBestPetNameMatch(baseFiltered, query))
-                    .filter(Boolean)
+                petNameQueries.flatMap(query => getPetNameMatches(baseFiltered, query, sortMetric, sortOrder))
             );
         } else {
             filtered = [...baseFiltered].sort((a, b) => {
@@ -716,7 +730,7 @@ try {
         }
 
         const petNameSummary = petNameQueries.length > 0
-            ? ` · 이름 검색: <strong>${escapeHtml(petNameQueries.join(', '))}</strong> · 최대 3마리 표시`
+            ? ` · 이름 검색: <strong>${escapeHtml(petNameQueries.join(', '))}</strong> · 포함 이름 전체 표시 · 정렬: <strong>${escapeHtml(sortLabel)} ${escapeHtml(sortOrderLabel)}</strong>`
             : ` · 정렬 기준: <strong>${escapeHtml(sortLabel)} ${escapeHtml(sortOrderLabel)}</strong>`;
 
         area.innerHTML += `
