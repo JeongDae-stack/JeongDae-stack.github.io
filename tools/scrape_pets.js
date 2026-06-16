@@ -233,13 +233,22 @@ async function getPageInfo(page) {
 async function main() {
     fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
 
-    const browser = await puppeteer.launch({
-        headless: false,
-        defaultViewport: {
-            width: 1280,
-            height: 900,
-        },
-    });
+const browser = await puppeteer.launch({
+    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    headless: false,
+    userDataDir: path.join(__dirname, "..", "tmp", "puppeteer-chrome-profile"),
+    defaultViewport: {
+        width: 1280,
+        height: 900,
+    },
+    args: [
+        '--no-first-run',
+        '--no-default-browser-check',
+        '--disable-extensions',
+        '--disable-gpu',
+        '--disable-dev-shm-usage'
+    ],
+});
 
     const page = await browser.newPage();
 
