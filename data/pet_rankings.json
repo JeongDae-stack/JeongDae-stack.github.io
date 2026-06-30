@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-06-28T23:42:41.263Z",
+    "generatedAt": "2026-06-30T04:00:04.633Z",
     "petCount": 609,
-    "petsWithRanking": 546,
-    "totalRankingRows": 1556,
+    "petsWithRanking": 547,
+    "totalRankingRows": 1558,
     "combatPowerFormula": "atk + def + agi + (hp / 4)"
   },
   "pets": [
@@ -119,13 +119,13 @@
         },
         {
           "rank": 3,
-          "nickname": "요다",
-          "level": 146,
-          "atk": 332,
-          "def": 319,
-          "agi": 130,
-          "hp": 1712,
-          "combatPower": 1209,
+          "nickname": "원",
+          "level": 147,
+          "atk": 334,
+          "def": 322,
+          "agi": 131,
+          "hp": 1723,
+          "combatPower": 1217.75,
           "combatPowerType": "calculated"
         }
       ]
@@ -877,7 +877,7 @@
         },
         {
           "rank": 2,
-          "nickname": "즐방",
+          "nickname": "사장님",
           "level": 141,
           "atk": 290,
           "def": 194,
@@ -1406,6 +1406,17 @@
         },
         {
           "rank": 2,
+          "nickname": "끌로에",
+          "level": 148,
+          "atk": 326,
+          "def": 181,
+          "agi": 287,
+          "hp": 1538,
+          "combatPower": 1178.5,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 3,
           "nickname": "페인",
           "level": 148,
           "atk": 326,
@@ -1413,17 +1424,6 @@
           "agi": 285,
           "hp": 1541,
           "combatPower": 1178.25,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 3,
-          "nickname": "랑방",
-          "level": 147,
-          "atk": 324,
-          "def": 180,
-          "agi": 285,
-          "hp": 1527,
-          "combatPower": 1170.75,
           "combatPowerType": "calculated"
         }
       ]
@@ -1663,7 +1663,7 @@
         },
         {
           "rank": 3,
-          "nickname": "성곰",
+          "nickname": "앙대핑",
           "level": 148,
           "atk": 371,
           "def": 159,
@@ -1778,13 +1778,13 @@
         },
         {
           "rank": 2,
-          "nickname": "뿌치",
-          "level": 131,
-          "atk": 332,
-          "def": 274,
-          "agi": 144,
-          "hp": 1531,
-          "combatPower": 1132.75,
+          "nickname": "Herakles",
+          "level": 133,
+          "atk": 337,
+          "def": 278,
+          "agi": 146,
+          "hp": 1553,
+          "combatPower": 1149.25,
           "combatPowerType": "calculated"
         }
       ]
@@ -1811,13 +1811,13 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "Archon",
-          "level": 129,
-          "atk": 310,
-          "def": 255,
-          "agi": 148,
-          "hp": 1409,
-          "combatPower": 1065.25,
+          "nickname": "전가",
+          "level": 125,
+          "atk": 302,
+          "def": 242,
+          "agi": 144,
+          "hp": 1370,
+          "combatPower": 1030.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -1830,7 +1830,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "차코차코",
+          "nickname": "차코",
           "level": 148,
           "atk": 375,
           "def": 315,
@@ -1848,6 +1848,17 @@
           "agi": 159,
           "hp": 1477,
           "combatPower": 1136.25,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 3,
+          "nickname": "Archon",
+          "level": 125,
+          "atk": 318,
+          "def": 268,
+          "agi": 150,
+          "hp": 1462,
+          "combatPower": 1101.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -1879,23 +1890,23 @@
         {
           "rank": 2,
           "nickname": "차코",
-          "level": 143,
-          "atk": 370,
-          "def": 299,
-          "agi": 156,
-          "hp": 1672,
-          "combatPower": 1243,
+          "level": 147,
+          "atk": 380,
+          "def": 307,
+          "agi": 160,
+          "hp": 1718,
+          "combatPower": 1276.5,
           "combatPowerType": "calculated"
         },
         {
           "rank": 3,
           "nickname": "성곰",
-          "level": 142,
-          "atk": 366,
-          "def": 302,
-          "agi": 141,
-          "hp": 1663,
-          "combatPower": 1224.75,
+          "level": 148,
+          "atk": 380,
+          "def": 315,
+          "agi": 147,
+          "hp": 1729,
+          "combatPower": 1274.25,
           "combatPowerType": "calculated"
         }
       ]
@@ -1979,7 +1990,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "현신",
+          "nickname": "하나님",
           "level": 145,
           "atk": 365,
           "def": 216,
@@ -2682,12 +2693,12 @@
         {
           "rank": 2,
           "nickname": "깔쌈한소년",
-          "level": 126,
-          "atk": 271,
-          "def": 184,
-          "agi": 208,
-          "hp": 1307,
-          "combatPower": 989.75,
+          "level": 127,
+          "atk": 273,
+          "def": 185,
+          "agi": 210,
+          "hp": 1318,
+          "combatPower": 997.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -2741,6 +2752,17 @@
       "rankings": [
         {
           "rank": 1,
+          "nickname": "각성",
+          "level": 148,
+          "atk": 299,
+          "def": 219,
+          "agi": 251,
+          "hp": 1405,
+          "combatPower": 1120.25,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 2,
           "nickname": "깜치",
           "level": 147,
           "atk": 297,
@@ -2748,17 +2770,6 @@
           "agi": 250,
           "hp": 1390,
           "combatPower": 1109.5,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 2,
-          "nickname": "각성",
-          "level": 146,
-          "atk": 295,
-          "def": 216,
-          "agi": 248,
-          "hp": 1386,
-          "combatPower": 1105.5,
           "combatPowerType": "calculated"
         },
         {
@@ -3878,7 +3889,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "도우마",
+          "nickname": "하늘다람쥐",
           "level": 142,
           "atk": 301,
           "def": 169,
@@ -4053,6 +4064,17 @@
         },
         {
           "rank": 2,
+          "nickname": "낭만",
+          "level": 146,
+          "atk": 348,
+          "def": 238,
+          "agi": 165,
+          "hp": 1680,
+          "combatPower": 1171,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 3,
           "nickname": "무",
           "level": 143,
           "atk": 341,
@@ -4060,17 +4082,6 @@
           "agi": 163,
           "hp": 1642,
           "combatPower": 1146.5,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 3,
-          "nickname": "낭만",
-          "level": 142,
-          "atk": 339,
-          "def": 231,
-          "agi": 161,
-          "hp": 1634,
-          "combatPower": 1139.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -4549,7 +4560,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "즐방",
+          "nickname": "무지개",
           "level": 141,
           "atk": 255,
           "def": 374,
@@ -5007,7 +5018,7 @@
         },
         {
           "rank": 2,
-          "nickname": "[하나]",
+          "nickname": "하나님",
           "level": 148,
           "atk": 366,
           "def": 246,
@@ -6778,7 +6789,7 @@
         },
         {
           "rank": 3,
-          "nickname": "Jazz",
+          "nickname": "Polaris",
           "level": 148,
           "atk": 357,
           "def": 220,
@@ -7617,13 +7628,13 @@
         },
         {
           "rank": 3,
-          "nickname": "우띠",
+          "nickname": "심장",
           "level": 148,
-          "atk": 344,
+          "atk": 342,
           "def": 200,
-          "agi": 256,
-          "hp": 1678,
-          "combatPower": 1219.5,
+          "agi": 254,
+          "hp": 1677,
+          "combatPower": 1215.25,
           "combatPowerType": "calculated"
         }
       ]
@@ -8773,7 +8784,7 @@
         },
         {
           "rank": 3,
-          "nickname": "럭키울보",
+          "nickname": "건쓰쓰",
           "level": 148,
           "atk": 355,
           "def": 184,
@@ -9601,7 +9612,7 @@
         },
         {
           "rank": 2,
-          "nickname": "담",
+          "nickname": "담이",
           "level": 148,
           "atk": 382,
           "def": 259,
@@ -10772,12 +10783,12 @@
         {
           "rank": 1,
           "nickname": "Noru",
-          "level": 140,
-          "atk": 341,
-          "def": 161,
-          "agi": 241,
-          "hp": 1474,
-          "combatPower": 1111.5,
+          "level": 145,
+          "atk": 352,
+          "def": 166,
+          "agi": 250,
+          "hp": 1526,
+          "combatPower": 1149.5,
           "combatPowerType": "calculated"
         },
         {
@@ -10894,7 +10905,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "킴",
+          "nickname": "Nagato",
           "level": 148,
           "atk": 372,
           "def": 176,
@@ -11028,7 +11039,7 @@
         },
         {
           "rank": 2,
-          "nickname": "담",
+          "nickname": "담이",
           "level": 143,
           "atk": 303,
           "def": 171,
@@ -11441,7 +11452,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "벤틀리",
+          "nickname": "흑곰",
           "level": 148,
           "atk": 350,
           "def": 232,
@@ -11534,6 +11545,17 @@
         },
         {
           "rank": 2,
+          "nickname": "난바",
+          "level": 140,
+          "atk": 309,
+          "def": 159,
+          "agi": 272,
+          "hp": 1418,
+          "combatPower": 1094.5,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 3,
           "nickname": "전요환",
           "level": 140,
           "atk": 305,
@@ -11541,17 +11563,6 @@
           "agi": 278,
           "hp": 1371,
           "combatPower": 1081.75,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 3,
-          "nickname": "시대미남",
-          "level": 140,
-          "atk": 305,
-          "def": 156,
-          "agi": 278,
-          "hp": 1363,
-          "combatPower": 1079.75,
           "combatPowerType": "calculated"
         }
       ]
@@ -11919,7 +11930,19 @@
       "sub": "충전 보상",
       "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=842&sst=wr_hit&sod=asc&sop=and&page=2",
       "imageUrl": "https://www.hwansoo.top/data/file/pets/801de85d8ced8d2a7a26cd01437b0ff5_C1nWMVus_3a27990ab04b124e549a61d98da843c7ace3d029.webp",
-      "rankings": []
+      "rankings": [
+        {
+          "rank": 1,
+          "nickname": "아줌마",
+          "level": 123,
+          "atk": 294,
+          "def": 131,
+          "agi": 239,
+          "hp": 1306,
+          "combatPower": 990.5,
+          "combatPowerType": "calculated"
+        }
+      ]
     },
     {
       "petName": "암흑천마(환)",
@@ -12410,12 +12433,12 @@
         {
           "rank": 2,
           "nickname": "차장",
-          "level": 141,
-          "atk": 306,
-          "def": 281,
-          "agi": 176,
-          "hp": 1551,
-          "combatPower": 1150.75,
+          "level": 142,
+          "atk": 308,
+          "def": 283,
+          "agi": 178,
+          "hp": 1562,
+          "combatPower": 1159.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -12573,7 +12596,7 @@
         },
         {
           "rank": 3,
-          "nickname": "봉",
+          "nickname": "mmnn",
           "level": 148,
           "atk": 333,
           "def": 261,
@@ -13337,7 +13360,7 @@
         },
         {
           "rank": 3,
-          "nickname": "카키닭",
+          "nickname": "쿠쿠닭",
           "level": 146,
           "atk": 354,
           "def": 175,
@@ -13460,13 +13483,13 @@
         },
         {
           "rank": 3,
-          "nickname": "땡글이",
-          "level": 145,
-          "atk": 364,
-          "def": 199,
-          "agi": 230,
-          "hp": 1635,
-          "combatPower": 1201.75,
+          "nickname": "치로",
+          "level": 146,
+          "atk": 366,
+          "def": 200,
+          "agi": 233,
+          "hp": 1642,
+          "combatPower": 1209.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -13521,12 +13544,12 @@
         {
           "rank": 1,
           "nickname": "이푸긴",
-          "level": 139,
-          "atk": 339,
-          "def": 198,
-          "agi": 206,
-          "hp": 1444,
-          "combatPower": 1104,
+          "level": 140,
+          "atk": 341,
+          "def": 199,
+          "agi": 207,
+          "hp": 1454,
+          "combatPower": 1110.5,
           "combatPowerType": "calculated"
         }
       ]
@@ -14052,7 +14075,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "만져",
+          "nickname": "빠삐코",
           "level": 148,
           "atk": 361,
           "def": 354,
@@ -14063,7 +14086,7 @@
         },
         {
           "rank": 2,
-          "nickname": "유파파",
+          "nickname": "khj",
           "level": 148,
           "atk": 360,
           "def": 355,
@@ -14112,12 +14135,12 @@
         {
           "rank": 2,
           "nickname": "무지개",
-          "level": 139,
-          "atk": 316,
-          "def": 156,
-          "agi": 240,
-          "hp": 1408,
-          "combatPower": 1064,
+          "level": 140,
+          "atk": 318,
+          "def": 157,
+          "agi": 242,
+          "hp": 1418,
+          "combatPower": 1071.5,
           "combatPowerType": "calculated"
         },
         {
@@ -14549,7 +14572,7 @@
         },
         {
           "rank": 2,
-          "nickname": "태권도",
+          "nickname": "Poseidon",
           "level": 148,
           "atk": 327,
           "def": 204,
@@ -15008,6 +15031,17 @@
       "rankings": [
         {
           "rank": 1,
+          "nickname": "김민정",
+          "level": 140,
+          "atk": 236,
+          "def": 342,
+          "agi": 119,
+          "hp": 1466,
+          "combatPower": 1063.5,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 2,
           "nickname": "♥♡♡♡♡♡♥",
           "level": 140,
           "atk": 236,
@@ -15018,7 +15052,7 @@
           "combatPowerType": "calculated"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "nickname": "RUGBY",
           "level": 140,
           "atk": 235,
@@ -15026,17 +15060,6 @@
           "agi": 114,
           "hp": 1459,
           "combatPower": 1056.75,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 3,
-          "nickname": "김민정",
-          "level": 135,
-          "atk": 228,
-          "def": 330,
-          "agi": 115,
-          "hp": 1415,
-          "combatPower": 1026.75,
           "combatPowerType": "calculated"
         }
       ]
@@ -15868,6 +15891,17 @@
       "rankings": [
         {
           "rank": 1,
+          "nickname": "유햇살",
+          "level": 144,
+          "atk": 250,
+          "def": 163,
+          "agi": 315,
+          "hp": 1332,
+          "combatPower": 1061,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 2,
           "nickname": "난장이",
           "level": 143,
           "atk": 249,
@@ -15875,17 +15909,6 @@
           "agi": 310,
           "hp": 1320,
           "combatPower": 1051,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 2,
-          "nickname": "유햇살",
-          "level": 142,
-          "atk": 247,
-          "def": 161,
-          "agi": 310,
-          "hp": 1314,
-          "combatPower": 1046.5,
           "combatPowerType": "calculated"
         },
         {
@@ -15909,7 +15932,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "이진",
+          "nickname": "백수",
           "level": 148,
           "atk": 280,
           "def": 184,
@@ -17240,7 +17263,7 @@
         },
         {
           "rank": 3,
-          "nickname": "랑방",
+          "nickname": "끌로에",
           "level": 148,
           "atk": 354,
           "def": 186,
@@ -19372,7 +19395,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "빈구",
+          "nickname": "연재아빠",
           "level": 148,
           "atk": 359,
           "def": 172,
@@ -19678,7 +19701,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "인연",
+          "nickname": "Poseidon",
           "level": 140,
           "atk": 333,
           "def": 166,
@@ -19749,7 +19772,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "주리",
+          "nickname": "빵빠레",
           "level": 148,
           "atk": 361,
           "def": 228,
@@ -19973,7 +19996,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "창",
+          "nickname": "복",
           "level": 148,
           "atk": 368,
           "def": 197,
@@ -20890,13 +20913,13 @@
         },
         {
           "rank": 3,
-          "nickname": "벽청의소라",
+          "nickname": "Archon",
           "level": 140,
-          "atk": 344,
-          "def": 188,
+          "atk": 350,
+          "def": 190,
           "agi": 208,
-          "hp": 1525,
-          "combatPower": 1121.25,
+          "hp": 1531,
+          "combatPower": 1130.75,
           "combatPowerType": "calculated"
         }
       ]
@@ -21133,7 +21156,7 @@
       "rankings": [
         {
           "rank": 1,
-          "nickname": "은채지",
+          "nickname": "골드런",
           "level": 148,
           "atk": 349,
           "def": 225,
@@ -21490,7 +21513,7 @@
         },
         {
           "rank": 3,
-          "nickname": "흑곰",
+          "nickname": "벤틀리",
           "level": 148,
           "atk": 350,
           "def": 370,
@@ -21650,7 +21673,7 @@
         },
         {
           "rank": 2,
-          "nickname": "바람의검심",
+          "nickname": "기유",
           "level": 140,
           "atk": 319,
           "def": 163,
@@ -21661,13 +21684,13 @@
         },
         {
           "rank": 3,
-          "nickname": "코쿠시보",
+          "nickname": "최달천",
           "level": 140,
-          "atk": 304,
-          "def": 156,
-          "agi": 242,
-          "hp": 1387,
-          "combatPower": 1048.75,
+          "atk": 319,
+          "def": 164,
+          "agi": 236,
+          "hp": 1400,
+          "combatPower": 1069,
           "combatPowerType": "calculated"
         }
       ]
@@ -21762,6 +21785,17 @@
       "rankings": [
         {
           "rank": 1,
+          "nickname": "Bong",
+          "level": 148,
+          "atk": 341,
+          "def": 191,
+          "agi": 273,
+          "hp": 1574,
+          "combatPower": 1198.5,
+          "combatPowerType": "calculated"
+        },
+        {
+          "rank": 2,
           "nickname": "O",
           "level": 148,
           "atk": 340,
@@ -21772,7 +21806,7 @@
           "combatPowerType": "calculated"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "nickname": "차코",
           "level": 148,
           "atk": 340,
@@ -21780,17 +21814,6 @@
           "agi": 271,
           "hp": 1570,
           "combatPower": 1194.5,
-          "combatPowerType": "calculated"
-        },
-        {
-          "rank": 3,
-          "nickname": "Bong",
-          "level": 147,
-          "atk": 339,
-          "def": 189,
-          "agi": 271,
-          "hp": 1563,
-          "combatPower": 1189.75,
           "combatPowerType": "calculated"
         }
       ]
