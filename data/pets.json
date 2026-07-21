@@ -1,6 +1,32 @@
 [
   {
     "name": "(신)백호",
+    "sub": "퀘스트",
+    "elem": {
+      "수": 3,
+      "지": 7
+    },
+    "total": 4.993,
+    "stats": {
+      "atk": 2.224,
+      "def": 1.327,
+      "agi": 1.442,
+      "hp": 10.231
+    },
+    "init": {
+      "atk": 12,
+      "def": 7,
+      "agi": 7,
+      "hp": 56
+    },
+    "ride": "탑승가능",
+    "grade": "일반",
+    "emoji": "🐅",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/c5b4e651a81cf83915d8ea890a5468c8_gX9kl1dn_c4d4eb069cb4a533a63766be366e8e18c4e1de86.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=889&sst=wr_hit&sod=asc&sop=and&page=1"
+  },
+  {
+    "name": "(신)백호",
     "sub": "신전에서 영웅의 길로",
     "elem": {
       "수": 3,
@@ -23,7 +49,33 @@
     "grade": "일반 등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ad5e6299fee1093bd87c1e324466aec1_YpsxZelP_e4955e5689529d3f8a36b48363efbac960884936.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=233&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=233&sst=wr_hit&sod=asc&sop=and&page=35"
+  },
+  {
+    "name": "(신)백호(환)",
+    "sub": "패트 환생",
+    "elem": {
+      "수": 3,
+      "지": 7
+    },
+    "total": 5.259,
+    "stats": {
+      "atk": 2.293,
+      "def": 1.483,
+      "agi": 1.483,
+      "hp": 10.667
+    },
+    "init": {
+      "atk": 12,
+      "def": 8,
+      "agi": 8,
+      "hp": 58
+    },
+    "ride": "탑승가능",
+    "grade": "일반",
+    "emoji": "🐅",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/7e9c64fef0cf5088498b885695533ffe_cHCl0jDy_ff4b92d687d86cadcd262ace4c174c246a456b9d.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=890&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "가가로스",
@@ -49,7 +101,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_lcQ2XDZ6_4ed0935a4a3003378a81fe5618f11003506af23e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=91&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=91&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "가가로스(환)",
@@ -101,7 +153,7 @@
     "grade": "일반등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3930ed98d6e582ec612690791da88a3d_4aSsibKc_206c071e8fe86f4936e20a276ecea2cdf3066819.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=170&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=170&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "가스트(환)",
@@ -257,7 +309,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8ba16f47b2e8001402c6c312ea37a219_TK9qRw8b_b10d1f51f34cfa309b82a2adb687caa217fc984e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=529&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=529&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "게이블",
@@ -283,7 +335,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3930ed98d6e582ec612690791da88a3d_QifFUMAH_d2b8795d4ad74b08564532ee79adcfe0d7806ea7.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=169&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=169&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "게이블(환)",
@@ -309,7 +361,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_9sWnfOUK_b60c47b967578db0701b07c8093910aae85fd36e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=730&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=730&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "격수",
@@ -332,10 +384,10 @@
       "hp": 52
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_rM7aUy9d_efda5f09b73f6caf8b27db431a334f38b1204821.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=883&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=883&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "격수",
@@ -365,7 +417,7 @@
   },
   {
     "name": "격수(환)",
-    "sub": "격수 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 7,
       "화": 3
@@ -384,10 +436,10 @@
       "hp": 55
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_DG4Jh7jC_cd56969822abab3bcff717779e1ef399e24f0e8f.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=884&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=884&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "고로",
@@ -491,7 +543,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_3um4CvFf_7179e0ab9ef4dfa22416dba36c5fc7971e8ec38a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=65&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=65&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "고르고르",
@@ -594,7 +646,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_LBYrxPv7_d37e0a23969f4f81fbdbb30dc567ecdd2b5ea448.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=62&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=62&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "고반케스",
@@ -672,7 +724,7 @@
     "grade": "1등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_jDMtVwoe_e6533b48c7794e9b1c43b0b61b4f6ab6062a3356.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=765&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=765&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "골드 테이노스",
@@ -724,7 +776,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_SbVsIeyH_ab3d5f62a6f9151ea64092cca0640532ce162836.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=753&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=753&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "골드로비",
@@ -750,7 +802,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ecfae02aa0cfd02ab48ccac4a8c8b4a_5euxiX67_a25f053ad73c95183c4f930bd712a68fdabf3e67.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=290&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=290&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "골드부비",
@@ -776,7 +828,7 @@
     "grade": "2등급",
     "emoji": "🐖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_AFwc9xGp_4d1c68e6ac78e1fc4072a41d808fcf7d30c4c004.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=13&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=13&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "골드카비트",
@@ -801,7 +853,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_seguTJqD_7caecb6e93b42b0cba58e20cd06ec44af6da7fee.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=61&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=61&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "골드테라곤",
@@ -827,7 +879,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_mwgj1HIS_2f4ee45b13495b02f03fd86a3a41929da15579fb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=113&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=113&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "골드테라곤(환)",
@@ -853,7 +905,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/08688fded9b5b54359a974ed202443b0_vGX7aHE1_c67982327b2d9b3764cc800c88edc797f91a1638.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=600&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=600&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "골로스",
@@ -879,7 +931,7 @@
     "grade": "1등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3f11fd55b38e184ce2a92c7e7976591b_cdvSsqRG_3ba43a2daad63e3f64c84ed5b51b7393cd4fcdff.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=531&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=531&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "골로스(진)",
@@ -905,7 +957,7 @@
     "grade": "1등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_xC7wXKJj_78876128a94146f2c08374f1ce0100b8d0cd899a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=532&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=532&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "골로스(환)",
@@ -931,7 +983,7 @@
     "grade": "1등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_h7gTI1p9_380b41b7061bfe32bfcc5f663b6663f2023e42e2.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=533&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=533&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "구)청룡",
@@ -956,7 +1008,7 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_JTufRx4B_d44cd75c538321c8b3b447784241f0d3eb985c2b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=681&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=681&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "구루마루",
@@ -982,7 +1034,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4ff4db00ab7a0f7918627d29ce8be3c_arzX391E_42f33df7ccd69ff2675c5a63a26f14727631c195.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=485&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=485&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "구루마루(환)",
@@ -1008,7 +1060,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/7cb71e8ed5773b012a61857b3c31d06e_2DIrCjsY_c912bf4a7d84bd001ea3ce43771128b9667f3c06.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=714&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=714&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "그란푸스",
@@ -1034,7 +1086,7 @@
     "grade": "일반등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/404120487e6da3a9821cdc27fc962344_hBo8uIcG_27122a32a3e131a76a094c9ea1e660938e1aa730.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=709&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=709&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "그램고르",
@@ -1111,7 +1163,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e50384d25907f8de06b1e36fe5621927_CnZmEHfp_0f4117b7b293700b45c9a02a70fd488b617bfaae.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=467&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=467&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "그루(진)",
@@ -1189,7 +1241,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/6fc01c0b41839f4d081a256d374cbd0c_UqAWOwL2_db7f03eaf190bb13b14aff6f81dd214bfaaecc23.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=577&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=577&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "그린고르",
@@ -1214,7 +1266,7 @@
     "grade": "일반 등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ad5e6299fee1093bd87c1e324466aec1_nzBDQ68K_d245657bcd88d3bfb8a4b005c7b3107592aee081.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=232&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=232&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "그린바로스",
@@ -1240,7 +1292,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_f57XBLZJ_bac5121de02e0733dbadb5d58f9fdb4346296bee.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=739&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=739&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "금조",
@@ -1266,7 +1318,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8a2480a5e5d87a7335d7c4408e34444c_7EHz9D6Q_34642af3e3e746e333c5a4081e275dc5483ef9a4.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=667&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=667&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "금호(각)",
@@ -1291,7 +1343,7 @@
     "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e6ef614f45756fd99efd92a55b48107e_XAiOe3C7_c4b32a0cc68ecd6923b319f0c3bcf6ec3f295a26.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=786&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=786&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "금호(변종)",
@@ -1316,7 +1368,7 @@
     "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/49c307b90535633d8409e443a3b19d77_qdxcIXEH_b0b906e0eea741ed016edc5b93276640baf8a6d0.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=788&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=788&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "기가로스",
@@ -1342,7 +1394,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_AKZURxtG_cbab549dde1a33810e3923597cc0e4abca47f61f.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=88&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=88&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "기계수말",
@@ -1365,14 +1417,14 @@
       "hp": 69
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_IzNj1GUw_774b5a685bfd3b1ef1d3ce68466fa940cf998256.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=851&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=851&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "기계수말(환)",
-    "sub": "기계수말 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 8,
       "화": 2
@@ -1391,10 +1443,10 @@
       "hp": 73
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f61b6ffeb59d44ae526ddeea780de2b_ZfUB7OEH_5e177280131cadf8d995c360a7298907ca5d6304.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=852&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=852&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "기계지말",
@@ -1417,14 +1469,14 @@
       "hp": 67
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f61b6ffeb59d44ae526ddeea780de2b_0D6BZJSV_cb28af8aaa0093e72e17579bded7be2d573ea6bc.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=849&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=849&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "기계지말(환)",
-    "sub": "기계지말 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 2,
       "지": 8
@@ -1443,10 +1495,10 @@
       "hp": 71
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_Dme6uUHO_2a588c7c234854f3a4f85596d23ebcd5cea404b0.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=850&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=850&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "기계풍말",
@@ -1469,14 +1521,14 @@
       "hp": 66
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_3u8bJn56_179b4f542dbb5727093d46f138b8f49d701b7ec6.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=855&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=855&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "기계풍말(환)",
-    "sub": "기계풍말 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 8,
       "화": 2
@@ -1495,7 +1547,7 @@
       "hp": 70
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_knbBNa1S_8db31b256d71fdecb6db3e5b12f7b456ba95b239.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=856&sst=wr_hit&sod=asc&sop=and&page=3"
@@ -1521,14 +1573,14 @@
       "hp": 67
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f61b6ffeb59d44ae526ddeea780de2b_NZRrSsWb_6841ce872471065ef05ef3ea50608ed1eba6d41d.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=853&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "기계화말(환)",
-    "sub": "기계화말 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 2,
       "화": 8
@@ -1547,10 +1599,10 @@
       "hp": 71
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_2Odfkrh0_802f275008666e85c191f56448e5def164827ed6.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=854&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=854&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "기계환룡",
@@ -1602,7 +1654,7 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c6aba87199bca7db76c786d562bd5423_Wvwx2g8E_ed0618427fb697f8c3f29cdaecc12516cad9885c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=809&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=809&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "기노",
@@ -1627,7 +1679,7 @@
     "grade": "일반 등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/95dbdaf6fff7eaa1541f2a239a28f67a_y6TsYrkb_7942a3c9289c4486a82a2625d53ad1da15c3578c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=445&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=445&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "기노(각)",
@@ -1652,7 +1704,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_WFnXgLvC_2d40fc68bc9f68d8deb228655617d1582472c87a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=793&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=793&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "기라돈",
@@ -1704,7 +1756,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/88d982b6392fcf51fd66f7e5a9cecf42_PjLpZorh_948125954a32a33607e8e0a603b6bc52c310b34c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=448&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=448&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "기로(각)",
@@ -1730,7 +1782,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_ASKfgcWD_396113121c081a5b959a9274a91a7541273ad4ad.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=791&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=791&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "기로아치",
@@ -1782,7 +1834,33 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ff3a4dd32942cc35e1f6b92dfc5aa651_jmgR8U3s_4a33996c8817a762dab04e7cbd858277445ccce5.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=237&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=237&sst=wr_hit&sod=asc&sop=and&page=31"
+  },
+  {
+    "name": "기린(환)",
+    "sub": "페트 환생",
+    "elem": {
+      "풍": 1,
+      "지": 9
+    },
+    "total": 5.238,
+    "stats": {
+      "atk": 2.32,
+      "def": 1.721,
+      "agi": 1.197,
+      "hp": 11.177
+    },
+    "init": {
+      "atk": 11,
+      "def": 8,
+      "agi": 6,
+      "hp": 56
+    },
+    "ride": "탑승가능",
+    "grade": "일반",
+    "emoji": "🐾",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/83b56e91c6e7afe0d21c952a6684dfa1_NG7p8gwn_f81d5a01c7365f92b945121ba819de20c75a8fd4.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=896&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "기비노",
@@ -1808,7 +1886,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2bdd85106927491dd9ddf22f3d62a2a3_wPdJm6Lq_144844ce2eaf6b552a0354ca2c8a0b704009ddf3.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=243&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=243&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "깜아리",
@@ -1834,7 +1912,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3fc7fb72fe56e940747593c0ccfb8029_lnc7Af5e_b5d3591edb8467cc2600aa6dd3330e5964f59c81.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=756&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=756&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "깡북이",
@@ -1860,7 +1938,7 @@
     "grade": "일반등급",
     "emoji": "🐢",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_VcRwjZBQ_546e4b67b1343899956e11585ee90e7157a4666b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=32&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=32&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "꼬꼬비",
@@ -1912,7 +1990,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_DgA7xN82_f6cc02b6812b7852e341b55d26ef5f1b85b31122.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=16&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=16&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "꼬비",
@@ -1938,7 +2016,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_ut26PC30_759293d8ae94e56182be080027f2261df4520b6a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=17&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=17&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "꼬비오",
@@ -1963,7 +2041,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_JINyLjkz_bda73fb8cb0f85b1d94d7d4776a78585c322540b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=18&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=18&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "나비드래곤",
@@ -1989,7 +2067,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8f3632d720156f8bc492fa3ff15b24e3_i5foO7ZJ_ce5697c85bece59ce2ef2e00ee0aeb838b032bf4.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=678&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=678&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "네고스",
@@ -2015,7 +2093,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_jbkfEWwB_98d00d2c133e445dabb36c8eb53ea107e6eed4d7.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=35&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=35&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "노가(각)",
@@ -2092,7 +2170,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_OVk81U6R_9f1c12064bac614aba631505d5b60ee506cc1dbb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=103&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=103&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "노르",
@@ -2118,7 +2196,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d32ee886232a7988cefeac50e0c65e1b_Nkj0DsVt_9ece8878f29dc294c03d819add4a23c0fd7176e3.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=475&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=475&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "노르가르",
@@ -2170,7 +2248,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b043c9705482bc69977dd5a9f617a21b_B2ovuilf_3fde47f345c45418dd6e8e36cf54495487b2a325.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=133&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=133&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "노르곤(환)",
@@ -2222,7 +2300,7 @@
     "grade": "1등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_WRFuKOaM_5d1852a017c57c30d3b14a2d608491cc90667b60.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=77&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=77&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "노르노르(진)",
@@ -2248,7 +2326,7 @@
     "grade": "일반등",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/36d79fa8bf0b5daf99c480cf00546533_h5p21BHc_38b62ea3573311ba7896fc4cdfdd042c1bb0ae86.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=472&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=472&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "노르노르(환)",
@@ -2274,7 +2352,7 @@
     "grade": "2등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_JdrRnjY7_8bc9c93cec041ff1b70c5ef798306af137897da2.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=473&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=473&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "노북이",
@@ -2300,7 +2378,7 @@
     "grade": "일반등급",
     "emoji": "🐢",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_h3PeIdvK_166c3d61fcc9f959a35350659966b534b6726aa8.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=30&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=30&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "노투투",
@@ -2351,7 +2429,7 @@
     "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/539c138df2fc3e734a9a5c785f114086_GO1yJezU_1863b8693345aa46fba7809533c4ff844c80ca53.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=804&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=804&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "다고스",
@@ -2403,7 +2481,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_u9OiKJHY_80cfc147a241110152887a361657fe94540bb5c3.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=98&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=98&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "다이노(환)",
@@ -2455,7 +2533,7 @@
     "grade": "일반 등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/20fedbb2a645332bca7c80df21d11f7b_cNG6mYbf_7cb8e90f1c495eaf2f787a4b4544ae61352b5566.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=140&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=140&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "다이노스",
@@ -2559,7 +2637,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/66a9996a6830e01d6905c0eef7316226_ra3iGFDz_3a494cc216718a8c8971d9cf5a0d41e9f14a7d88.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=373&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=373&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "다크무이",
@@ -2585,7 +2663,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/6d735b93f645776c33dfe7fb12763662_oEbMLSR5_c8d357e758760a165007c806b6e233a8994d0d13.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=673&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=673&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "데빌바로스",
@@ -2611,7 +2689,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0a40dd5aa3ad489c57cd5c6a9bec8d0b_uSEDd6cf_17f38853a1dca6a03de518ca7046cf0a0b1f9ee7.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=489&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=489&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "델푸스",
@@ -2663,7 +2741,7 @@
     "grade": "일반등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/712f65393ea5049d64b68646db7e2bc9_XYruyeG0_3cae2ebaf5df908ec009f864218d0c6b8dbf102e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=596&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=596&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "도라비스",
@@ -2688,7 +2766,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_ML3u9W7P_a4737fb2fd6935402dd0394d9a2fa9d5f8bf4b6c.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=111&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=111&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "도라비스(환)",
@@ -2739,7 +2817,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e58c57c51a689bfd0f578d1c3e57a5f0_2cJI9uKW_c974bea67cc0b7470462419081d091e74681c7c4.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=155&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=155&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "도르도르(진)",
@@ -2791,7 +2869,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_UAwMqp45_54659982cb6f45931c672cd302b8f265a6139d58.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=535&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=535&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "도철",
@@ -2869,7 +2947,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_ktRHV56W_a9f58d598fdbfb6be12238ffda637a1497d19669.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=92&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=92&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "돌가로스(환)",
@@ -2895,7 +2973,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0615f818c4c4c56bda3cf7d638cf4570_3e4f8rxv_939acb17ac2d69a7140bec09dbc8efa45075ab84.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=663&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=663&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "돌꼬비",
@@ -2973,7 +3051,7 @@
     "grade": "일반",
     "emoji": "🐢",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a4da87ada2594b44e75834f11d162b34_02wmoLDH_4d6127f19a3246a6813d35af66baf0c179af49a1.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=817&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=817&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "두리",
@@ -2999,7 +3077,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5834bbba68d1a59d9c55baaf5b3828aa_6UwT1RyK_c57213adc5288786c0876f98b64884e9016946c9.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=4&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=4&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "디어룬",
@@ -3025,7 +3103,7 @@
     "grade": "일반 등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e5c943ac8a4f8bd116e214223d84a927_TULgIaVF_c0b8bcbb29b42d39dcbd8c6dacbcd5cee3543f53.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=438&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=438&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "디어룬(환)",
@@ -3051,7 +3129,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_DsgeGpIQ_b9420d8ccda586e55dd742a48cd47f4af8462c4b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=734&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=734&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "라고고",
@@ -3101,7 +3179,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fed82543e430f0dfbf5c485f4c17a0ba_Em8I23ho_f670a6670611292f1fa2e7c2225a0b0795990544.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=646&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=646&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "라그노스",
@@ -3127,7 +3205,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d58a1e714f111b7503a1b3cd8041f11e_MoIazn8g_f9956b376973281fd85fbd0dbc70f0c280a77674.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=189&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=189&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "라나프",
@@ -3205,7 +3283,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_g8LfrtFy_24d17d81a69d20ab17459ac5c732e0fb32d968dc.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=200&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=200&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "라이혼",
@@ -3231,7 +3309,7 @@
     "grade": "2등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4f1d386bbbfdd91ddddc81dc6878bde0_lKDNJcHv_bdbb2be925a14acf0c0fd87f417038532d59757e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=126&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=126&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "란베르스",
@@ -3283,7 +3361,7 @@
     "grade": "2등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/539c138df2fc3e734a9a5c785f114086_QsoaV3Wq_fcecb80f1cf61a3cd2f0938f68b25d51353bd880.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=46&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=46&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "레드 드래곤",
@@ -3309,7 +3387,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/36c847b04686fdc00f37f336e06be6e9_wnyhDmMj_e5fd7d3e4735240ce622b2059e87fd57b14765b5.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=552&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=552&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "레드프라키",
@@ -3335,7 +3413,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/410941940408f5a386525b4e5ace3f48_Af7VmRzE_3e458cd7dd658f5725586747db600295a3b1438a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=815&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=815&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "레드프라키(환)",
@@ -3413,7 +3491,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d868596cf0ca5de5f71ea550913ce28f_LG0m1DEJ_502d001c196891ec92811e0b0d3033fc29cd038d.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=802&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=802&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "레피온",
@@ -3465,7 +3543,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/de119d8f2a6960b83e8b42a005a36a06_TSMZb3f1_01f51c6038ae9e50e5d0c3e0052fa9b5dae440ef.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=647&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=647&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "로기안",
@@ -3494,6 +3572,58 @@
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=45&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
+    "name": "로데오",
+    "sub": "네메시스 보상",
+    "elem": {
+      "풍": 2,
+      "화": 8
+    },
+    "total": 5.034,
+    "stats": {
+      "atk": 2.265,
+      "def": 1.327,
+      "agi": 1.442,
+      "hp": 10.095
+    },
+    "init": {
+      "atk": 12,
+      "def": 7,
+      "agi": 7,
+      "hp": 53
+    },
+    "ride": "탑승불가",
+    "grade": "일반",
+    "emoji": "🐾",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/e11102e580241bd71b53f08fe00e2e62_9hHBRPAq_0904d0c1d6e83bc7aa7fc4bd58d2b3a9dfc987b7.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=894&sst=wr_hit&sod=asc&sop=and&page=1"
+  },
+  {
+    "name": "로데오(환)",
+    "sub": "페트 환생",
+    "elem": {
+      "풍": 2,
+      "화": 8
+    },
+    "total": 5.259,
+    "stats": {
+      "atk": 2.333,
+      "def": 1.435,
+      "agi": 1.49,
+      "hp": 10.463
+    },
+    "init": {
+      "atk": 12,
+      "def": 7,
+      "agi": 7,
+      "hp": 55
+    },
+    "ride": "탑승불가",
+    "grade": "일반",
+    "emoji": "🐾",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/e11102e580241bd71b53f08fe00e2e62_XM5TURLv_3e5fff45ee069ee38d7c0d59424ba959365bbc57.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=893&sst=wr_hit&sod=asc&sop=and&page=1"
+  },
+  {
     "name": "로즈란",
     "sub": "듀얼",
     "elem": {
@@ -3517,7 +3647,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d950d3e7d6bceb6851d7132137c27589_o2Kbvhs0_e448232963cff5c0993bb75f4965d924ad0ceee5.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=706&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=706&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "로즈란스",
@@ -3569,7 +3699,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c965125eea9b7dfd60a27fb6462dfb2b_MPtEjT3g_4d6479cfea2c62d7248c64232364ee7bcd8e3c24.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=549&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=549&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "루가(각)",
@@ -3595,7 +3725,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_5T7YxUgA_c32386292b6ded1655c8acff0f5b72a567f7055b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=771&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=771&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "루니",
@@ -3697,7 +3827,7 @@
     "grade": "일반 등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ae6824570dbfc8074b91ceef644be772_oOAUbI4a_1de18925f61d5e78c87c145ca96af6bfc1e7682a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=439&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=439&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "르돈(각)",
@@ -3773,7 +3903,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8a2480a5e5d87a7335d7c4408e34444c_0WdrwjxZ_22782bb265eca560ec4b497555c87bdd471a7685.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=50&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=50&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "리비노(진)",
@@ -3849,7 +3979,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_MztLjsmK_d253724f49ad1d76829bfb5aee0a38dca394a33b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=57&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=57&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "리어룬",
@@ -3879,7 +4009,7 @@
   },
   {
     "name": "리어룬(환)",
-    "sub": "리어룬 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 1,
       "화": 9
@@ -3898,10 +4028,10 @@
       "hp": 56
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/024572d4f192daa750336d17f88f86cb_s6pE7jIT_4bba6309ab4c9f7a9a3881c6e337afdabf9fef90.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=887&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=887&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "리오다",
@@ -3979,7 +4109,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_LyGv9a76_fbf05a20250662d8109b91cdb14b62ff06d2f1ab.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=192&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=192&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "마모나스",
@@ -4005,7 +4135,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_9Svpq3Kl_6f4f3e9252b5e6dbb9102a6d053c69fafb019800.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=106&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=106&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "마모나스(환)",
@@ -4057,7 +4187,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_BxoaCTD8_9eaacd65f6b2410b9d184ba828da206aaa61a3e4.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=740&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=740&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "막쿠마",
@@ -4083,7 +4213,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ade71d98079b209fcfdc425e61692f36_M1UxSuYC_acc0cd62005aa03ce233b6f81015b05a24f6b951.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=571&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=571&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "막쿠마(진)",
@@ -4135,7 +4265,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_l6SWdL2M_1357a26ed42d2cf3dc29d14d1447fd8c8c0439d1.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=104&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=104&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "만모(환)",
@@ -4161,7 +4291,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/eb980333af7818fefd758ebcb0383985_APqaprFg_3b4e8473d9fb8a650e95da31e4a1046d831ed7ed.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=586&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=586&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "만모로스",
@@ -4291,7 +4421,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_F74O2Dgl_4d140d5945c58dcb71aaed37b28f8a1d2f8f20ab.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=743&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=743&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "메가갈푸스",
@@ -4317,7 +4447,7 @@
     "grade": "일반",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/631efbac521bd43ced2a1966742b0e6f_wr0mLBWg_2d79c0b76d54f82110789391f94d97700ef824ec.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=724&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=724&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "메가갈푸스(환)",
@@ -4343,7 +4473,7 @@
     "grade": "일반",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_R89Dnyga_d0a28a030b21135b27eda65a359fddef480dbb4c.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=735&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=735&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "메가고르돈",
@@ -4368,7 +4498,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d868596cf0ca5de5f71ea550913ce28f_E1xcqYkT_f1dc061aa214300c50e7168fa6616032f58e853f.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=563&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=563&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "메가기룡",
@@ -4470,7 +4600,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_Uwuxi6Zy_50d78c10f732b2164ab0e9aa06bdae27e6c79a37.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=660&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=660&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "메가르곤",
@@ -4496,7 +4626,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_tiSXeklJ_b4c2051ffb30a01b90a80554455e1ad96974c259.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=738&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=738&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "메가르곤(환)",
@@ -4548,11 +4678,11 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/54f7866cad84f8748ba514f209548cd6_iz3XWmDc_03f47fb7190c6c2df0953fb9b1a884bd64c59c17.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=736&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=736&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "메가리스키(환)",
-    "sub": "메가리스키 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 3,
       "화": 7
@@ -4571,10 +4701,10 @@
       "hp": 58
     },
     "ride": "탑승불가",
-    "grade": "일반 페트",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/55009b1f23c7282b126640db40066046_M7J5wHlo_0040db09d24aea4d27a8fba0e9b74b866330ff1a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=831&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=831&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "메가만모",
@@ -4599,7 +4729,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/631efbac521bd43ced2a1966742b0e6f_0pEDy1IA_f822f709029e2b73fa45f24ce1ef886570f5cfee.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=694&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=694&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "메가만모(환)",
@@ -4650,7 +4780,7 @@
     "grade": "일반등급",
     "emoji": "🐢",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1d90c9cfa0932389d96971c4182879da_1m2TMuhX_a463f472bfa132150be7491816dad8a1dd0ac6fa.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=543&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=543&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "메가북이(환)",
@@ -4680,7 +4810,7 @@
   },
   {
     "name": "메가카키(환)",
-    "sub": "메가 카키 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 5,
       "화": 5
@@ -4699,7 +4829,7 @@
       "hp": 56
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/68a27d8eedc094eb0b483323c79a7117_wpyRP0IZ_51a61a06e6a15d16acdd956672f6673544a0f165.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=837&sst=wr_hit&sod=asc&sop=and&page=3"
@@ -4728,7 +4858,33 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/631efbac521bd43ced2a1966742b0e6f_LB0PfQ6u_c46d1b2a22a85f3baf8eff452c611705a764fba2.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=723&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=723&sst=wr_hit&sod=asc&sop=and&page=11"
+  },
+  {
+    "name": "메가프라키(환)",
+    "sub": "페트 환생",
+    "elem": {
+      "수": 9,
+      "지": 1
+    },
+    "total": 4.864,
+    "stats": {
+      "atk": 2.211,
+      "def": 2.21,
+      "agi": 0.442,
+      "hp": 13.558
+    },
+    "init": {
+      "atk": 12,
+      "def": 12,
+      "agi": 2,
+      "hp": 74
+    },
+    "ride": "탑승불가",
+    "grade": "일반",
+    "emoji": "🐾",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/61ddf1041c3f6781006a92cff4f960d1_SoBZscxe_1278597c8cd91bbfdf4fbb999ed33426435177b6.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=897&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "메가호크",
@@ -4754,7 +4910,7 @@
     "grade": "일반 등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_Ty8C5WPd_be20f1cf63ab5a650ec35046799e3a24fd6dde48.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=370&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=370&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "메가호크(각)",
@@ -4777,10 +4933,10 @@
       "hp": 55
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_myp4veYK_efb2815a175f32efb776e71e17f20a190a2e69b0.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=838&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=838&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "메가호크(변종)",
@@ -4803,14 +4959,14 @@
       "hp": 57
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_coXL3IQU_fd5d03e422d20fef0c6d6f2d833195f2ed7ba7e9.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=839&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=839&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "메가호크(환)",
-    "sub": "메가호크 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 9,
       "화": 1
@@ -4829,10 +4985,10 @@
       "hp": 55
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9f08de0af57a6ba28c351b3ae9a2a265_8cjDg9xF_f8c7ee794d1ffce59b1e9a14fadf4d38417e5f11.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=836&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=836&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "메가흑곤",
@@ -4884,7 +5040,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_t4JKMegF_b361f9b5f260d231486b0cda8c582f612d510e65.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=741&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=741&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "메이란스",
@@ -4910,11 +5066,11 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af63579a901e9e7a64405860a85966ce_qohg0N6n_5cb73d830d51268dacfd4b425f086d9b3febf256.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=773&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=773&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "메이란스(환)",
-    "sub": "메이란스 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 2,
       "지": 8
@@ -4933,7 +5089,7 @@
       "hp": 57
     },
     "ride": "탑승가능",
-    "grade": "일반 페트",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f0ec136d9caa40d18b7e50952583dc4_D9fxXJrM_a26e20bf34e79e33200d6b56b3df8787c78146fb.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=830&sst=wr_hit&sod=asc&sop=and&page=4"
@@ -4988,7 +5144,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9ac7819450409e37dfb2ea72cb15d6ae_B5PcWKSO_fd061c18b45aaf51010f67ac409dacd1058cf929.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=813&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=813&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "메카다이노(환)",
@@ -5014,7 +5170,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9ac7819450409e37dfb2ea72cb15d6ae_Qu4kUSFc_ced1032725a937ba448b1dacda7f4002701421f1.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=814&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=814&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "메피노",
@@ -5040,11 +5196,11 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_MKCuVgti_3fe0fc5aae6573af6135c300b11cbbfc3e81d7ae.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=199&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=199&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "메피노(환)",
-    "sub": "페트환",
+    "sub": "패트 환생",
     "elem": {
       "수": 7,
       "화": 3
@@ -5092,7 +5248,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_H0tiYgny_948284acd5cfcdb00b727fda89b379232a9295eb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=769&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=769&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "모가로스",
@@ -5118,7 +5274,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4f1d386bbbfdd91ddddc81dc6878bde0_P0xEuR2p_cc03d7239ef8210ba6d47b9aac84b1ed184d42bf.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=122&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=122&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "모가로스(진)",
@@ -5217,14 +5373,14 @@
       "hp": 53
     },
     "ride": "탑승불가",
-    "grade": "일반 페트",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9dbc6d5ff0692a98d3cfd5730913a421_FGyMek7j_9fd0e10eb5c16a72e628f1110c142290ed4cf18e.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=826&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "모사크(환)",
-    "sub": "모사크 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 10
     },
@@ -5242,10 +5398,10 @@
       "hp": 55
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_PoqVQbAK_9849dd8de06028fc22fcd0a4f867a5e68ecf2444.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=861&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=861&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "무이",
@@ -5270,7 +5426,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_fNZI1BLr_054fde847ddfb8189dd1ea11303f44faa5d0b6e2.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=94&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=94&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "문울프",
@@ -5348,7 +5504,7 @@
     "grade": "일반 등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dd34d6acbc4981c5d17ba19f5df4a421_Bw2leZuG_03cef0386295d6dfa340741f6829041c524261c8.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=238&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=238&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "바우",
@@ -5426,7 +5582,7 @@
     "grade": "일반등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ef4c654faa21cde1281edf5c0e4facc0_w4VOE2Zb_facd87302d72e898752e0acd3a01abaa3039825d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=603&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=603&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "바카",
@@ -5452,7 +5608,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_2waRxrKX_93b319996845689421e022d1e10f25a2232fb2e0.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=71&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=71&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "반기노",
@@ -5502,7 +5658,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/947f3a9f1c0af94d20efb0ab0e3a710b_OI1jZNRB_e6951186a2f4b7788cff5c64d1956c3b0e070443.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=446&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=446&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "반기노(환)",
@@ -5527,7 +5683,7 @@
     "grade": "일반 등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/60d80da7b0ba9d179b5e4741f798843e_R8CA2heK_cbe46b825627c0d4e53dd2382a21f7959c8f8165.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=447&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=447&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "반보로",
@@ -5553,7 +5709,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8a2480a5e5d87a7335d7c4408e34444c_K1QMAvXl_fd12238229f4d97fef348a783b0930bd889d359b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=52&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=52&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "반보로(진)",
@@ -5579,7 +5735,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dfae83f4f5d68211973ef3887e7046bf_E48FmkX5_f074f8a36a302edd5600b281011d78e14117b451.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=450&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=450&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "반보로(환)",
@@ -5605,7 +5761,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_b5lNqAro_3badf1a5598e6dfadb33bc845e287201c6d07eb3.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=451&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=451&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "백여우",
@@ -5631,7 +5787,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4ff4db00ab7a0f7918627d29ce8be3c_haCeBzAb_774fe6bae3652f7d185979815ed7c41661ef38df.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=495&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=495&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "백호",
@@ -5656,7 +5812,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3a31cf72e3f6f8410cb34cdc8c3bd6af_Luqm5VY6_a1b2999eecd84da03dc3dc088e3c6375f2180789.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=187&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=187&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "백호(각)",
@@ -5681,11 +5837,11 @@
     "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/de119d8f2a6960b83e8b42a005a36a06_6noIlJba_55da83c67f787f1ee12cab24fd434d9c74fb7b50.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=803&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=803&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "백호(환)",
-    "sub": "백호 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 10
     },
@@ -5703,10 +5859,10 @@
       "hp": 55
     },
     "ride": "탑승불가",
-    "grade": "일반등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9f678bd56fb17ba400cab885dc336d60_ixgKYLvV_5e412022af0ed2dd83970a4fa7ea7645df11cbad.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=827&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=827&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "베가",
@@ -5731,7 +5887,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b8b38883ad20b9ebd6e2bf7614b286a3_JMSWL73h_cb76902058c93e34a035d36580c5da05e6e1c76f.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=654&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=654&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "베가(환)",
@@ -5756,7 +5912,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_qcuoU87M_6a52ecfc5206c09d7cabd5620926115294251fb1.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=746&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=746&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "베라라",
@@ -5782,7 +5938,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a10c03d2acb247b36da7e1da599bb5b5_Gl8bj7KO_9fe61d1a22801ab70b180be2bc465f3111c0e19b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=157&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=157&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "베라라(진)",
@@ -5808,7 +5964,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_tF5dl2Hh_fa6632ff7181ad06277d02419586ad9c7d8279eb.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=538&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=538&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "베라라(환)",
@@ -5860,7 +6016,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_7OLzSh8F_8a48b839d1de2e1937413e18236f95cb1629e3eb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=27&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=27&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "베로보크",
@@ -5937,7 +6093,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_eEQ19gyT_d608da12115143fd27ccc92973d42fd9325c8020.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=26&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=26&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "베루",
@@ -5963,7 +6119,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/98b0152ae4f1e5546b001ec8a8ba33fd_BJPjhv1b_9b5df67d8fc2a469c540599749aca0e7131d1355.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=452&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=452&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "베루루",
@@ -5989,7 +6145,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_NIS9kZme_baa433d21ba729e0133abedcde1fed3c281f2599.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=75&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=75&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "베루루(진)",
@@ -6015,7 +6171,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/92bd6766057596cf21e0ae336f6e9e9b_CSqyjdOG_acc1e14fdc7247d4720207c279738b55adf5cce0.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=453&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=453&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "베루루(환)",
@@ -6041,7 +6197,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2b6e724b50690c350cf28fdf6dbfbcb4_ut5B4kFI_d67468e7c8b77f0bbac10783a741cb475137af64.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=454&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=454&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "베루루르",
@@ -6067,7 +6223,7 @@
     "grade": "일반등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8666bd963ca8a6dc033ebcd60750c57e_1YUPoZXj_14c1de6bd680a6b1fa7875cc7897fc99df5230a8.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=455&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=455&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "베르",
@@ -6093,7 +6249,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b01b902109333fc0f5406a267d842b4b_qcSloVkx_cee53f49b9332555ad29566c15ebdf4cf7c5c818.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=458&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=458&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "베르가",
@@ -6119,7 +6275,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_2a1SFhBI_13bd62765e585ab191aa5654419b3b2726de8ed5.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=74&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=74&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "베르가(진)",
@@ -6223,7 +6379,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d4616e2ab94484be4d7f4e83263a2226_yzmdWHA8_87da31b4cbdc0a5f8a767599c66f5b36e870524b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=222&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=222&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "베르푸스",
@@ -6248,7 +6404,7 @@
     "grade": "일반 등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/766fe2ce141687af060f9b2bad5bb164_ncWC7YkR_9f7fe388456de05ea6d2a821d50eebfc4802da75.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=150&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=150&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "베르푸스(환)",
@@ -6273,7 +6429,7 @@
     "grade": "일반등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/22c7ffb21a74c75e1926d57513a375cf_6Bp4jzVq_7a7cbf1808103f3222046aa6d6b6dc0cf1334eac.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=461&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=461&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "보로",
@@ -6299,7 +6455,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dfae83f4f5d68211973ef3887e7046bf_0IKcep21_896813080aafa69b963a9c27f2711b050b8ba89d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=449&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=449&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "보크곤",
@@ -6325,7 +6481,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_sjilK1IR_1494c1c7e96c8e4dbfd00975b569f4bd12150462.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=38&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=38&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "복우리",
@@ -6377,7 +6533,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_P6lEYtcr_1453d1998c40ebbef226e32eb954a6999a2e957d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=194&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=194&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "본드래곤(환)",
@@ -6428,7 +6584,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c3419bb01568fab12ae057146f69fd41_s1ZtPJWI_dc793eeb077c60454761b1b660a689784327afb7.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=634&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=634&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "볼케(환)",
@@ -6453,7 +6609,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/de119d8f2a6960b83e8b42a005a36a06_UDj2bNCB_cd28d00cd50373ce1ea1aba820e3a635b4eba1cd.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=645&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=645&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "봉봉",
@@ -6479,7 +6635,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/84563ac1b8e9fc56251caf5f335d0095_GBoecifm_340d86c61f6ec2c8f27c8ae1c1883836d0815592.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=506&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=506&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "부루마루",
@@ -6505,7 +6661,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dd34d6acbc4981c5d17ba19f5df4a421_59BsExrp_2bd0adef6a31f9d249fc25552e54bca6ce5450df.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=236&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=236&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "부루마루(환)",
@@ -6531,7 +6687,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c47b2f2ea832ed6f0d88e4e63531e6a3_ZMiF7qOc_484cae55a705d0d813fee311a258196894e541c2.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=716&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=716&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "부르돈",
@@ -6557,7 +6713,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_qi7l0Z58_a0fe2d5dfb72dad8cd48852eb319061d9ed19b17.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=53&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=53&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "부르돈(진)",
@@ -6635,7 +6791,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/476a780d32167e76c8ce1a4d2cb1581d_RS50G8dW_037ec9e1537ce665a59c7cd378d03f8066904646.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=146&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=146&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "부비",
@@ -6687,7 +6843,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dbcc97097ae75aaf65946ddeb89934a8_7y3Din0P_2701d421781588ae0e208c999f4f1d1d18b56c56.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=11&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=11&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "부이비",
@@ -6713,7 +6869,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_5NOX1DhM_2bb3038dbd150a3834b5247eed14738c484af442.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=14&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=14&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "북이",
@@ -6739,7 +6895,7 @@
     "grade": "일반등급",
     "emoji": "🐢",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_yiDK3VvG_66341c9bf22d0206b056179c0310ce779399db08.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=31&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=31&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "불그리",
@@ -6892,7 +7048,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_WrU3D4f0_a53f611c1d5950a1fdc4d36ebe7cdf3d5347585e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=750&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=750&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "블랙펄",
@@ -6944,7 +7100,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8d09fbf3f064bc2c9d50668078c22537_XKIx4a6W_6336b3282114a873c96dff4b9ea80ad784bebb37.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=496&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=496&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "비노",
@@ -6969,7 +7125,7 @@
     "grade": "일반 등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1c9a50252682ee019913eb4850bdd0cb_OVCndYfJ_84f825b795d69150725857374aeb222c1a47372e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=442&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=442&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "비노(각)",
@@ -6994,7 +7150,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_x2IoWVia_0282a43b1f63ba97c312f254de9a9cd04a5afd0b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=790&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=790&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "비트로스",
@@ -7046,7 +7202,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_f0eC9aVH_952ea574738d808234bb597a1b2643c9451d6474.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=662&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=662&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "사르굴",
@@ -7071,7 +7227,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/faabe1fca48fb9ede5cc4d087f3aded8_CZGHWnjN_4dfd369f41dce333f788c5714e155606bda2fbea.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=670&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=670&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "사리온",
@@ -7094,7 +7250,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8a2480a5e5d87a7335d7c4408e34444c_lvNe1MhG_b304632b3c33da9c9b78d384607d931b83186657.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=668&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=668&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "사이록스",
@@ -7224,7 +7380,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/177f3b2420db6e28aa2dfca34da81db1_uCHUxFIl_e071048072e5e0508f6f1d7fb036755cd6cb1803.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=820&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=820&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "샤르체",
@@ -7273,7 +7429,7 @@
       "hp": 51
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_YkfvM0dh_86de80d55787064621d32a574870111d3a16b4b5.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=844&sst=wr_hit&sod=asc&sop=and&page=3"
@@ -7302,7 +7458,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dd34d6acbc4981c5d17ba19f5df4a421_ap8fQlEJ_2b8b18933a5be4f815c7872f9506c2db3fd5a3e9.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=240&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=240&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "샤베르(진)",
@@ -7328,7 +7484,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/03c3933299209c194616a47ccce9eedb_QkhFu84r_bcf62f1cea3891c6fc96b8009680178df79ecab5.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=617&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=617&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "샤베르(환)",
@@ -7354,7 +7510,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/beb4afc182a11ad1387be2c5d96f7e16_xIJCSTn7_d52cdc91d10f7fda18af26498dd35e3ee232740f.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=460&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=460&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "샤우트",
@@ -7406,7 +7562,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/91aa7847d9a97fff130c0f6efa8cfb40_Bd6qK5tl_8bc9cd662c23752d2fc45001d97fe9971a109ff1.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=491&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=491&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "샤크라",
@@ -7432,7 +7588,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/28864e55f436525fad7ce1ccb86537d3_wYd7eq09_f3d2c84f865b3bed015d24848be1bec8b4a83b4e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=292&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=292&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "샤크라(환)",
@@ -7510,7 +7666,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/88591565770705394f95281007d0fa86_7PRqkC4u_6f1ea21c1b130cfd86664a40e41fc77b98948a32.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=293&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=293&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "샤크라이(환)",
@@ -7638,7 +7794,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_A8xCwcDN_79289adcde1f6e602e07a19fc64cd18e013c42df.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=536&sst=wr_hit&sod=asc&sop=and&page=26"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=536&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "설표(환)",
@@ -7664,7 +7820,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d3d717da0c96917ccbc224842f9c9e51_qXCalPDh_fed140176666f7c48f853ac80b3afb44bc40e11c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=567&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=567&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "수마",
@@ -7716,7 +7872,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/404120487e6da3a9821cdc27fc962344_BZHNEg6D_749c54ffce3c22a1f9b85e02e42f244f03985759.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=574&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=574&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "수마(진)",
@@ -7765,10 +7921,10 @@
       "hp": 69
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b3d08aadae2f11b3befb4f98e21af895_KsqYVdzl_81a4f48460059b78f6bb71f6af878845a092815a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=866&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=866&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "수복어(신)",
@@ -7791,14 +7947,14 @@
       "hp": 72
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_1Ykj2tJi_ced87bacfe2a8c922ec314512bbb1978ed7d70b1.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=878&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "수복어(환)",
-    "sub": "수복어 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 7,
       "지": 3
@@ -7817,7 +7973,7 @@
       "hp": 72
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2293ac14222d2eb327b7a7ac3f1d1dcf_O4xSnXo5_0f0e09c1881a7ee2691f812b9262bbe85f80a0b7.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=867&sst=wr_hit&sod=asc&sop=and&page=2"
@@ -7869,10 +8025,10 @@
       "hp": 51
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f61b6ffeb59d44ae526ddeea780de2b_mEDrnqOw_0d636be266f2276a2efa0f9a03d58b1a540271fe.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=843&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=843&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "스노밍코",
@@ -7898,7 +8054,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2ded82787d8a7a78f3fc37f3f94dce88_9rQuhoCF_ee177242b881394381a7e94264ed808e74c433cb.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=229&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=229&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "스콜",
@@ -8001,7 +8157,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_64xlOCD9_54f7cc3e6131d34d0457c8a826d78e1e14ed6a71.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=193&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=193&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "시어룬",
@@ -8027,11 +8183,11 @@
     "grade": "일반등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ade71d98079b209fcfdc425e61692f36_YLvyr5eK_02e8d325748b89d685b182ae18ab47bd6246c053.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=700&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=700&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "시어룬(환)",
-    "sub": "시어룬 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 9,
       "화": 1
@@ -8050,7 +8206,7 @@
       "hp": 56
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e6ef0ed3133600682a6292d2dffe7d69_m4FvkopJ_6bb68d6c82d43d945bde65d75892efe8d74e0e97.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=888&sst=wr_hit&sod=asc&sop=and&page=2"
@@ -8079,7 +8235,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/de119d8f2a6960b83e8b42a005a36a06_jnHrs4d8_42a342d4a8cc12fb3fb3c7d95ef80ace192dcd0d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=644&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=644&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "실버로스",
@@ -8105,7 +8261,7 @@
     "grade": "일반페트",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b58882f037e4bf0e9a4bb3dbc183ddb7_nRPElZH8_d9c0546796fe1297482d5c402765cf22f919220d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=630&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=630&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "실버우리",
@@ -8157,7 +8313,7 @@
     "grade": "일반등급",
     "emoji": "🐖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a8e200694b8e92aca9d7c70ad16d9f58_3SzvNZkn_c90164bf7fed6e6dd16b0ff7b90970f97d1c7353.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=665&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=665&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "싸가트",
@@ -8180,14 +8336,14 @@
       "hp": 65
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_r2q5FINy_4b3dd0300fc1e92a1b70d3a97251ed6f5adfe5cc.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=881&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "싸가트(환)",
-    "sub": "싸가트 환생",
+    "sub": "페트 환생",
     "elem": {
       "수": 6,
       "지": 4
@@ -8206,10 +8362,10 @@
       "hp": 66
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_kRgVXovP_1ae38b2e6e0615a932360f1a948565e8e7865295.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=882&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=882&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "싸이클론",
@@ -8261,7 +8417,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_P7b2ZzHR_28672ec67c9860c9f60f32c72da4f6ee83c87be2.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=95&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=95&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "아고아",
@@ -8287,7 +8443,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_L6qZerOk_fe5f2eea2dbf1fb2cb40a9ab7ab8401dcd906afb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=34&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=34&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "아르마루",
@@ -8313,7 +8469,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_3YvfKTu2_98f2214010f8942a75a97dc8f4663c8fc945ed4e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=198&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=198&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "아르마루(환)",
@@ -8416,7 +8572,33 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/14d2f3b67c39a00590cc2a1e04ea2874_A2GhdfPs_fd9a3b7fc9796f5377bc2d4938c2ced52a01c2e6.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=578&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=578&sst=wr_hit&sod=asc&sop=and&page=22"
+  },
+  {
+    "name": "아마란스(각)",
+    "sub": "페트 각성",
+    "elem": {
+      "수": 8,
+      "지": 2
+    },
+    "total": 5.435,
+    "stats": {
+      "atk": 2.381,
+      "def": 1.524,
+      "agi": 1.531,
+      "hp": 12.088
+    },
+    "init": {
+      "atk": 12,
+      "def": 8,
+      "agi": 8,
+      "hp": 63
+    },
+    "ride": "탑승가능",
+    "grade": "일반",
+    "emoji": "🐾",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/b45023db9cb5ed3a219fdf5e729bba42_J9cu2Gyh_2a3703c5d7f32c8e11f5e4ea82b23eb407f394b8.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=895&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "아비시니안",
@@ -8468,7 +8650,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/32708409f638ecbf0b9da6232c40f0c8_InFGHK6o_ff66745ad3b932203ceb3093de748214e4638349.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=651&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=651&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "아스타로(환)",
@@ -8520,7 +8702,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/573e80c9941476c11f0fec8519a9c655_0pOJWSCU_c2149fa13f239056b805da5376394503fd5040c4.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=684&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=684&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "아이스만모",
@@ -8546,7 +8728,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/65bfcea1f5ef65a39ac245511079ea38_MDqf1moU_57616d7737e7c71e765c8d3f0ad22784e8f33b97.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=158&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=158&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "아이스만모(환)",
@@ -8572,7 +8754,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_NnMIr7qQ_d9d8e1f83c3c9cae296fed1abca296a818c2fc1d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=763&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=763&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "아이카스",
@@ -8624,7 +8806,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ff3a4dd32942cc35e1f6b92dfc5aa651_VpqUsSXW_3fd30001655e1782c51e5da060d91a6c438568ea.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=234&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=234&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "아토라지",
@@ -8649,7 +8831,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/20fedbb2a645332bca7c80df21d11f7b_A8pc5a3n_48104bf26b06a869768af9625b623358df42c008.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=138&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=138&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "암흑골로스",
@@ -8675,7 +8857,7 @@
     "grade": "일반등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/eb81d455a10cf23624dddbadf92001e1_0X7K1dPf_54b8400816b599b1a28080057c9f5c438fe89dee.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=626&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=626&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "암흑골로스(환)",
@@ -8701,7 +8883,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b01436bccd2a57e6e3e9ab9d498def90_oIdy1Yqs_1a4c8370f9a073da9d04d0ec0458e6d989267206.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=727&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=727&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "암흑천마",
@@ -8724,7 +8906,7 @@
       "hp": 58
     },
     "ride": "탑승가능",
-    "grade": "일반 페트",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/801de85d8ced8d2a7a26cd01437b0ff5_C1nWMVus_3a27990ab04b124e549a61d98da843c7ace3d029.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=842&sst=wr_hit&sod=asc&sop=and&page=3"
@@ -8750,10 +8932,10 @@
       "hp": 60
     },
     "ride": "탑승가능",
-    "grade": "일반 페트",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/801de85d8ced8d2a7a26cd01437b0ff5_EiOQ0Y31_1700473dcbda023631f06bc41a4c4a79bdfa9da0.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=840&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=840&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "얀기로",
@@ -8831,7 +9013,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ecd1ee826bab39299b05521028597a02_UZbcPgRW_229e762c01056a39a136afdfbc6dc2ca5387b30d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=551&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=551&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "어린 청주작",
@@ -8857,7 +9039,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/348e7abed31cfbcc5d24515354cc98d2_IetvFJHa_da4707e5d8b58ab16b7295a03ed88f831df1ec40.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=652&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=652&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "어린금조",
@@ -8961,7 +9143,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b01436bccd2a57e6e3e9ab9d498def90_nQR0IpFu_159b96e5551b0cfd82a321ab1276ee3982111a4f.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=697&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=697&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "어린현무(환)",
@@ -9090,7 +9272,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_ElM4tj30_1600cb55326cdae7c683fbbadd228e43262867a9.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=770&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=770&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "오가로스",
@@ -9116,7 +9298,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_je7bu2Vz_62a73e9fac773e995d00ab77e9c0c3fe6a32b033.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=120&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=120&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "오가로스(진)",
@@ -9142,7 +9324,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8ba16f47b2e8001402c6c312ea37a219_oS29skcC_9e92396c70ec02e3d61428b55d324d1b1afdd754.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=522&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=522&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "오가로스(환)",
@@ -9220,7 +9402,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8ba16f47b2e8001402c6c312ea37a219_Pq1IgGY3_cca81564478bff0852e6ff361efa0502d022f3f9.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=524&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=524&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "오르곤(환)",
@@ -9246,7 +9428,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8ba16f47b2e8001402c6c312ea37a219_kVgYDntA_2208bbb73f3d3dd29689a5cde21d287080accae0.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=525&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=525&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "오시모미",
@@ -9324,7 +9506,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8ba16f47b2e8001402c6c312ea37a219_YKuLEV09_1cfe859e1d180507162db630ff9d02762f0f2ac5.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=518&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=518&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "오투투(환)",
@@ -9376,7 +9558,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/88591565770705394f95281007d0fa86_n4R2Zlgo_3980f46901c89ea85d5e6af11f96c9944153f265.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=303&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=303&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "요루(변종)",
@@ -9401,7 +9583,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/197131939932e8378ed486cb2d4e484f_hAG5bFKe_9886ed4ece1be3f8abdbdcc7e5e86c97010497cb.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=463&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=463&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "요루(진)",
@@ -9427,7 +9609,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/58cba287e958532b75a21a41e6339054_Ol8tRhDy_9fc99856725fb14c47310b76bdb774b2591aeb11.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=462&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=462&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "우라노스",
@@ -9453,7 +9635,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3ccbbc3500ad472b09a70c1189632497_aUo5Axbq_4fdd72b20e763506aa2bbaed77519d851d6b3ee0.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=605&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=605&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "우리",
@@ -9531,7 +9713,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/3f11fd55b38e184ce2a92c7e7976591b_XryeiP6p_5b360515702de2f9925ad57114554524d651c27a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=514&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=514&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "우푸(환)",
@@ -9607,7 +9789,7 @@
     "grade": "일반등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/712f65393ea5049d64b68646db7e2bc9_bSiUOITB_93b888f99935069ca62f67ae2e1bc1e10339feed.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=595&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=595&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "은하다이노",
@@ -9633,7 +9815,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c6aba87199bca7db76c786d562bd5423_Z5hyoVac_40770c752aa94f6a9c5fc3fc840a272b6a1caf74.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=824&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=824&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "은하다이노(환)",
@@ -9659,7 +9841,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c6aba87199bca7db76c786d562bd5423_EGfAh8dK_6a9db694b71d93aaaf3ac1194df69abf7e22a826.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=825&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=825&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "이구로스",
@@ -9685,7 +9867,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/31906c61dbaebab603b762001a936db2_4NgA87r1_4797cbfa6a65874079595c6254d09fd7568c15c6.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=486&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=486&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "이구로스(환)",
@@ -9737,7 +9919,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/88591565770705394f95281007d0fa86_4HTYsaGm_15cc0bd3bee6ec80f961ab920bac5d50eb40f341.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=304&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=304&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "이루(변종)",
@@ -9788,7 +9970,7 @@
     "grade": "일반등",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a928746a94d49342ba21ff2faeef3030_RXhmHBK7_0d8e6f64b9c13a069bbfee035d878fcd0de9449a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=464&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=464&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "이무기",
@@ -9814,7 +9996,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_fvXgxjRu_c4c53e5244711f52adda20c21d73f155a8177f49.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=692&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=692&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "이무기(환)",
@@ -9840,7 +10022,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_UE9n4CNk_298725eeead528d42752dda4f372d3885b324d65.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=693&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=693&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "이블티거",
@@ -9866,11 +10048,11 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/664e976afd3d91f89eff6542700f0c72_W3D0IdXj_3cb6fd1b108f43c85ad13179a6974e29e0053a45.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=623&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=623&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "이블티거(환)",
-    "sub": "이블티거 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 2,
       "화": 8
@@ -9889,7 +10071,7 @@
       "hp": 53
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_BlUbRoCn_7cc1372874409b9e72422c4765901153590c0eeb.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=858&sst=wr_hit&sod=asc&sop=and&page=2"
@@ -9917,7 +10099,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5387d13ec54a99594e998adbabe07754_B5mFTeJK_5872962aabd3912dcdf8b134a3c7ab542d3e2cde.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=85&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=85&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "쟈그라",
@@ -9943,7 +10125,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5387d13ec54a99594e998adbabe07754_DegKvdAC_5c9a41a76b7b62be6f2369f876b26fcbcb446625.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=84&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=84&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "쟈하드",
@@ -9969,7 +10151,7 @@
     "grade": "1등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5387d13ec54a99594e998adbabe07754_uoZnCge4_5a222b4a3040081234b3b14093c03cdc8c8c9b43.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=87&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=87&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "주작",
@@ -10004,12 +10186,12 @@
       "풍": 5,
       "화": 5
     },
-    "total": 5.347,
+    "total": 5.354,
     "stats": {
-      "atk": 2.354,
-      "def": 1.125,
-      "agi": 1.868,
-      "hp": 10.181
+      "atk": 2.361,
+      "def": 1.122,
+      "agi": 1.871,
+      "hp": 10.184
     },
     "init": {
       "atk": 12,
@@ -10017,11 +10199,11 @@
       "agi": 9,
       "hp": 53
     },
-    "ride": "탑승불가",
+    "ride": "탑승가능",
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_bP4MuifT_07b0b9513debe03715615b476a324682cf95a3fc.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=847&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=847&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "주작(변종)",
@@ -10046,7 +10228,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_eqZBoyAP_c0870270f66dbf44d8b28a432f80d9b11f79872e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=848&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=848&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "주작(환)",
@@ -10098,7 +10280,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_xVPACIkm_7112c304220ac0afbca24dd29acb9d5031677652.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=119&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=119&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "지가로스",
@@ -10150,7 +10332,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/50d0d4acc37bd6c57f7cfd0ca78f81b9_6EBdQipX_8647b5af4c23a183b89cc7923badf8edfd1e9fc9.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=585&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=585&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "지늑인(각)",
@@ -10175,7 +10357,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2d6ac88162ac58d8963977daea5ee314_JaXFLsKp_8018482809aa7f77080408fc6e8b44395fa118db.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=679&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=679&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "지마",
@@ -10201,7 +10383,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5c4eb7b3c715198694de80efa2fce410_jDl6mtqS_ac6bb6d46857dc23e5d3ea9f33cfcff1dd115c50.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=555&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=555&sst=wr_hit&sod=asc&sop=and&page=15"
   },
   {
     "name": "지마(변종)",
@@ -10227,7 +10409,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/18dad21de87c57d4e87a7450c2794409_1Db78RdI_c439d658c03b200e5c727950a9779fb06ced4428.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=573&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=573&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "지마(진)",
@@ -10253,7 +10435,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2611118ced7875c0e26376e5e8c5bba6_mrxLI1Gb_969632da9ba530cf942ca1d6fb29b6b123a26587.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=561&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=561&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "지발리",
@@ -10279,7 +10461,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_T6hjKADz_0fa326a2a66a5376f24af95e402024fa72c93df8.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=798&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=798&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "지발리(환)",
@@ -10302,10 +10484,10 @@
       "hp": 69
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1ba6a9e565417644855cc6f0b70d88cc_PtFfGB5a_02c963610bac56f3cb6a4d3e9e0610649fa9e012.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=846&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=846&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "지복어",
@@ -10328,7 +10510,7 @@
       "hp": 67
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/be3ede340bc8d10be7e54b80ba2071c0_Wn0Pbe8E_b57e20d1e4c65703754ba7354a49fd57ae0f3c78.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=864&sst=wr_hit&sod=asc&sop=and&page=1"
@@ -10354,14 +10536,14 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fa6a5871818edd64a2f07f676a8520bf_R2yKt3ZO_5968aeaac1de8f0fa1f368a213156b0ddeef168e.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=877&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "지복어(환)",
-    "sub": "지복어 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 3,
       "지": 7
@@ -10380,7 +10562,7 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_tZm9PWUC_8e8e5b39f28da32ac3115eab278361116ee6f49b.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=865&sst=wr_hit&sod=asc&sop=and&page=1"
@@ -10408,7 +10590,7 @@
     "grade": "일반페트",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d868596cf0ca5de5f71ea550913ce28f_4waPB2jY_40f49c89762a6004a9afe8b55810c754db90db1c.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=562&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=562&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "지주작",
@@ -10434,7 +10616,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/54f7866cad84f8748ba514f209548cd6_SIgJcuZ1_b6f76437d5b13fd66cc53ca385f4046fa57fa9f6.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=732&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=732&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "지주작(환)",
@@ -10460,7 +10642,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/54f7866cad84f8748ba514f209548cd6_oPqCd30J_e49ca4d2f7f98c7558da24bc63d0921a927a9301.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=733&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=733&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "천 룡",
@@ -10486,7 +10668,7 @@
     "grade": "일반 등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fed82543e430f0dfbf5c485f4c17a0ba_CYaA8ltK_a6cd77e9a4d2de084d651a425e2e91eaccea411a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=631&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=631&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "천 룡(환)",
@@ -10562,7 +10744,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a113aa4ec7f7a5a9d893292fd679ecdc_Z56EvhQb_55cf1d450aeafc03e7a84040678f2b3a30b0aaca.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=637&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=637&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "청룡",
@@ -10588,7 +10770,59 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_F2UaS8by_7267b4bc64c0d36b4c3ce922fc8b72081b136be3.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=669&sst=wr_hit&sod=asc&sop=and&page=14"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=669&sst=wr_hit&sod=asc&sop=and&page=15"
+  },
+  {
+    "name": "청룡(각)",
+    "sub": "페트 각성",
+    "elem": {
+      "수": 9,
+      "화": 1
+    },
+    "total": 5.469,
+    "stats": {
+      "atk": 2.51,
+      "def": 1.571,
+      "agi": 1.388,
+      "hp": 11.741
+    },
+    "init": {
+      "atk": 13,
+      "def": 8,
+      "agi": 7,
+      "hp": 64
+    },
+    "ride": "탑승불가",
+    "grade": "일반",
+    "emoji": "🐉",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/61ddf1041c3f6781006a92cff4f960d1_7WdJBh3I_4effcb0cdddcb315fd18ae1dc1cb2fe0a55b7081.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=891&sst=wr_hit&sod=asc&sop=and&page=2"
+  },
+  {
+    "name": "청룡(변종)",
+    "sub": "페트 변종",
+    "elem": {
+      "수": 9,
+      "화": 1
+    },
+    "total": 5.592,
+    "stats": {
+      "atk": 2.565,
+      "def": 1.585,
+      "agi": 1.442,
+      "hp": 12.041
+    },
+    "init": {
+      "atk": 14,
+      "def": 8,
+      "agi": 7,
+      "hp": 66
+    },
+    "ride": "탑승불가",
+    "grade": "일반",
+    "emoji": "🐉",
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/e11102e580241bd71b53f08fe00e2e62_WB6uvDm5_73e93ff7806e6c3f81ff1114fed2674285d1a842.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=892&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "청룡(환)",
@@ -10614,7 +10848,7 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_3nYIWd4u_1c489c2a79ddc40c31b73012dd9d8edd2facc2ee.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=747&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=747&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "청모",
@@ -10640,7 +10874,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/539c138df2fc3e734a9a5c785f114086_HMYTWvfh_de24f280a411106687cbc44d0238807d690694e0.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=805&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=805&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "청주작",
@@ -10666,7 +10900,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/6fce171b81244f2a1a91ffe6bf7f7943_6ExOTbqU_6b0b23651c9529b16aa5effc6a2e40c4a023b9bd.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=653&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=653&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "청호",
@@ -10696,7 +10930,7 @@
   },
   {
     "name": "청호(환)",
-    "sub": "청호 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 8,
       "지": 2
@@ -10715,10 +10949,10 @@
       "hp": 58
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_1c2QXrep_1a61a79c268cf57744d57dd7a6e45f6d7590dbcb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=859&sst=wr_hit&sod=asc&sop=and&page=2"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=859&sst=wr_hit&sod=asc&sop=and&page=3"
   },
   {
     "name": "초르초르",
@@ -10744,7 +10978,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2ded82787d8a7a78f3fc37f3f94dce88_EeMnJDtj_3fa9f221cbad9c93ae5f312772df633999faf713.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=230&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=230&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "초르초르(진)",
@@ -10770,7 +11004,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_yZc4LPqX_7e8225100b31507279c239042582661c6df7e86e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=540&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=540&sst=wr_hit&sod=asc&sop=and&page=27"
   },
   {
     "name": "초르초르(환)",
@@ -10796,7 +11030,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5ae6d3fc1fd356babbf8a23c6eb08b39_MLYIhHD5_36885d77421e8eedff8f35643e2129a058f510aa.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=541&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=541&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "초크론",
@@ -10846,7 +11080,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_JKcdMU9W_88d24c639599795cdfe06a248db1fa55cb552144.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=764&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=764&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "치크론",
@@ -10898,7 +11132,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b540bab72315ae49dadb22bb94550372_oUX20rCP_e3e6f1966279327c349c0c2354f1272073a878c2.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=710&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=710&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "카가로스",
@@ -10950,7 +11184,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/88591565770705394f95281007d0fa86_PYr7Cwib_b03c2adc6eac3145608a8a14441834c098fbad9f.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=302&sst=wr_hit&sod=asc&sop=and&page=30"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=302&sst=wr_hit&sod=asc&sop=and&page=31"
   },
   {
     "name": "카루(각성)",
@@ -11026,7 +11260,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/beb4afc182a11ad1387be2c5d96f7e16_DgisUhHR_da2cf1440758f33740623645cf8d2ed3d723454c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=468&sst=wr_hit&sod=asc&sop=and&page=25"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=468&sst=wr_hit&sod=asc&sop=and&page=26"
   },
   {
     "name": "카르곤",
@@ -11052,7 +11286,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fed82543e430f0dfbf5c485f4c17a0ba_7oGDsYuC_0b1651b3ed5aad467ad8b5faf39946f1dc061bf7.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=598&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=598&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "카르곤(환)",
@@ -11130,7 +11364,7 @@
     "grade": "일반등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/558ee86d4878e2b8994d6e65a2ceccf9_5KlY8iqf_41eab93310e2a2d5e3d867865aca45a5ca85792d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=470&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=470&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "카비트",
@@ -11182,7 +11416,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_8XGNLOCS_d8ff83754a3e7e1951114164384e76a77285d412.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=73&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=73&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "카우거",
@@ -11208,7 +11442,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/65bfcea1f5ef65a39ac245511079ea38_9YNHu4eE_41468fa56cf1ab419f4c9280dd1ca54f6e093ff2.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=151&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=151&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "카우거(환)",
@@ -11234,7 +11468,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c90050ccc07ba14375eaf63b7af44da0_UGRDoYpM_73c3c8c7bd09ddd2eaf43e8621540be5ce27281f.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=601&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=601&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "카이저",
@@ -11286,7 +11520,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_SLcXVHOx_3a09b7aabcf58ae983dc0e95abfa64307902d5ad.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=70&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=70&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "카키",
@@ -11312,7 +11546,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_jY1Fqbwi_d91066890f8c5d4c135b07540f8408e11d70755d.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=117&sst=wr_hit&sod=asc&sop=and&page=42"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=117&sst=wr_hit&sod=asc&sop=and&page=43"
   },
   {
     "name": "카키(환)",
@@ -11338,7 +11572,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d32ee886232a7988cefeac50e0c65e1b_8Tzirva2_7e8caf141edb8e115609855461ac48f592ef780b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=582&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=582&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "카타르카스",
@@ -11389,7 +11623,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4925df4cec84c8b5281e2ed2337554db_r6HXn5O1_0f1a7a6bcd7dba93e7fa5a364a5e9a1feff83cd9.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=497&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=497&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "칼로스(환)",
@@ -11415,7 +11649,7 @@
     "grade": "일반등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/10c597da3d7c401c0630401aba35eb50_vaTU8Ae1_2b5a9325c097e8cbe2fe9f1948b3abbaafa2241e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=583&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=583&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "케이비",
@@ -11441,7 +11675,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_DbEPrNWk_bd201a983d817f726543365c96eeac60c7735494.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=59&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=59&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "켄타르",
@@ -11467,7 +11701,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/008bc26da6dd2d695549bf15accb0372_e0bazyEo_be3fcbf0aeb869c34764fa6daddeb7c3c383165b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=609&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=609&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "코로카스",
@@ -11519,7 +11753,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4f1d386bbbfdd91ddddc81dc6878bde0_iMXtlj0g_70b94109aaebd479547ae5715003df35e3685ae1.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=130&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=130&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "코발스",
@@ -11544,11 +11778,11 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5387d13ec54a99594e998adbabe07754_347HRP5M_a8f1bb024aeab878465638fd009e508732e4be5b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=82&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=82&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "코발스(환)",
-    "sub": "코발스 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 10
     },
@@ -11566,7 +11800,7 @@
       "hp": 41
     },
     "ride": "탑승불가",
-    "grade": "일반등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f0ec136d9caa40d18b7e50952583dc4_olyemhFd_baa0689d69f50c313d049f68891bd0809f62fe38.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=833&sst=wr_hit&sod=asc&sop=and&page=4"
@@ -11723,7 +11957,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_AWK6kqdR_43b447c7355769a8dae4081b8cc478b3c0ad1427.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=115&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=115&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "쿠쿠(환)",
@@ -11748,7 +11982,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d32ee886232a7988cefeac50e0c65e1b_BYyU1LXu_7910e7fab88d8983224716cf636a583175de34b2.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=580&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=580&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "쿠쿠르",
@@ -11851,7 +12085,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d4616e2ab94484be4d7f4e83263a2226_BnYCTKM2_401912bd684129c79f4af3600d3afda94749026a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=227&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=227&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "크로아치",
@@ -11877,7 +12111,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d58a1e714f111b7503a1b3cd8041f11e_39agx4OG_2ff464c3fe5f93bdf8746fc425d20042412420fa.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=196&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=196&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "크로톤",
@@ -11981,7 +12215,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fad4f0b53ef7a61514d8e52ed6e9724b_WJcy0FZU_9fab07f363533f0fa678a09dd8aadf3b3fece445.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=508&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=508&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "키로",
@@ -12007,7 +12241,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c965125eea9b7dfd60a27fb6462dfb2b_dmVH5hGg_ef92a7c199f4d4bed33fa2919da556231bf66fda.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=548&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=548&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "키오아치",
@@ -12059,7 +12293,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e604bc081a9b234bfede62c672bd640b_BpltJo1u_6a262956f14db2c3f41b9dc9e04159b9f73f9d20.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=819&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=819&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "키파",
@@ -12085,7 +12319,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/b25d9022809e57c403566bcd65354dec_ez1Cagvm_3b254f312f97b9b563f6b7cd047be68f6f1562c1.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=231&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=231&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "키파(환)",
@@ -12137,7 +12371,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_IvaK1k4x_3d0e7ba2969014c5a9812582b4d4ad58cfa6a72d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=195&sst=wr_hit&sod=asc&sop=and&page=31"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=195&sst=wr_hit&sod=asc&sop=and&page=32"
   },
   {
     "name": "킹크랩",
@@ -12163,7 +12397,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d4616e2ab94484be4d7f4e83263a2226_KDtyU8cr_d53e1f2d433e341d60948ed305f35f584d1644dc.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=228&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=228&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "타로곤",
@@ -12215,7 +12449,7 @@
     "grade": "일반 등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c20689ab7ddf4b05c11f2319f6ed21bf_aHDEyrCI_e77f05c07244701c651c110756efa4fb4cd9c461.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=141&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=141&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "타스무미",
@@ -12319,7 +12553,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_7suR9qY8_7f4d0037a26b0cf5e125a0c56554f375be6410f9.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=114&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=114&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "타키(환)",
@@ -12345,7 +12579,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d32ee886232a7988cefeac50e0c65e1b_sGDeihCt_d3c4941301eb136b5ee94a3dbe70329f911caad7.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=579&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=579&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "타키온",
@@ -12371,7 +12605,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/813209c1e328c5fb94be5d6007dba828_ixnkAI31_066d5eaf7f4ea90ad00855b721d7e1e26a333d2b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=201&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=201&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "테라곤",
@@ -12397,7 +12631,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_LMYxIzV3_427773be54929e35bd2a37826d5801fbfb01af9a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=108&sst=wr_hit&sod=asc&sop=and&page=36"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=108&sst=wr_hit&sod=asc&sop=and&page=37"
   },
   {
     "name": "테라곤(환)",
@@ -12423,7 +12657,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/eb69c2b5546dab26fb88170acbd2f173_OEFMxlDw_d13ef70471b5d7e6e76102fe17984b8dbd7c459b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=597&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=597&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "테라로스",
@@ -12449,7 +12683,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0b63a6e4106baa5a58c5c4f0c6f6f921_c45Y3U8m_9cb2fd9818e605fb3020614b21723f4014ce609d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=481&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=481&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "테라로스(환)",
@@ -12475,7 +12709,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fbfbeb5922b3e675c259a779276bf744_zLCbTUDN_40f98e1e5e5a1e568d0cff9ee6c247018e05c4c3.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=686&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=686&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "테라비스",
@@ -12527,7 +12761,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4b451efc4e3fcb69406b44492ce87daf_u4sY2n9S_f4960a4a13b928fec40deb2d162b3c10068f407b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=685&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=685&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "테라탄",
@@ -12579,7 +12813,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_BxER6QHn_00fba2a1a65b7b48e2fb9caa046bc5f7adfcbb1c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=729&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=729&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "테로노돈",
@@ -12629,7 +12863,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/dacd00a51f9e860a5e27135161a78e2b_mkspl0X7_dabbf9d73e4053a1048e658b6e433bf6f741484e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=655&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=655&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "테르가",
@@ -12707,7 +12941,7 @@
     "grade": "일반 등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1176adb7895227efa3225ba809328231_7YS9COJt_b92ceed741648a555b91049202a2b5cbaaa93f42.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=434&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=434&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "테이노스(각)",
@@ -12733,7 +12967,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/bc2a4c901e25932d73f25d139f8feb32_uX80FdiL_26394b5a3f5cfbe3800eb80e039453e58adc0a71.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=680&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=680&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "테이노스(변종)",
@@ -12759,7 +12993,7 @@
     "grade": "일반 등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/36f0e3f1c8f4a5d6267063b6ad5d8ade_MyvgNdiA_17b973d09b3b0cd8a68bb00090e36fa0cb306206.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=436&sst=wr_hit&sod=asc&sop=and&page=28"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=436&sst=wr_hit&sod=asc&sop=and&page=29"
   },
   {
     "name": "테이노스(진)",
@@ -12785,7 +13019,7 @@
     "grade": "일반 등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/67ec219fadbad1663ba00c2a032d38af_bY81scnV_ef173832da3c80633511e087c67c308a762e6470.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=435&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=435&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "테이론",
@@ -12811,7 +13045,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/539c138df2fc3e734a9a5c785f114086_Ryl1v4wo_c30c7242b1a292fbf85f5e49e356c07121b5fead.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=799&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=799&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "테이론(환)",
@@ -12837,7 +13071,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e4f81796c4e8066be9c504218d83ec4e_RgNeaOSp_7eae770ec2b631b7e832ec90680c7532e4d7c957.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=800&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=800&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "테이루스",
@@ -12863,7 +13097,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8171a21f11be9f2d4f13efc2a106e5a4_Nci6Fdl4_f0da96d4398c5cab02d8e7aa563912700b9e3e0e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=758&sst=wr_hit&sod=asc&sop=and&page=7"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=758&sst=wr_hit&sod=asc&sop=and&page=8"
   },
   {
     "name": "테이루스(환)",
@@ -12889,7 +13123,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8171a21f11be9f2d4f13efc2a106e5a4_4zX6qNIp_576db762801a92fc1238f2d404ea16727f749fb1.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=759&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=759&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "토라",
@@ -12941,7 +13175,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_SF2nO3PY_ddec15616dad9afe4f5172394f138e52c87a1a43.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=69&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=69&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "토르프스",
@@ -12966,7 +13200,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_2Y10qSmx_39c5bfce50a15cf2008b920d5275fcc3fb59fe03.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=81&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=81&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "토리노프스",
@@ -12992,7 +13226,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_z3QBRk7t_1f95abe81806cf91d1ef71e74dab40a252e25109.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=78&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=78&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "토리케라",
@@ -13044,7 +13278,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/03c3933299209c194616a47ccce9eedb_PMAuHbgX_d30ff104ccd5fc532f3c279cc075d1a9ddbeb857.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=619&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=619&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "토우트(환)",
@@ -13070,7 +13304,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_16L0ZJNf_729da3da1227d27aef322e450565a018242a027e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=761&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=761&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "투르돈",
@@ -13096,7 +13330,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_PrExj27e_81a3a1293eca98b5e4fd4dce90b1e36d3633d127.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=64&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=64&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "투투",
@@ -13252,7 +13486,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_wEBOlWtV_2697a87c16bdcc18aa7ca7bce9ea3a0bd3b16863.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=797&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=797&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "파르체(환)",
@@ -13275,7 +13509,7 @@
       "hp": 67
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/0f61b6ffeb59d44ae526ddeea780de2b_Nh0Qu9cZ_b565b2687920b63dbdcbb8ea2526ed62b306d97a.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=845&sst=wr_hit&sod=asc&sop=and&page=3"
@@ -13328,7 +13562,7 @@
     "grade": "일반등",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/511880f6b4522fe766bfd3e86226a0a5_CSWAIk07_4a6ad321bc898b6e8e272d006ca333a5f74ddfc8.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=604&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=604&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "파아란",
@@ -13354,7 +13588,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c9b6dd6387291ed49b2cf4babebab3a7_JDaONnwL_20a0b06aeaef845c7dcda3e3bfce20ab5a5382a6.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=615&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=615&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "파아란(환)",
@@ -13380,7 +13614,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a25f206159c46f1b02c3eebe03e06158_XMZwGolK_0ef4ae4aa5b2f5967cab1762364cfd922ddfebaa.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=689&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=689&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "파이어 킹 드래곤",
@@ -13405,7 +13639,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/19f4e0f9db28ea6723bc5ceac91607b6_khO8NVm5_b618e85618779b654b4d36cf1d4e9500609a69a7.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=553&sst=wr_hit&sod=asc&sop=and&page=24"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=553&sst=wr_hit&sod=asc&sop=and&page=25"
   },
   {
     "name": "파이어노르",
@@ -13428,7 +13662,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/aaf2f168a116f36b89970f01c25789d9_S9qxnKrt_465aeed4e082bf6721dc0d4888751804a868c518.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=657&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=657&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "파피온",
@@ -13480,7 +13714,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5387d13ec54a99594e998adbabe07754_7zDMeyxR_8f07dd75da026f6cc583c8e144363d7caec6a3a6.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=86&sst=wr_hit&sod=asc&sop=and&page=39"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=86&sst=wr_hit&sod=asc&sop=and&page=40"
   },
   {
     "name": "팔케온",
@@ -13505,7 +13739,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c90050ccc07ba14375eaf63b7af44da0_bCkGS9Dq_4f4c8a471278622f01f4529579ddf7da75c8a946.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=484&sst=wr_hit&sod=asc&sop=and&page=23"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=484&sst=wr_hit&sod=asc&sop=and&page=24"
   },
   {
     "name": "페가수스",
@@ -13557,7 +13791,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_hOmIGywp_db26a026e6a4397d17a89314fb5d091ed29367d3.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=728&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=728&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "페루루",
@@ -13583,7 +13817,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/db359daa7efe7325486bd61065078928_zbJCvj1q_d8b800cd1f7c38e6d553187199ae9588bb4763db.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=628&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=628&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "페트(환)",
@@ -13635,7 +13869,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a2cf7917567db830f1cc2fd2f58f0798_nLFKtyAr_56447e222742238d2f33d2401acd145bc896452e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=775&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=775&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "펜리(환)",
@@ -13661,7 +13895,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_FOGxSy8A_4386a8c5aedf5c7f3f1992f2a1a1f5df3dc6f99c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=778&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=778&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "펜릭스",
@@ -13687,7 +13921,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/707c43b7a3a8c5f6cb1f29a1245b18f3_EwIHknaL_4d9311279200dab4b2f0a06373dc36e7d8e737d2.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=776&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=776&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "펜릭스(환)",
@@ -13713,7 +13947,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_jNwiuYSQ_2b64d2ddeaffb041f46928e89853cd2aaafe8264.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=779&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=779&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "펜타스",
@@ -13817,7 +14051,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d58a1e714f111b7503a1b3cd8041f11e_gReob3h8_515213f23e708eba677cbbfa97e7bf606cacfacf.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=204&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=204&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "포링",
@@ -13843,7 +14077,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_0Yq5dTWC_0eacd347815ea0028ba802dbe909b023884c7697.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=56&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=56&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "포보",
@@ -13869,7 +14103,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_Sf7bCumI_5b6f50a1e9e431a9b62ed76802e02d8811758e8e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=67&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=67&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "포이비스",
@@ -13895,7 +14129,7 @@
     "grade": "일반페트",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_3BImAia2_ee9925aeae9a6bbfd1357814a82a5da30bc5810f.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=110&sst=wr_hit&sod=asc&sop=and&page=40"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=110&sst=wr_hit&sod=asc&sop=and&page=41"
   },
   {
     "name": "푸비",
@@ -13921,7 +14155,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_BRXz4A6F_345cb570f5ed274d40cf2793adb6db0f1d4bbe91.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=15&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=15&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "푸비토스",
@@ -13947,7 +14181,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_lrz0F8CK_845b3dff0fb71fdd5ab3521913b5136d1c2561c9.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=102&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=102&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "푸타카",
@@ -13999,7 +14233,7 @@
     "grade": "일반등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_Wzkb0fFZ_b64f407bc1701e49224502db15330770b8878b30.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=112&sst=wr_hit&sod=asc&sop=and&page=38"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=112&sst=wr_hit&sod=asc&sop=and&page=39"
   },
   {
     "name": "푸푸",
@@ -14025,7 +14259,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_rJOQ74kw_2cbba0ee20cefdabba90a14e136814a86043a458.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=21&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=21&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "푸푸(진)",
@@ -14051,7 +14285,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8ba16f47b2e8001402c6c312ea37a219_ShPdjXN2_82a45618bd79f8fb39de2336b86b25fbc41a6916.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=512&sst=wr_hit&sod=asc&sop=and&page=21"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=512&sst=wr_hit&sod=asc&sop=and&page=22"
   },
   {
     "name": "푸푸(환)",
@@ -14077,7 +14311,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d32ee886232a7988cefeac50e0c65e1b_ONC2F3I8_fdca4c518fc3ffd1ac3f714fc27e8df52700fb1e.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=513&sst=wr_hit&sod=asc&sop=and&page=22"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=513&sst=wr_hit&sod=asc&sop=and&page=23"
   },
   {
     "name": "풍마",
@@ -14103,7 +14337,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5c4eb7b3c715198694de80efa2fce410_BV8DpUv7_5d943ac52da409d9f8aff0cbdeef05b59e05da75.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=557&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=557&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "풍마(변종)",
@@ -14155,7 +14389,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/be16574fd27b3bce53c23831752a65b1_oAUq7iP9_f20f8760356eeff0b56c16d80bd6edbafe8e7cfb.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=558&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=558&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "풍백",
@@ -14181,7 +14415,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c9b6dd6387291ed49b2cf4babebab3a7_6qWiDlHy_21f2e77bdce085e43a01ad0be24e39e53bdac48c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=614&sst=wr_hit&sod=asc&sop=and&page=20"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=614&sst=wr_hit&sod=asc&sop=and&page=21"
   },
   {
     "name": "풍백(환)",
@@ -14207,7 +14441,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ad900477990abc5092d9f17ff4c3fc8f_2Sxt1QA0_813478075462cec07ab90ba864ae8f9d41b1f28a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=635&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=635&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "풍복어",
@@ -14230,10 +14464,10 @@
       "hp": 66
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/be3ede340bc8d10be7e54b80ba2071c0_QGtPfrOl_6b9b66cbbd98e95067fb7e40f67a6d5129f90b32.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=870&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=870&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "풍복어(신)",
@@ -14256,14 +14490,14 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_baN7OpoF_524998f3847c929b9c44e9c4f9a69d1e23a7f4e8.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=880&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "풍복어(환)",
-    "sub": "풍복어 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 7,
       "화": 3
@@ -14282,10 +14516,10 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2293ac14222d2eb327b7a7ac3f1d1dcf_Yo45OHXi_a4ffd22413f8ce1b0954bf503273d8d0bb219b76.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=876&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=876&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "풍운룡",
@@ -14311,7 +14545,7 @@
     "grade": "일반페트",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fed82543e430f0dfbf5c485f4c17a0ba_OouhCpDQ_0c13479cc56e58cb510d1897fcdd8f379be4b454.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=633&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=633&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "풍운룡(환)",
@@ -14363,7 +14597,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_d42YMVWc_4eb1a9a73f75783111fb929d5e165299d57ce589.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=100&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=100&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "프라키토스(환)",
@@ -14414,7 +14648,7 @@
     "grade": "일반 등급",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2bdd85106927491dd9ddf22f3d62a2a3_F9W6V2dH_5863f881c0da01e8a049c72b8f2d690214223e3c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=244&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=244&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "프로돈(환)",
@@ -14439,7 +14673,7 @@
     "grade": "일반",
     "emoji": "🦖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_EMFb7NVm_31050e80121627765c1b7e7d49929886cc5fcd49.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=745&sst=wr_hit&sod=asc&sop=and&page=9"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=745&sst=wr_hit&sod=asc&sop=and&page=10"
   },
   {
     "name": "프리토스",
@@ -14465,7 +14699,7 @@
     "grade": "1등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_zmstEJWV_e1e41e400ffb56cfeda38c5cb55217128b779b4b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=101&sst=wr_hit&sod=asc&sop=and&page=33"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=101&sst=wr_hit&sod=asc&sop=and&page=34"
   },
   {
     "name": "프리토스(환)",
@@ -14595,7 +14829,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_Y6A0pNmd_786a3a6f64b776a912d6c26cfe2b085b69a7832e.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=715&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=715&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "하트링",
@@ -14621,7 +14855,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a4a45ec32ed57a468a30a424b4139c5f_Q9hiH8dv_6d319836ca846960cadae06522c258eaf055a922.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=181&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=181&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "한가름",
@@ -14673,7 +14907,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4d9e5a96524c2945b5f0c53911559626_PpARzZ8N_59b87e193f7d31d6ed815ed3a6fe8f5cea5f06fe.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=570&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=570&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "해룡",
@@ -14751,7 +14985,7 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/990657a3d525661d9664d1806a4a1669_Wr2NnRaE_1ca13c13f3ef5e617ab226683b32fa15578c405a.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=811&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=811&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "해치",
@@ -14803,7 +15037,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/8fffca169ff11f965a683ba5d8973074_8wQKxZeS_08305662a63b9865b2bf1ec5b467b192aabe4a5f.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=211&sst=wr_hit&sod=asc&sop=and&page=29"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=211&sst=wr_hit&sod=asc&sop=and&page=30"
   },
   {
     "name": "헤티루SD",
@@ -14953,7 +15187,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/de119d8f2a6960b83e8b42a005a36a06_dhDiaBk6_b6b318a2ef3c36d0254f1c3a7d7bb6f2dc275759.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=642&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=642&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "헤티아SD",
@@ -14978,7 +15212,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/431ed60ffb587f808b1b7487206bc247_f9Yx8JeU_db3ba345bcb560a5c7a0d6f6aaaed6759141635a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=478&sst=wr_hit&sod=asc&sop=and&page=27"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=478&sst=wr_hit&sod=asc&sop=and&page=28"
   },
   {
     "name": "헤티아SD(환)",
@@ -15026,10 +15260,10 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c44edc37133d0fb442832906bf6ccbe7_8X90ep6l_5370e959b5ddf12197fdb4e77ac3954ef482ed31.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=828&sst=wr_hit&sod=asc&sop=and&page=3"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=828&sst=wr_hit&sod=asc&sop=and&page=4"
   },
   {
     "name": "현무(각)",
@@ -15052,10 +15286,10 @@
       "hp": 73
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9f678bd56fb17ba400cab885dc336d60_eKAH5WVq_b2563995d591eca0586946d57088092efba064e8.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=834&sst=wr_hit&sod=asc&sop=and&page=4"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=834&sst=wr_hit&sod=asc&sop=and&page=5"
   },
   {
     "name": "현무(변종)",
@@ -15076,15 +15310,15 @@
       "agi": 3,
       "hp": 74
     },
-    "ride": "탑승가능",
-    "grade": "일반 등급",
+    "ride": "탑승불가",
+    "grade": "일반",
     "emoji": "🐾",
-    "imageUrl": "https://www.hwansoo.top/data/file/pets/5b9e8fb7db90e27c54e4790af37d72d9_xY3kN7R2_00b339434ba60a303ae7123a3aef8c755661f33c.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=835&sst=wr_hit&sod=asc&sop=and&page=5"
+    "imageUrl": "https://www.hwansoo.top/data/file/pets/0f61b6ffeb59d44ae526ddeea780de2b_tmyG41Vc_d571d3d666f3df4b1273c12ed35944d1d5ccdf6f.webp",
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=835&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "현무(환)",
-    "sub": "현무 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 1,
       "지": 9
@@ -15103,7 +15337,7 @@
       "hp": 73
     },
     "ride": "탑승불가",
-    "grade": "일반 페트",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/55009b1f23c7282b126640db40066046_kpAx7OPF_a8c149e87f4e8412b38ef2e0baa17e7397ce956b.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=832&sst=wr_hit&sod=asc&sop=and&page=4"
@@ -15158,7 +15392,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/f190cee7934ff85a0d24eb293d99a8c3_YHU9xm3N_ba760bf6bc6247dd5b9c5dae863ddbe4dc100e10.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=116&sst=wr_hit&sod=asc&sop=and&page=41"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=116&sst=wr_hit&sod=asc&sop=and&page=42"
   },
   {
     "name": "호르쿠(환)",
@@ -15210,7 +15444,7 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e88458a02781cc4951563db36460cad5_EhquK5m7_b76bc0079a9e9c76410157e84f2cab81f4adf953.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=638&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=638&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "호크(환)",
@@ -15236,7 +15470,7 @@
     "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/1676c51ca26c60fab3ea89287195e4e8_qfY1IML8_3a93dd983a3169aa508b7ef43a1dbd04c5f7c6a0.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=781&sst=wr_hit&sod=asc&sop=and&page=6"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=781&sst=wr_hit&sod=asc&sop=and&page=7"
   },
   {
     "name": "홍모",
@@ -15262,7 +15496,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/addbbfe737d04b61c2f128a4bd79f40c_EXmAgMDU_9487c482808f597a46426c57e54df85efbffc00b.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=806&sst=wr_hit&sod=asc&sop=and&page=5"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=806&sst=wr_hit&sod=asc&sop=and&page=6"
   },
   {
     "name": "홍아리",
@@ -15314,7 +15548,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/5c4eb7b3c715198694de80efa2fce410_CIbvx5Qe_d00e750aa79bd29098e8618db1ef528f4c70d152.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=554&sst=wr_hit&sod=asc&sop=and&page=17"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=554&sst=wr_hit&sod=asc&sop=and&page=18"
   },
   {
     "name": "화마(각)",
@@ -15366,7 +15600,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/9a4c314ecf97cb153250ff5f2b2003af_BKktW1jL_3c223dd4f51aa0cd530b3ff84603c1b01b4060ea.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=575&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=575&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "화마(진)",
@@ -15415,7 +15649,7 @@
       "hp": 67
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/be3ede340bc8d10be7e54b80ba2071c0_d5RA0Ff3_d5f587e01433b995abcf0d4e008d73ac20d2463f.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=868&sst=wr_hit&sod=asc&sop=and&page=1"
@@ -15441,14 +15675,14 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_lVSsg4fr_3d19dbba7f3406d048b23595507e228648e443b4.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=879&sst=wr_hit&sod=asc&sop=and&page=1"
   },
   {
     "name": "화복어(환)",
-    "sub": "화복어 환생",
+    "sub": "패트 환생",
     "elem": {
       "수": 3,
       "화": 7
@@ -15467,10 +15701,10 @@
       "hp": 70
     },
     "ride": "탑승불가",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/2293ac14222d2eb327b7a7ac3f1d1dcf_9sJXu1KE_936aaa87e5b02b3c180bb5047838ea6be7f44779.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=869&sst=wr_hit&sod=asc&sop=and&page=1"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=869&sst=wr_hit&sod=asc&sop=and&page=2"
   },
   {
     "name": "화이트드래곤",
@@ -15496,7 +15730,7 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_zhYPM2tZ_04c7b51e5693ef795e7c136a91490ad1dd706afb.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=725&sst=wr_hit&sod=asc&sop=and&page=10"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=725&sst=wr_hit&sod=asc&sop=and&page=11"
   },
   {
     "name": "화이트드래곤(진)",
@@ -15522,7 +15756,7 @@
     "grade": "일반",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e765ff717c049f16f7ef74a17e9ac1d1_kDIZcyPf_8cc108b4160bec0ef49ea3d91c42729b1ae6d6fa.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=726&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=726&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "화이트링",
@@ -15574,7 +15808,7 @@
     "grade": "1등급",
     "emoji": "🐖",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/04fb709020128997b2b36221e8fca3ce_R049QBI6_babf0ba2e59a41e91c5407ca80b9c0e226ce586c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=608&sst=wr_hit&sod=asc&sop=and&page=18"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=608&sst=wr_hit&sod=asc&sop=and&page=19"
   },
   {
     "name": "황호",
@@ -15600,11 +15834,11 @@
     "grade": "일반등급",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/664e976afd3d91f89eff6542700f0c72_EhDS5nfL_a483b5796ce16a4f9bdbffd9bf774ede84595f5c.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=621&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=621&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "황호(환)",
-    "sub": "황호 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 2,
       "지": 8
@@ -15623,7 +15857,7 @@
       "hp": 54
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/208c72c4342ab687f2f38043175dd506_2wCYr5vg_5f3f84a96368833195be069935e6c8d2e4ccd817.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=857&sst=wr_hit&sod=asc&sop=and&page=2"
@@ -15652,7 +15886,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/93dd7ef571ef9eea5ac5db9606314142_cFWGrqQ6_9e3bd3f10b0ebb9313850cbb28be39aa3a7e4d43.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=40&sst=wr_hit&sod=asc&sop=and&page=37"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=40&sst=wr_hit&sod=asc&sop=and&page=38"
   },
   {
     "name": "휴보",
@@ -15678,7 +15912,7 @@
     "grade": "2등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/e71549095ae03c5a3acda5e10be2b685_GLY08Hbk_c928bb5ac9d49d4f9883ed8f7f333cda0e3d12ec.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=66&sst=wr_hit&sod=asc&sop=and&page=35"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=66&sst=wr_hit&sod=asc&sop=and&page=36"
   },
   {
     "name": "흑갈푸스",
@@ -15730,7 +15964,7 @@
     "grade": "일반등급",
     "emoji": "🐺",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/6c6c14fda6f5c3ba7b451b12aa7a8575_HcgUaX3P_b45a607dff83ee0a7807ae95cedb7f9c3540929a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=711&sst=wr_hit&sod=asc&sop=and&page=11"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=711&sst=wr_hit&sod=asc&sop=and&page=12"
   },
   {
     "name": "흑기린",
@@ -15808,7 +16042,7 @@
     "grade": "일반등급",
     "emoji": "🐉",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/c53ea4a96de0bff73b1a6c1f9ba8b36f_6YMghIGy_3b4805b82e85d7604b7cc843a9259a08b3d37c2d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=656&sst=wr_hit&sod=asc&sop=and&page=16"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=656&sst=wr_hit&sod=asc&sop=and&page=17"
   },
   {
     "name": "흑우트",
@@ -15834,7 +16068,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/03c3933299209c194616a47ccce9eedb_d6rvKTq3_6446ff624cb5ad3f0b6ab407759732c6f55621f9.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=618&sst=wr_hit&sod=asc&sop=and&page=15"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=618&sst=wr_hit&sod=asc&sop=and&page=16"
   },
   {
     "name": "흑우트(환)",
@@ -15860,7 +16094,7 @@
     "grade": "일반",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/af124408d977f9fbd4f314f79b1c9e31_yl7iJ6ZH_5bd002f4735ebc4430cb4ef55a042565e81698d5.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=760&sst=wr_hit&sod=asc&sop=and&page=8"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=760&sst=wr_hit&sod=asc&sop=and&page=9"
   },
   {
     "name": "흑주작",
@@ -15886,7 +16120,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/d58a1e714f111b7503a1b3cd8041f11e_W8aDX6T4_8e407248444d1ddcd67ff21903efdc6a2281cc0d.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=190&sst=wr_hit&sod=asc&sop=and&page=32"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=190&sst=wr_hit&sod=asc&sop=and&page=33"
   },
   {
     "name": "흑주작(환)",
@@ -15990,7 +16224,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/fc684159652a3e18e6be68661c838ba2_lg7an5By_a85655577191b0a86897bc56207ea884785f188b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=620&sst=wr_hit&sod=asc&sop=and&page=19"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=620&sst=wr_hit&sod=asc&sop=and&page=20"
   },
   {
     "name": "흑풍(환)",
@@ -16046,7 +16280,7 @@
   },
   {
     "name": "흑호(환)",
-    "sub": "흑호 환생",
+    "sub": "패트 환생",
     "elem": {
       "풍": 8,
       "화": 2
@@ -16065,7 +16299,7 @@
       "hp": 54
     },
     "ride": "탑승가능",
-    "grade": "일반 등급",
+    "grade": "일반",
     "emoji": "🐅",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a6c2104f518c7b9b919f5139e51e20d2_DABd0NGW_3a40c2b2399e2a9efc22837c338d769a598d18f4.webp",
     "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=860&sst=wr_hit&sod=asc&sop=and&page=3"
@@ -16094,7 +16328,7 @@
     "grade": "일반 등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/22941d98ccec2e83b4583cb98638798d_TYzxOmNa_f6377895c84e19efccfdb2fc8604e2e71388309b.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=159&sst=wr_hit&sod=asc&sop=and&page=34"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=159&sst=wr_hit&sod=asc&sop=and&page=35"
   },
   {
     "name": "히파(환)",
@@ -16120,7 +16354,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/ef4c654faa21cde1281edf5c0e4facc0_zg6ndmTF_ad0e699f1869e84d1d98d28b115656758436f6b8.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=688&sst=wr_hit&sod=asc&sop=and&page=13"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=688&sst=wr_hit&sod=asc&sop=and&page=14"
   },
   {
     "name": "SD언딘",
@@ -16146,7 +16380,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/4a85afa9bbb93a86511ff23fa0c15fc9_kYPgyUbp_3e97d0abcec1a772fc4182a5cfa2e3d7da5a839a.gif",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=682&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=682&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "SD언딘(진)",
@@ -16172,7 +16406,7 @@
     "grade": "일반등급",
     "emoji": "🐾",
     "imageUrl": "https://www.hwansoo.top/data/file/pets/a73ac1e8b1d3a49dfc44c5c95fd4823a_T3ZRpVEk_49718f8dcfff082d60f114284729fc805edd0704.webp",
-    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=707&sst=wr_hit&sod=asc&sop=and&page=12"
+    "source": "https://www.hwansoo.top/bbs/board.php?bo_table=pets&wr_id=707&sst=wr_hit&sod=asc&sop=and&page=13"
   },
   {
     "name": "SD언딘(환)",
