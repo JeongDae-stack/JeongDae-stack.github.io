@@ -147,6 +147,9 @@ try {
 
     function switchTab(tab) {
         currentTab = tab;
+        document.getElementById('commentsPanel').hidden = tab !== 'comments';
+        document.getElementById('commentsBtn').className = tab === 'comments' ? 'nav-btn active-pet' : 'nav-btn';
+        if (tab === 'comments') document.dispatchEvent(new Event('comments:open'));
 
         document.getElementById('petSearchPanel').style.display = tab === 'pet' ? 'block' : 'none';
         document.getElementById('itemSearchPanel').style.display = tab === 'item' ? 'block' : 'none';
@@ -172,7 +175,7 @@ try {
     }
 
     function resetSearch() {
-        document.querySelectorAll('input').forEach(input => input.value = "");
+        document.querySelectorAll('input:not(#commentsPanel input)').forEach(input => input.value = "");
         document.querySelectorAll('select').forEach(select => select.value = "");
 
         const rankLimit = document.getElementById('rankLimit');

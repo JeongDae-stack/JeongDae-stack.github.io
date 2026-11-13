@@ -34,6 +34,7 @@
         <button id="rankBtn" class="nav-btn" onclick="switchTab('rank')">🏆 펫 랭킹</button>
         <button id="radontaBtn" class="nav-btn" onclick="switchTab('radonta')">🗼 라돈타 공략</button>
         <button id="ridingBtn" class="nav-btn" onclick="switchTab('riding')">🦖 탑승펫 안내</button>
+        <button id="commentsBtn" class="nav-btn" onclick="switchTab('comments')">💬 댓글</button>
     </div>
 
     <div id="petSearchPanel" class="search-panel">
@@ -253,10 +254,31 @@
     </div>
 </div>
 
+    <section id="commentsPanel" hidden>
+        <form id="commentForm" class="comment-form">
+            <label>닉네임 <input name="nickname" maxlength="30" required></label>
+            <label>댓글 <textarea name="body" rows="3" maxlength="1000" required></textarea></label>
+            <label>삭제 비밀번호 <input name="password" type="password" minlength="8" maxlength="72" autocomplete="new-password" required></label>
+            <button>댓글 등록</button>
+        </form>
+        <details>
+            <summary>관리자 로그인</summary>
+            <form id="commentAdmin" class="comment-form">
+                <label>이메일 <input name="email" type="email" autocomplete="username" required></label>
+                <label>비밀번호 <input name="password" type="password" autocomplete="current-password" required></label>
+                <button>로그인</button>
+            </form>
+            <button id="commentLogout" hidden>로그아웃</button>
+        </details>
+        <p id="commentStatus" role="status"></p>
+        <div id="commentList"></div>
+        <button id="commentMore" hidden>댓글 더 보기</button>
+    </section>
     <div id="resultArea"></div>
 </div>
 
 <script src="./js/app.js" defer></script>
 <script src="./js/shared-memo.js" defer></script>
+<script src="./js/comments.js" defer></script>
 </body>
 </html>

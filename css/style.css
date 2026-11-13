@@ -1228,3 +1228,10 @@ button.source-link {
 #memo-status {
     margin-inline-start: 4px;
 }
+
+.comment-form { display: grid; gap: 8px; max-width: 480px; margin-block: 12px; }
+.comment-form label { display: grid; gap: 4px; }
+.comment-form input, .comment-form textarea { font: inherit; width: 100%; box-sizing: border-box; }
+#commentList article { border-top: 1px solid #c9d4e3; padding: 12px 0; overflow-wrap: anywhere; }
+#commentList p { white-space: pre-wrap; }
+#commentsPanel [hidden] { display: none; }
