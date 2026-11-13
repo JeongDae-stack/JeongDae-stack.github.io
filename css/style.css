@@ -1235,3 +1235,5 @@ button.source-link {
 #commentList article, #tipList article { border-top: 1px solid #c9d4e3; padding: 12px 0; overflow-wrap: anywhere; }
 #commentList p, #tipList p { white-space: pre-wrap; }
 #commentsPanel [hidden] { display: none; }
+
+.tip-image { display: block; max-width: 100%; height: auto; margin: 8px 0; }

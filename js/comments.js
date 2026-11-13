@@ -1,3 +1,27 @@
+async function encodeTipImage(file) {
+    if (file.size > 10 * 1024 * 1024 || !["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+        throw new Error("Unsupported image");
+    }
+    const bitmap = await createImageBitmap(file);
+    try {
+        const scale = Math.min(1, 1200 / Math.max(bitmap.width, bitmap.height));
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.max(1, Math.round(bitmap.width * scale));
+        canvas.height = Math.max(1, Math.round(bitmap.height * scale));
+        const context = canvas.getContext("2d");
+        context.fillStyle = "#fff";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+        for (const quality of [0.8, 0.65, 0.45, 0.25, 0.1]) {
+            const data = canvas.toDataURL("image/jpeg", quality);
+            if (data.length <= 450000) return data;
+        }
+        throw new Error("Image too large");
+    } finally {
+        bitmap.close();
+    }
+}
+
 function mountDiscussion({ prefix, table, kind, tab, label }) {
     const url = "https://tzbzxzfcpjrcbrhqgqcq.supabase.co";
     const apikey = "sb_publishable_lC2eHvmDCl_WmlGICCDvug_lY7Fhbbk";
@@ -54,6 +78,25 @@ function mountDiscussion({ prefix, table, kind, tab, label }) {
             const title = document.createElement("summary");
             title.textContent = comment.title;
             details.append(title, heading, body, remove);
+            if (comment.has_image) {
+                let imageLoaded = false;
+                details.addEventListener("toggle", async () => {
+                    if (!details.open || imageLoaded) return;
+                    imageLoaded = true;
+                    try {
+                        const [tip] = await request("/rest/v1/site_tips?select=image_data&id=eq." + comment.id);
+                        if (!tip?.image_data?.startsWith("data:image/jpeg;base64,")) return;
+                        const image = document.createElement("img");
+                        image.src = tip.image_data;
+                        image.alt = comment.title + " 첨부 이미지";
+                        image.className = "tip-image";
+                        remove.before(image);
+                    } catch {
+                        imageLoaded = false;
+                        status.textContent = "첨부 이미지를 불러오지 못했습니다.";
+                    }
+                });
+            }
             row.append(details);
         } else {
             row.append(heading, body, remove);
@@ -66,7 +109,7 @@ function mountDiscussion({ prefix, table, kind, tab, label }) {
         loading = more.disabled = true;
         try {
             const filter = append ? "&id=lt." + cursor : "";
-            const comments = await request("/rest/v1/" + table + "?select=id,nickname,body,created_at" + (kind === "tip" ? ",title" : "") + "&order=id.desc&limit=20" + filter);
+            const comments = await request("/rest/v1/" + table + "?select=id,nickname,body,created_at" + (kind === "tip" ? ",title,has_image" : "") + "&order=id.desc&limit=20" + filter);
             if (!append) list.replaceChildren();
             list.append(...comments.map(render));
             cursor = comments.at(-1)?.id;
@@ -89,6 +132,18 @@ function mountDiscussion({ prefix, table, kind, tab, label }) {
         const button = form.querySelector("button");
         button.disabled = true;
         try {
+            if (kind === "tip") {
+                const file = fields.image;
+                delete fields.image;
+                if (file?.size) {
+                    try {
+                        fields.image_data = await encodeTipImage(file);
+                    } catch {
+                        status.textContent = "10MB 이하의 JPG, PNG, WebP 이미지를 선택해 주세요.";
+                        return;
+                    }
+                }
+            }
             await rpc("add_site_" + kind, fields);
             form.reset();
             await load();
