@@ -1,10 +1,10 @@
-(() => {
+function mountDiscussion({ prefix, table, kind, tab, label }) {
     const url = "https://tzbzxzfcpjrcbrhqgqcq.supabase.co";
     const apikey = "sb_publishable_lC2eHvmDCl_WmlGICCDvug_lY7Fhbbk";
-    const form = document.querySelector("#commentForm");
-    const list = document.querySelector("#commentList");
-    const status = document.querySelector("#commentStatus");
-    const more = document.querySelector("#commentMore");
+    const form = document.getElementById(prefix + "Form");
+    const list = document.getElementById(prefix + "List");
+    const status = document.getElementById(prefix + "Status");
+    const more = document.getElementById(prefix + "More");
     let cursor;
     let loading = false;
     const date = new Intl.DateTimeFormat("ko-KR", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Seoul" });
@@ -39,17 +39,25 @@
             if (!password) return;
             remove.disabled = true;
             try {
-                if (await rpc("delete_site_comment", { comment_id: comment.id, password })) {
+                if (await rpc("delete_site_" + kind, { [kind + "_id"]: comment.id, password })) {
                     row.remove();
-                    status.textContent = "댓글을 삭제했습니다.";
-                } else status.textContent = "비밀번호가 일치하지 않거나 이미 삭제된 댓글입니다.";
+                    status.textContent = label + "을 삭제했습니다.";
+                } else status.textContent = "비밀번호가 일치하지 않거나 이미 삭제된 글입니다.";
             } catch {
                 status.textContent = "삭제하지 못했습니다. 다시 시도해 주세요.";
             } finally {
                 remove.disabled = false;
             }
         };
-        row.append(heading, body, remove);
+        if (kind === "tip") {
+            const details = document.createElement("details");
+            const title = document.createElement("summary");
+            title.textContent = comment.title;
+            details.append(title, heading, body, remove);
+            row.append(details);
+        } else {
+            row.append(heading, body, remove);
+        }
         return row;
     }
 
@@ -58,14 +66,14 @@
         loading = more.disabled = true;
         try {
             const filter = append ? "&id=lt." + cursor : "";
-            const comments = await request("/rest/v1/site_comments?select=id,nickname,body,created_at&order=id.desc&limit=20" + filter);
+            const comments = await request("/rest/v1/" + table + "?select=id,nickname,body,created_at" + (kind === "tip" ? ",title" : "") + "&order=id.desc&limit=20" + filter);
             if (!append) list.replaceChildren();
             list.append(...comments.map(render));
             cursor = comments.at(-1)?.id;
             more.hidden = comments.length < 20;
-            status.textContent = list.childElementCount ? "" : "아직 댓글이 없습니다.";
+            status.textContent = list.childElementCount ? "" : "아직 " + label + "이 없습니다.";
         } catch {
-            status.textContent = "댓글을 불러오지 못했습니다.";
+            status.textContent = label + "을 불러오지 못했습니다.";
         } finally {
             loading = more.disabled = false;
         }
@@ -81,16 +89,19 @@
         const button = form.querySelector("button");
         button.disabled = true;
         try {
-            await rpc("add_site_comment", fields);
+            await rpc("add_site_" + kind, fields);
             form.reset();
             await load();
         } catch {
-            status.textContent = "댓글을 등록하지 못했습니다. 입력을 확인해 주세요.";
+            status.textContent = label + "을 등록하지 못했습니다. 입력을 확인해 주세요.";
         } finally {
             button.disabled = false;
         }
     };
 
     more.onclick = () => load(true);
-    document.addEventListener("comments:open", () => load());
-})();
+    document.addEventListener(tab + ":open", () => load());
+}
+
+mountDiscussion({ prefix: "comment", table: "site_comments", kind: "comment", tab: "comments", label: "댓글" });
+mountDiscussion({ prefix: "tip", table: "site_tips", kind: "tip", tab: "tips", label: "게시글" });

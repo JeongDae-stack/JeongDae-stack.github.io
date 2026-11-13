@@ -35,6 +35,7 @@
         <button id="radontaBtn" class="nav-btn" onclick="switchTab('radonta')">🗼 라돈타 공략</button>
         <button id="ridingBtn" class="nav-btn" onclick="switchTab('riding')">🦖 탑승펫 안내</button>
         <button id="commentsBtn" class="nav-btn" onclick="switchTab('comments')">💬 댓글</button>
+        <button id="tipsBtn" class="nav-btn" onclick="switchTab('tips')">💡 유저 팁</button>
     </div>
 
     <div id="petSearchPanel" class="search-panel">
@@ -264,6 +265,18 @@
         <p id="commentStatus" role="status"></p>
         <div id="commentList"></div>
         <button id="commentMore" hidden>댓글 더 보기</button>
+    </section>
+    <section id="tipsPanel" hidden>
+        <form id="tipForm" class="comment-form">
+            <label>제목 <input name="title" maxlength="100" required></label>
+            <label>닉네임 <input name="nickname" maxlength="30" required></label>
+            <label>본문 <textarea name="body" rows="7" maxlength="5000" required></textarea></label>
+            <label>삭제 비밀번호 <input name="password" type="password" minlength="8" maxlength="72" autocomplete="new-password" required></label>
+            <button>게시글 등록</button>
+        </form>
+        <p id="tipStatus" role="status"></p>
+        <div id="tipList"></div>
+        <button id="tipMore" hidden>게시글 더 보기</button>
     </section>
     <div id="resultArea"></div>
 </div>
