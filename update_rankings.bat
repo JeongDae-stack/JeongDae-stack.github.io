@@ -86,9 +86,7 @@ if "%COMPARE_RESULT%"=="0" (
     echo   변경사항 없음
     echo ========================================
     echo.
-    git status
-    pause
-    exit /b 0
+    goto publish
 )
 
 if "%COMPARE_RESULT%"=="2" (
@@ -123,44 +121,29 @@ echo.
 git status
 
 echo.
-set /p DO_GIT=GitHub에 commit / push까지 할까요? (y/N): 
+:publish
+echo [Git] 변경 파일 확인 중...
+git add -- data\pet_rankings.json
+if errorlevel 1 goto git_failed
 
-if /I "%DO_GIT%"=="Y" (
-    echo.
-    echo [Git] data\pet_rankings.json 추가 중...
-    git add data\pet_rankings.json
-
-    echo.
-    echo [Git] 커밋 생성 중...
-    git commit -m "Update pet ranking data"
-
-    if errorlevel 1 (
-        echo.
-        echo [WARN] 커밋할 변경사항이 없거나 커밋에 실패했습니다.
-        echo git status를 확인해주세요.
-        pause
-        exit /b 0
-    )
-
-    echo.
-    echo [Git] GitHub로 push 중...
-    git push
-
-    if errorlevel 1 (
-        echo.
-        echo [ERROR] git push 실패
-        pause
-        exit /b 1
-    )
-
-    echo.
-    echo GitHub 반영 완료.
-    echo GitHub Pages 반영까지는 약간 시간이 걸릴 수 있습니다.
-) else (
-    echo.
-    echo Git commit / push는 건너뜁니다.
+git diff --cached --quiet HEAD -- data\pet_rankings.json
+if errorlevel 2 goto git_failed
+if errorlevel 1 (
+    git commit --only -m "Update pet ranking data" -- data\pet_rankings.json
+    if errorlevel 1 goto git_failed
 )
 
+echo [Git] GitHub로 push 중...
+git push
+if errorlevel 1 goto git_failed
+
+echo GitHub 푸시 완료.
 echo.
 echo 완료되었습니다.
 pause
+exit /b 0
+
+:git_failed
+echo [ERROR] GitHub 반영 실패. 위 Git 오류를 확인해주세요.
+pause
+exit /b 1

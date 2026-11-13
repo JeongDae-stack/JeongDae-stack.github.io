@@ -132,32 +132,29 @@ echo.
 dir data
 
 echo.
-set /p DO_GIT=GitHub에 commit / push까지 할까요? (y/N): 
+:publish
+echo [Git] 변경 파일 확인 중...
+git add -- data\pets.json data\items.json
+if errorlevel 1 goto git_failed
 
-if /I "%DO_GIT%"=="Y" (
-    echo.
-    echo [Git] 변경 파일 추가 중...
-
-    git add data\pets.json data\items.json tools\scrape_pets.js tools\convert_items.js update_data.bat
-
-    echo.
-    echo [Git] 커밋 생성 중...
-
-    git commit -m "Update pet and item data"
-
-    echo.
-    echo [Git] GitHub로 push 중...
-
-    git push
-
-    echo.
-    echo GitHub 반영 요청 완료.
-    echo GitHub Pages 반영까지는 약간 시간이 걸릴 수 있습니다.
-) else (
-    echo.
-    echo Git commit / push는 건너뜁니다.
+git diff --cached --quiet HEAD -- data\pets.json data\items.json
+if errorlevel 2 goto git_failed
+if errorlevel 1 (
+    git commit --only -m "Update pet and item data" -- data\pets.json data\items.json
+    if errorlevel 1 goto git_failed
 )
 
+echo [Git] GitHub로 push 중...
+git push
+if errorlevel 1 goto git_failed
+
+echo GitHub 푸시 완료.
 echo.
 echo 완료되었습니다.
 pause
+exit /b 0
+
+:git_failed
+echo [ERROR] GitHub 반영 실패. 위 Git 오류를 확인해주세요.
+pause
+exit /b 1
