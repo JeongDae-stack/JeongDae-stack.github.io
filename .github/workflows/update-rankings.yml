@@ -20,6 +20,8 @@ jobs:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    env:
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
     permissions:
       contents: write
     steps:
