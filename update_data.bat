@@ -95,7 +95,12 @@ echo.
 echo [2/3] 아이템 원본 데이터 다운로드 중...
 echo.
 
-powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/flowerjunho/stoneage-light/main/src/data/right_items.json' -OutFile 'data\right_items_raw.json'"
+powershell -NoProfile -Command "$ErrorActionPreference = 'Stop'; $temp = Join-Path 'data' ([guid]::NewGuid().ToString() + '.tmp'); try { Invoke-WebRequest -UseBasicParsing -Uri 'https://raw.githubusercontent.com/flowerjunho/stoneage-light/main/src/data/right_items.json' -OutFile $temp; Move-Item -LiteralPath $temp -Destination 'data\right_items_raw.json' -Force } catch { if ($_.Exception.Response -and [int]$_.Exception.Response.StatusCode -eq 404) { exit 4 }; throw } finally { Remove-Item -LiteralPath $temp -ErrorAction SilentlyContinue }"
+
+if "%errorlevel%"=="4" (
+    echo [WARN] 아이템 원본 주소에서 404를 반환했습니다. 기존 아이템 데이터를 유지합니다.
+    goto data_updated
+)
 
 if errorlevel 1 (
     echo.
@@ -117,6 +122,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
+:data_updated
 echo.
 echo ========================================
 echo   데이터 갱신 완료
