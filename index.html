@@ -267,13 +267,17 @@
         <button id="commentMore" hidden>댓글 더 보기</button>
     </section>
     <section id="tipsPanel" hidden>
-        <form id="tipForm" class="comment-form">
+        <div class="tip-toolbar">
+            <h2>유저 팁 게시글</h2>
+            <button id="tipWrite" type="button" aria-controls="tipForm" aria-expanded="false">글쓰기</button>
+        </div>
+        <form id="tipForm" class="comment-form" hidden>
             <label>제목 <input name="title" maxlength="100" required></label>
             <label>닉네임 <input name="nickname" maxlength="30" required></label>
             <label>본문 <textarea name="body" rows="7" maxlength="5000" required></textarea></label>
             <label>삭제 비밀번호 <input name="password" type="password" minlength="8" maxlength="72" autocomplete="new-password" required></label>
             <label>이미지 첨부 <input name="image" type="file" accept="image/jpeg,image/png,image/webp"></label>
-            <button>게시글 등록</button>
+            <div><button>게시글 등록</button> <button id="tipCancel" type="button">닫기</button></div>
         </form>
         <p id="tipStatus" role="status"></p>
         <div id="tipList"></div>

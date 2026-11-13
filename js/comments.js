@@ -77,7 +77,8 @@ function mountDiscussion({ prefix, table, kind, tab, label }) {
             const details = document.createElement("details");
             const title = document.createElement("summary");
             title.textContent = comment.title;
-            details.append(title, heading, body, remove);
+            title.append(heading);
+            details.append(title, body, remove);
             if (comment.has_image) {
                 let imageLoaded = false;
                 details.addEventListener("toggle", async () => {
@@ -146,6 +147,7 @@ function mountDiscussion({ prefix, table, kind, tab, label }) {
             }
             await rpc("add_site_" + kind, fields);
             form.reset();
+            if (kind === "tip") setTipFormOpen(false);
             await load();
         } catch {
             status.textContent = label + "을 등록하지 못했습니다. 입력을 확인해 주세요.";
@@ -160,3 +162,15 @@ function mountDiscussion({ prefix, table, kind, tab, label }) {
 
 mountDiscussion({ prefix: "comment", table: "site_comments", kind: "comment", tab: "comments", label: "댓글" });
 mountDiscussion({ prefix: "tip", table: "site_tips", kind: "tip", tab: "tips", label: "게시글" });
+
+function setTipFormOpen(open) {
+    const form = document.getElementById("tipForm");
+    const write = document.getElementById("tipWrite");
+    form.hidden = !open;
+    write.setAttribute("aria-expanded", String(open));
+    if (open) form.elements.title.focus();
+    else write.focus();
+}
+
+document.getElementById("tipWrite").onclick = () => setTipFormOpen(document.getElementById("tipForm").hidden);
+document.getElementById("tipCancel").onclick = () => setTipFormOpen(false);
