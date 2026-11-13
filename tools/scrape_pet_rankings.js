@@ -199,13 +199,14 @@ async function scrapeOnePetRanking(page, pet, index, total) {
     }
 
     try {
-        await page.goto(pet.source, {
+        const response = await page.goto(pet.source, {
             waitUntil: "networkidle2",
             timeout: 60000
         });
 
         await sleep(150);
 
+        if (!response?.ok()) throw new Error("HTTP " + response?.status());
         const bodyText = await page.evaluate(() => document.body.innerText || "");
         const rankings = parseRankingsFromText(bodyText);
 
@@ -221,6 +222,7 @@ async function scrapeOnePetRanking(page, pet, index, total) {
     } catch (error) {
         console.log(`[${index}/${total}] FAIL - ${pet.name}`);
         console.log(`  이유: ${error.message}`);
+        if (process.env.CI) throw error;
 
         return {
             petName: pet.name || "",
@@ -256,8 +258,10 @@ async function main() {
         console.log(`기존 랭킹 백업 생성: ${BACKUP_PATH}`);
     }
 
+    const localChrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
     const browser = await puppeteer.launch({
-        headless: false,
+        executablePath: !process.env.CI && fs.existsSync(localChrome) ? localChrome : undefined,
+        headless: Boolean(process.env.CI),
         defaultViewport: {
             width: 1280,
             height: 900
@@ -290,7 +294,7 @@ async function main() {
 
         totalRankingRows += result.rankings.length;
 
-        if ((i + 1) % 25 === 0 || i === pets.length - 1) {
+        if (!process.env.CI && ((i + 1) % 25 === 0 || i === pets.length - 1)) {
             const partialOutput = {
                 summary: {
                     generatedAt: new Date().toISOString(),
