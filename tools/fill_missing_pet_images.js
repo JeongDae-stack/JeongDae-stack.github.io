@@ -76,7 +76,8 @@ async function main() {
     }
 
     const browser = await puppeteer.launch({
-        headless: false,
+        executablePath: process.env.CI ? undefined : 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+        headless: Boolean(process.env.CI),
         defaultViewport: {
             width: 1280,
             height: 900

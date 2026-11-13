@@ -234,8 +234,8 @@ async function main() {
     fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
 
 const browser = await puppeteer.launch({
-    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-    headless: false,
+        executablePath: process.env.CI ? undefined : 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    headless: Boolean(process.env.CI),
     userDataDir: path.join(__dirname, "..", "tmp", "puppeteer-chrome-profile"),
     defaultViewport: {
         width: 1280,
