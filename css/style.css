@@ -1194,3 +1194,37 @@ button.source-link {
         grid-template-columns: 1fr;
     }
 }
+
+.shared-memo {
+    max-width: 360px;
+    margin: 0 0 12px;
+    padding: 8px 12px;
+    border: 1px solid #c9d4e3;
+    border-radius: 8px;
+    background: #f7f9fc;
+    color: #243449;
+    font-size: 0.875rem;
+}
+
+.shared-memo summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.memo-label {
+    display: block;
+    margin-top: 6px;
+}
+
+.shared-memo textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+    resize: vertical;
+    font: inherit;
+}
+
+#memo-status {
+    margin-inline-start: 4px;
+}

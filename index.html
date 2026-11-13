@@ -19,6 +19,15 @@
 	    <button type="button" class="top-action-btn refresh-btn" onclick="refreshSite()">🔄 새로고침</button>
 	</div>
 
+    <details class="shared-memo" open>
+        <summary>공용 메모</summary>
+        <label for="memo-text" class="memo-label">누구나 수정하고 지울 수 있어요.</label>
+        <textarea id="memo-text" rows="3" maxlength="2000" disabled></textarea>
+        <button id="memo-save" type="button" disabled>저장</button>
+        <button id="memo-reload" type="button" hidden>최신 메모 불러오기</button>
+        <span id="memo-status" role="status"></span>
+    </details>
+
     <div class="nav-tabs">
         <button id="petBtn" class="nav-btn active-pet" onclick="switchTab('pet')">🐾 페트 검색</button>
         <button id="itemBtn" class="nav-btn" onclick="switchTab('item')">⚔️ 아이템 검색</button>
@@ -248,5 +257,6 @@
 </div>
 
 <script src="./js/app.js" defer></script>
+<script src="./js/shared-memo.js" defer></script>
 </body>
 </html>
