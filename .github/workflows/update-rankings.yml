@@ -1,1 +1,129 @@
+name: Update rankings and deploy Pages
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+      timezone: Asia/Seoul
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      task:
+        type: choice
+        options: [rankings, pet-data]
+        default: rankings
+  push:
+    branches: [main]
+
+concurrency:
+  group: stoneage-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  rankings:
+    if: (github.event_name == 'workflow_dispatch' && inputs.task == 'rankings') || (github.event_name == 'schedule' && github.event.schedule == '0 5 * * *')
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Collect and publish changed rankings
+        run: |
+          before="$(mktemp)"
+          cp data/pet_rankings.json "$before"
+          node tools/scrape_pet_rankings.js
+          node -e 'const r = require("./data/pet_rankings.json"); if (!r.summary.totalRankingRows) process.exit(1)'
+          result=0
+          node tools/compare_pet_rankings.js "$before" data/pet_rankings.json || result=$?
+          case "$result" in
+            0) exit 0 ;;
+            2) ;;
+            *) exit "$result" ;;
+          esac
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/pet_rankings.json
+          git commit -m "Update pet ranking data"
+          git push origin HEAD:main
+
+  pet-data:
+    if: (github.event_name == 'workflow_dispatch' && inputs.task == 'pet-data') || (github.event_name == 'schedule' && github.event.schedule == '17 * * * *')
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+    permissions:
+      contents: write
+    outputs:
+      updated: ${{ steps.refresh.outputs.updated }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - id: refresh
+        run: |
+          latest="$(node tools/latest_patch_note.js)"
+          previous="$(cat data/last_patch_note.txt 2>/dev/null || echo 0)"
+          echo "Latest patch note: $latest; last processed: $previous"
+          if (( latest <= previous )); then exit 0; fi
+          node tools/scrape_pets.js
+          node -e 'if (require("./data/pets.json").length < 500) throw new Error("Incomplete pet list")'
+          node tools/fill_missing_pet_images.js
+          node -e 'if (require("./data/pets.json").filter(p => p.imageUrl).length < 500) throw new Error("Incomplete pet images")'
+          status="$(curl -sS --retry 2 --max-time 60 -w '%{http_code}' -o data/right_items_raw.json 'https://raw.githubusercontent.com/flowerjunho/stoneage-light/main/src/data/right_items.json')"
+          case "$status" in
+            200) node tools/convert_items.js ;;
+            404) echo "::warning::Item source returned 404; keeping existing items" ;;
+            *) exit 1 ;;
+          esac
+          echo "$latest" > data/last_patch_note.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/pets.json data/items.json data/last_patch_note.txt
+          git commit -m "Update data for patch note $latest"
+          git push origin HEAD:main
+          echo 'updated=true' >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: [rankings, pet-data]
     if: ${{ always() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || needs.rankings.result == 'success' || needs.pet-data.outputs.updated == 'true') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Prepare static files
+        run: |
+          mkdir _site
+          cp -r index.html css data images js _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+          name: github-pages-${{ github.run_attempt }}
+      - uses: actions/deploy-pages@v4
+        id: deployment
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
