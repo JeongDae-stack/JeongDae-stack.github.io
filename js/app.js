@@ -38,6 +38,7 @@ let ridingInfoData = {
 
             try {
                 const rankResponse = await fetch("./data/pet_rankings.json");
+                if (!rankResponse.ok) throw new Error("HTTP " + rankResponse.status);
                 petRankingData = await rankResponse.json();
                 console.log("펫 랭킹 데이터 로딩 완료:", getRankingPetsArray().length);
             } catch (rankError) {
@@ -47,6 +48,19 @@ let ridingInfoData = {
                     pets: []
                 };
             }
+
+            const rankUpdatedAt = document.getElementById("rankUpdatedAt");
+            const generatedAt = new Date(petRankingData?.summary?.generatedAt ?? "");
+            rankUpdatedAt.textContent = "확인할 수 없음";
+            if (!Number.isNaN(generatedAt.getTime())) {
+                rankUpdatedAt.dateTime = generatedAt.toISOString();
+                rankUpdatedAt.textContent = new Intl.DateTimeFormat("ko-KR", {
+                    dateStyle: "medium",
+                    timeStyle: "short",
+                    timeZone: "Asia/Seoul"
+                }).format(generatedAt) + " (한국시간)";
+            }
+
 
             try {
                 const radontaResponse = await fetch("./data/radonta_guide.json");

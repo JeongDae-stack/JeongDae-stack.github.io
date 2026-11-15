@@ -1244,3 +1244,5 @@ button.source-link {
 #tipWrite { padding: 8px 16px; background: #235bb4; color: white; border: 0; border-radius: 6px; cursor: pointer; }
 #tipList summary { cursor: pointer; font-weight: 700; padding: 4px 0; }
 #tipList summary strong { display: block; margin: 4px 0 0 1.1rem; font-size: .85rem; font-weight: 400; color: #526174; }
+
+.rank-update { margin: 0 0 12px; font-size: .875rem; color: #526174; }
