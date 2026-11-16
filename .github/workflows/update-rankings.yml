@@ -2,7 +2,7 @@ name: Update rankings and deploy Pages
 
 on:
   schedule:
-    - cron: '0 5,17 * * *'
+    - cron: '0 5,11,17,23 * * *'
       timezone: Asia/Seoul
     - cron: '17 * * * *'
   workflow_dispatch:
@@ -23,7 +23,7 @@ permissions:
 
 jobs:
   rankings:
-    if: (github.event_name == 'workflow_dispatch' && inputs.task == 'rankings') || (github.event_name == 'schedule' && github.event.schedule == '0 5,17 * * *')
+    if: (github.event_name == 'workflow_dispatch' && inputs.task == 'rankings') || (github.event_name == 'schedule' && github.event.schedule == '0 5,11,17,23 * * *')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
