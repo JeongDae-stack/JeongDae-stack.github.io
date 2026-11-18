@@ -919,14 +919,24 @@ try {
             return matchPetName && hasRows;
         });
 
-        if (nicknameQuery) {
-            matchedPets = matchedPets
-                .map(pet => ({
-                    ...pet,
-                    rankings: pet.rankings.filter(row => safeText(row.nickname).includes(nicknameQuery))
-                }))
-                .filter(pet => pet.rankings.length > 0);
-        }
+        matchedPets = matchedPets.map(pet => {
+            const rankedRows = [...pet.rankings].sort((a, b) => {
+                if (metric === 'rank') {
+                    return Number(a.rank || 0) - Number(b.rank || 0);
+                }
+                return getRankingMetricValue(b, metric) - getRankingMetricValue(a, metric);
+            }).map((row, index) => ({
+                ...row,
+                displayRank: metric === 'rank' ? row.rank : index + 1
+            }));
+
+            return {
+                ...pet,
+                rankings: rankedRows.filter(row =>
+                    !nicknameQuery || safeText(row.nickname).includes(nicknameQuery)
+                )
+            };
+        }).filter(pet => pet.rankings.length > 0);
 
         if (matchedPets.length === 0) {
             renderEmptyMessage("랭킹 결과가 없습니다.");
@@ -954,18 +964,10 @@ try {
                 emoji: basePet?.emoji || '🐾'
             };
 
-            const sortedRows = [...petRank.rankings].sort((a, b) => {
-                if (metric === 'rank') {
-                    return Number(a.rank || 0) - Number(b.rank || 0);
-                }
+            const rows = petRank.rankings.slice(0, limit);
 
-                return getRankingMetricValue(b, metric) - getRankingMetricValue(a, metric);
-            });
-
-            const rows = sortedRows.slice(0, limit);
-
-            const tableRows = rows.map((row, index) => {
-                const displayRank = metric === 'rank' ? row.rank : index + 1;
+            const tableRows = rows.map(row => {
+                const displayRank = row.displayRank;
                 const comparison = calcSComparison(basePet, row);
 
                 const atkCell = comparison
